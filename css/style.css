@@ -40,3 +40,7 @@
 .fitem4{
     grid-area: d;
 }
+
+.fitem1, .fitem2, .fitem3, .fitem4, .title{
+    text-align: center;
+}
