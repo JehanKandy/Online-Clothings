@@ -1,6 +1,8 @@
 <h1 align="center">Online-Clothings</h1>
 <h3 align="center">Online Clothing Project</h3>
 
+<p align="center"><img src="https://wakatime.com/badge/user/0ac30051-5698-4ae9-851e-7d4853d4aba7/project/445a548e-d717-4951-ac7b-5cb416e2ad33.svg"></p>
+
 # Development Timeline
 
   <h4> 19 January 2023</h4>
