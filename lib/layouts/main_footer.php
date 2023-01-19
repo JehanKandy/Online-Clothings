@@ -42,10 +42,10 @@
                             <i class="fas fa-map-marked-alt"></i> &nbsp;&nbsp; 88/A, ABC Street, XYZ. <br>
 
                             <span>
-                                <i class="fab fa-whatsapp"></i>
-                                <i class="fab fa-facebook"></i>    
-                                <i class="fab fa-instagram"></i>  
-                                <i class="fab fa-twitter"></i>  
+                                <i class="fab fa-whatsapp" style="font-size: 30px; margin: 30px 10px;"></i>
+                                <i class="fab fa-facebook" style="font-size: 30px; margin: 30px 10px;"></i>    
+                                <i class="fab fa-instagram" style="font-size: 30px; margin: 30px 10px;"></i>  
+                                <i class="fab fa-twitter" style="font-size: 30px; margin: 30px 10px;"></i>  
                             </span>
                         </div>
                     </div>
