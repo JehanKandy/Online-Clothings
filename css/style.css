@@ -70,3 +70,8 @@
 .fitem2 .body ul li a, .fitem3 .body ul li a{
     color: white;
 }
+.fitem4 .body{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+}
