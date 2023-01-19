@@ -9,20 +9,20 @@
                 <div class="footer-grid">
                     <div class="fitem1">
                         <div class="title">Hiruni Clothings</div>
-                    </div>
-                    <div class="body">
-                        The Online Clothings Develop for educational purposes only
+                        <div class="body">
+                            The Online Clothings Develop for educational purposes only
+                        </div>
                     </div>
                     <div class="fitem2">
                         <div class="title">Usefull Links</div>
-                    </div>
-                    <div class="body">
-                        <ul>
-                            <li><a href="#">Buy Online</a></li>
-                            <li><a href="#">Buy From Shop</a></li>
-                            <li><a href="#">Get Discount</a></li>
-                            <li><a href="#">Link 1</a></li>                            
-                        </ul>
+                        <div class="body">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp; Buy Online</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Buy From Shop</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Get Discount</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Link 1</a></li>                            
+                            </ul>
+                        </div>
                     </div>
                     <div class="fitem3">
                         <div class="title">Our Services</div>
