@@ -37,6 +37,10 @@
                     </div>
                     <div class="fitem4">
                         <div class="title">Contact Us</div>
+                        <div class="body">
+                            <i class="fas fa-mobile-alt	"></i> +94 71 650 4653 <br>
+                            <i class="fas fa-map-marked-alt"></i> 88/A, ABC Street, XYZ. <br>
+                        </div>
                     </div>
                 </div>
             </div>
