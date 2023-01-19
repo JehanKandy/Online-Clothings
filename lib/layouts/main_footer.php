@@ -13,9 +13,15 @@
                     <div class="body">
                         The Online Clothings Develop for educational purposes only
                     </div>
-                    <div class="fitem2">Item 2</div>
-                    <div class="fitem3">Item 3</div>
-                    <div class="fitem4">Item 4</div>
+                    <div class="fitem2">
+                        <div class="title">Usefull Links</div>
+                    </div>
+                    <div class="fitem3">
+                        <div class="title">Our Services</div>
+                    </div>
+                    <div class="fitem4">
+                        <div class="title">Contact Us</div>
+                    </div>
                 </div>
             </div>
         </div>
