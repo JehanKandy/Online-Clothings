@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
+<link rel="stylesheet" href="../../css/style.css">
 
-/*
+<footer>
+    <div class="main-footer">
+        <div class="container">
+            <div class="body">
+                <div class="footer-grid">
+                    <div class="fitem1">Item 1</div>
+                    <div class="fitem2">Item 2</div>
+                    <div class="fitem3">Item 3</div>
+                    <div class="fitem4">Item 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    font-family: 'Merriweather Sans', sans-serif;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-
-*/
-
+<script src="../../js/script.js"></script>
