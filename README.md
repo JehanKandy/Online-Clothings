@@ -1,9 +1,9 @@
-# Online-Clothings
+<h1 align="center">Online-Clothings</h1>
 Online Clothing Project
 
 # Development Timeline
 
-  <h4> 17 January 2023</h4>
+  <h4> 19 January 2023</h4>
   
   - project Start
 
