@@ -1,18 +1,43 @@
-<link rel="stylesheet" href="../../css/style.css">
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
 
-<footer>
-    <div class="main-footer">
-        <div class="container">
-            <div class="body">
-                <div class="footer-grid">
-                    <div class="fitem1">Item 1</div>
-                    <div class="fitem2">Item 2</div>
-                    <div class="fitem3">Item 3</div>
-                    <div class="fitem4">Item 4</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+/*
 
-<script src="../../js/script.js"></script>
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+.main-footer{
+    padding: 80px 0 80px 0;
+    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/food1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.footer-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.fitem1{
+    grid-area: a;
+}
+.fitem2{
+    grid-area: b;
+}
+.fitem3{
+    grid-area: c;
+}
+.fitem4{
+    grid-area: d;
+}
