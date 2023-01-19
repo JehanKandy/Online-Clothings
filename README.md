@@ -11,6 +11,7 @@
   - index.php
   - lib/layouts/header.php
   - css/style.css
+  - js/script.js
 
 
 
