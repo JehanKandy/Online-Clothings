@@ -1,7 +1,7 @@
 <h1 align="center">Online-Clothings</h1>
 <h3 align="center">Online Clothing Project</h3>
 
-<p align="center"><img src="https://wakatime.com/badge/user/0ac30051-5698-4ae9-851e-7d4853d4aba7/project/445a548e-d717-4951-ac7b-5cb416e2ad33.svg"></p>
+<p align="center"><img src="https://wakatime.com/badge/user/0ac30051-5698-4ae9-851e-7d4853d4aba7/project/431b07de-a7ed-4337-bea8-9afa9ef1beb7.svg"></p>
 
 # Development Timeline
 
