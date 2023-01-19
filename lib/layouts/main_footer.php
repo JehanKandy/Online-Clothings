@@ -40,6 +40,13 @@
                         <div class="body">
                             <i class="fas fa-mobile-alt	"></i> &nbsp;&nbsp; +94 71 650 4653 <br>
                             <i class="fas fa-map-marked-alt"></i> &nbsp;&nbsp; 88/A, ABC Street, XYZ. <br>
+
+                            <span>
+                                <i class="fab fa-whatsapp"></i>
+                                <i class="fab fa-facebook"></i>    
+                                <i class="fab fa-instagram"></i>  
+                                <i class="fab fa-twitter"></i>  
+                            </span>
                         </div>
                     </div>
                 </div>
