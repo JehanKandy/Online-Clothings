@@ -51,3 +51,22 @@
     text-align: center;
     font-size: 25px;
 }
+.fitem1 .body{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+.fitem2 .body, .fitem3 .body{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+}
+.fitem2 .body ul, .fitem3 .body ul{
+    list-style-type: none;
+}
+.fitem2 .body ul li, .fitem3 .body ul li{
+    margin-top: 10px;
+}
+.fitem2 .body ul li a, .fitem3 .body ul li a{
+    color: white;
+}
