@@ -17,7 +17,7 @@
                         <div class="title">Usefull Links</div>
                         <div class="body">
                             <ul>
-                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp; Buy Online</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Buy Online</a></li>
                                 <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Buy From Shop</a></li>
                                 <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Get Discount</a></li>
                                 <li><a href="#"><i class="fas fa-tshirt"></i>&nbsp;Link 1</a></li>                            
@@ -28,10 +28,10 @@
                         <div class="title">Our Services</div>
                         <div class="body">
                             <ul>
-                                <li><a href="#">Online Store</a></li>
-                                <li><a href="#">Shops</a></li>
-                                <li><a href="#">Island wide Delivery</a></li>
-                                <li><a href="#">Service 1</a></li>                            
+                                <li><a href="#"><i class="fas fa-socks"></i>&nbsp;Online Store</a></li>
+                                <li><a href="#"><i class="fas fa-socks"></i>&nbsp;Shops</a></li>
+                                <li><a href="#"><i class="fas fa-socks"></i>&nbsp;Island wide Delivery</a></li>
+                                <li><a href="#"><i class="fas fa-socks"></i>&nbsp;Service 1</a></li>                            
                             </ul>
                         </div>
                     </div>
