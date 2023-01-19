@@ -1,5 +1,5 @@
 <h1 align="center">Online-Clothings</h1>
-Online Clothing Project
+<h3 align="center">Online Clothing Project</h3>
 
 # Development Timeline
 
