@@ -4,11 +4,11 @@
     <div class="main-footer">
         <div class="container">
             <div class="body">
-                <div class="footer-title">Hiruni Clothings</div>
+                <div class="footer-title">Pearl Clothings</div>
                 <hr class="footer-hr">
                 <div class="footer-grid">
                     <div class="fitem1">
-                        <div class="title">Hiruni Clothings</div>
+                        <div class="title">Pearl Clothings</div>
                         <div class="body">
                             The Online Clothings Develop for educational purposes only
                         </div>
@@ -49,6 +49,10 @@
                             </span>
                         </div>
                     </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="copy">
+                    All Rights Reserved BY <b><i class="far fa-copyright"></i>Hiruni 2023,</b> Pearl Clothings 
                 </div>
             </div>
         </div>
