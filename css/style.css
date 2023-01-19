@@ -142,4 +142,7 @@
         padding: 45 45 45 45;
         margin-bottom: 5px;
     }
+    .fitem1 .body{
+        text-align: center;
+    }
 }
