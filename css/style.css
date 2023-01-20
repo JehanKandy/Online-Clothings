@@ -225,6 +225,10 @@
 .bitem4{
     grid-area: d;
 }
+.bitem1, .bitem2, .bitem3, .bitem4{
+    background-position: center;
+    background-size: cover;
+}
  /* 
     ***************************************************************************************
 
