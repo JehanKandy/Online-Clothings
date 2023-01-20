@@ -43,9 +43,9 @@
     <div class="container">
         <div class="title">Get in Touch</div>
         <div class="body">
-            <form action="" method="post">
+            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="from-body">
-                    <input type="text" name="" id="" required="required">
+                    <input type="text" name="email" id="" required="required">
                     <span>Email</span>
                 </div>  
             </form>
