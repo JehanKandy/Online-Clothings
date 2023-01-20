@@ -7,7 +7,7 @@
                 Pearl Clothings
             </div>
             <div class="right-side">
-                Login
+                <a href=""><button class="login-nav-btn">Login</button></a>
             </div>                       
         </div>
     </div>
