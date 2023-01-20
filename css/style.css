@@ -232,6 +232,8 @@
 .bitem1, .bitem2, .bitem3, .bitem4{
     background-position: center;
     background-size: cover;
+    border: none;
+    border-radius: 5px;
 }
  /* 
     ***************************************************************************************
