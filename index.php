@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/style.css">
 <?php include("lib/layouts/header.php"); ?>
 <?php include("lib/layouts/main_nav.php"); ?>
+<?php include("lib/function/function.php"); ?>
+
 
 <div class="main-content">
     <div class="container">
@@ -43,6 +45,8 @@
     <div class="container">
         <div class="title">Get in Touch</div>
         <div class="body">
+
+
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="from-body">
                     <input type="text" name="email" id="" required="required">
