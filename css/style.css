@@ -9,290 +9,417 @@
 
 */
 
-.main-footer{
+.footer-main{
     padding: 80px 0 80px 0;
-    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/4.jpg);
+    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/food1.jpg);
     background-position: center;
     background-size: cover;
     color: white;
     font-family: 'Overpass', sans-serif;
 }
-.footer-title{
+.footer-main .title-main{
     font-size: 40px;
 }
-.footer-hr{
-    border-top: 1px solid white;
-}
-.footer-grid{
+.food-grid{
     display: grid;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(350px, auto);
     grid-gap: 1rem;
     grid-template-areas: "a b c d";
     padding: 45 45 45 45;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
-.fitem1{
+
+.food-grid .itme1{
     grid-area: a;
 }
-.fitem2{
+
+.food-grid .itme2{
     grid-area: b;
 }
-.fitem3{
+
+.food-grid .itme3{
     grid-area: c;
 }
-.fitem4{
+
+.food-grid .itme4{
     grid-area: d;
 }
-
-.fitem1, .fitem2, .fitem3, .fitem4, .title{
+.food-grid .itme1, .food-grid .itme2, .food-grid .itme3, .food-grid .itme4, .title{
+    font-size: 20px;
     text-align: center;
-    font-size: 25px;
 }
-.fitem1 .body{
-    margin-top: 15px;
+.food-grid .itme1 .body{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.food-grid.itme2, .food-grid.itme3, .body{
+    margin-top: 20px;
+    text-align: center;
     text-align: left;
-    font-size: 15px;
+    padding-left: 10px;
 }
-.fitem2 .body, .fitem3 .body{
-    font-size: 15px;
-    text-align: left;
-    margin-top: 15px;
-}
-.fitem2 .body ul, .fitem3 .body ul{
+.food-grid.itme2, .food-grid.itme3, .body ul{
     list-style-type: none;
 }
-.fitem2 .body ul li, .fitem3 .body ul li{
-    margin-top: 10px;
-}
-.fitem2 .body ul li a, .fitem3 .body ul li a{
+.food-grid.itme2, .food-grid.itme3, .body ul li a{
+    text-decoration: none;
     color: white;
 }
-.fitem4 .body{
-    font-size: 15px;
-    text-align: left;
-    margin-top: 15px;
+.food-grid .itme4 .body{
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.footer-hr{
+    border-top: 1px solid white;
 }
 .copy{
     text-align: center;
 }
-.nav-content{
-    width: 100%;
+.nav-contenmt{
+    background-color: rgb(37, 48, 56);
     height: 80px;
-    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/5.jpg);
-    background-position: center;
-    background-size: cover;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+.logo-text{
     color: white;
-    font-family: 'Overpass', sans-serif;
-    border-bottom: 1px solid white;
+    margin-left: 70px;
+    margin-top: -40px;
+    font-size: 25px;    
 }
-.left-side{
-    padding-top: 25px;
-    font-size: 30px;
-}
-.right-side{
-    margin-left: 90%;
-    margin-top: -55px;
+.nav-right{
+    margin-left: 88%;
+    margin-top: -40px;
 }
 .login-nav-btn{
-    padding: 15px 30px 10px 30px;
-    border: 1px solid white;
-    background: transparent;
+    background-color: transparent;
     color: white;
-    border-radius: 2px;
+    height: 40px;
+    padding: 10px 50px 10px 50px;   
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;     
     transition: 0.5s;
 }
 .login-nav-btn:hover{
-    background-color: white;
-    color: black;
+    color: rgb(37, 48, 56);
     cursor: pointer;
+    background-color: white;
 }
-.main-content{
+.home-content{
     width: 100%;
-    height: 80vh;
-    padding: 280px 0 300px 0;
-    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop1.jpg);
+    height: 800px;
     background-position: center;
     background-size: cover;
+    background-image: -webkit-linear-gradient(rgba(63, 63, 63, 0.7), rgba(0, 0, 0, 0.7)), url("../images/fishcurry.jpg");
     color: white;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.home-content .title{
+    font-size: 60px;
+    margin-top: 200px;
     font-family: 'Overpass', sans-serif;
 }
-.main-content .title{
-    text-align: center;
-    font-size: 50px
-}
-.main-content .body{
-    text-align: center;
+.home-info-btn{
     font-size: 20px;
-}
-.more-info{
-    margin-top: 20px;
-    padding: 12px 40px 10px 40px;
-    border: 2px solid white;
-    border-radius: 3px;
+    padding: 15px 50px 15px 50px;
     background: transparent;
-    color: white;    
+    border-radius: 5px;
+    border: 3px solid white;
+    color: white;
+    margin-top: 15px;
     transition: 0.5s;
 }
-.more-info:hover{
+.home-info-btn:hover{
     background-color: white;
     cursor: pointer;
     color: black;
 }
-.trending-content{
-    padding: 100px;
-    font-family: 'Overpass', sans-serif;
+.main-content{
+    margin: 150px 0 150px 0;
 }
-.trending-content .title{
-    font-size: 40px;
-    text-align: center;
-}
-.t-grid{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(250px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d e f";
-    padding: 45 45 45 45;
-    margin-bottom: 5px;
-}
-.titem1{
-    grid-area: a;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtsOjpkLWEzNGC7nHJ1RhPt5KuBMZ1SVMrg7_Y0ozFA3LiGXRwUXNsT3RfJSKRe0kR1M&usqp=CAU);
-}
-.titem2{
-    grid-area: b;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQjtH-nSJNa4-pvi51lcgsWoOs-4b_ErMi7yXuO3TkzC2zuLmlmZifSPSxKaYOfz8wkI&usqp=CAU);
-}
-.titem3{
-    grid-area: c;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M4ppGMhkSBFqoSX7bXSYOLw3twuQS_OoJ_HAnTT9anaN6M4UiUOIW2SGBp1uBuhPrr4&usqp=CAU);
-}
-.titem4{
-    grid-area: d;
-    background-image: url(https://static01.nyt.com/images/2021/05/28/fashion/mens-style/28sp-gear-inyt1/oakImage-1621867392181-superJumbo.jpg);
-}
-.titem5{
-    grid-area: e;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2KLMKhWGFGFhHsDJEKiT6c7eIVxjsgcuRukhibU5imlE7WrJSKLex_7V_ffgAerPyZc&usqp=CAU);
-}
-.titem6{
-    grid-area: f;
-    background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ed291e67-4618-49ec-8dda-2c2221a5df41/revolution-6-next-nature-mens-road-running-shoes-FgfhgR.png);
-}
-.titem1, .titem2, .titem3, .titem4, .titem5, .titem6{
-    background-position: center;
-    background-size: cover;
-}
-.branches-content{
-    width: 100%;
-    height: 90vh;
-    padding: 60px 0 60px 0;
-    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    font-family: 'Overpass', sans-serif;
-}
-.branches-content .title{
-    font-size: 40px;
-    text-align: center;
-}
-.b-grid{
+.food-info-grid{
     display: grid;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(250px, auto);
-    grid-gap: 1rem;
+    grid-auto-rows: minmax(550px, auto);
+    grid-gap: 5rem;
     grid-template-areas: "a b" "c d";
     padding: 45 45 45 45;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
-.bitem1{
+
+.food-info-grid .fitem1{
     grid-area: a;
-    background-image: url(../images/cshop.jpg);
-    transition: 0.5s;
-}
-.bitem2{
-    grid-area: b;
-    background-image: url(../images/cshop1.jpg);
-}
-.bitem3{
-    grid-area: c;
-    background-image: url(../images/cshop2.jpg);
-}
-.bitem4{
-    grid-area: d;
-    background-image: url(../images/cshop3.jpg);
-}
-.bitem1, .bitem2, .bitem3, .bitem4{
+    background-image: url("../images/dall1.jpg");
     background-position: center;
     background-size: cover;
-    border: none;
     border-radius: 5px;
 }
-.bitem1 .text, .bitem2 .text, .bitem3 .text, .bitem4 .text{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 10px;
+.food-info-grid .fitem2{
+    grid-area: b;
+}
+.food-info-grid .fitem3{
+    grid-area: c;
+}
+.food-info-grid .fitem4{
+    grid-area: d;
+    background-image: url("../images/dryfish.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.most-get-foods{
+    margin: 150px 0 150px 0;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hbun3.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.most-get-foods .title{
+    padding-top: 80px;
+    color: white;
+    font-size: 50px;
+}
+.most-food-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d e f";
+    padding: 45 45 45 45;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.mitem1, .mitem2, .mitem3, .mitem4, .mitem5, .mitem6{
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.most-food-grid .mitem1{
+    grid-area: a;
+    background-image: url("../images/cupcake1.jpg");
+}
+
+ .mitem1 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 50px;
+    opacity: 0;
     transition: 0.5s;
 }
-.bitem1:hover .text{
-    color: black;
-    margin-top: 100px;
-    font-size: 30px;
+.mitem1:hover{
+    cursor: pointer;
+}
+.mitem1:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+}
+.most-food-grid .mitem2{
+    grid-area: b;
+    background-image: url("../images/fried_rice.jpg");
+}
+.mitem2 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
     color: white;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 0.5s;
 }
-.bitem2:hover .text{
-    color: black;
-    margin-top: 100px;
-    font-size: 30px;
+.mitem2:hover{
+    cursor: pointer;
+}
+.mitem2:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+}
+.most-food-grid .mitem3{
+    grid-area: c;
+    background-image: url("../images/hbun3.jpg");
+}
+.mitem3 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
     color: white;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 0.5s;
 }
-.bitem3:hover .text{
-    color: black;
-    margin-top: 100px;
-    font-size: 30px;
+.mitem3:hover{
+    cursor: pointer;
+}
+.mitem3:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+}
+.most-food-grid .mitem4{
+    grid-area: d;
+    background-image: url("../images/cutlet2.jpg");
+}
+.mitem4 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
     color: white;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 0.5s;
 }
-.bitem4:hover .text{
-    color: black;
-    margin-top: 100px;
-    font-size: 30px;
+.mitem4:hover{
+    cursor: pointer;
+}
+.mitem4:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
+}
+.most-food-grid .mitem5{
+    grid-area: e;
+    background-image: url("../images/cupcake2.jpg");
+}
+.mitem5 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
     color: white;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 0.5s;
 }
-
-
-.bitem1:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
-    background-size: cover;
-    background-position: center;
+.mitem5:hover{
+    cursor: pointer;
 }
-.bitem2:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop1.jpg);
-    background-size: cover;
-    background-position: center;
+.mitem5:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
 }
-.bitem3:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop2.jpg);
-    background-size: cover;
-    background-position: center;
+.most-food-grid .mitem6{
+    grid-area: f;
+    background-image: url("../images/dryfish.jpg");
 }
-.bitem4:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
-    background-size: cover;
-    background-position: center;
+.mitem6 .body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mitem6:hover{
+    cursor: pointer;
+}
+.mitem6:hover .body{
+    visibility: visible;
+    opacity: 0.7; 
+    width: 150px;
+    padding: 8px 15px;
 }
 .get-in{
-    margin: 50px 500px 50px 500px;
+    margin: 150px 0px 150px 0; 
+}
+.get-in .title{
+    font-size: 40px;
 }
 .get-in .body{
-    margin: 50px 0 50px 0;
+    margin: 50px 350px 50px 350px;
+}
+.form-input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 2px;
+}
+.get-in-btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+    border: none;
+    background-color: orange;
+    transition: 0.5s;
+}
+.get-in-btn:hover{
+    background-color: rgb(179, 120, 12);
+    cursor: pointer;
+}
+.page-footer{
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid rgb(209, 209, 209);
+}
+.login-content{
+    padding: 150px 0 150px 0;
+    background-image: -webkit-linear-gradient(rgba(78, 78, 78, 0.568), rgba(0, 0, 0, 0.7)), url("../images/hbun3.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.reg-content{
+    padding: 150px 0 150px 0;
+    background-image: -webkit-linear-gradient(rgba(78, 78, 78, 0.568), rgba(0, 0, 0, 0.7)), url("../images/hbun5.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.full-form{
+    border: 2px solid orange;
+    margin: 0 250px 0 250px;
+    padding: 50px 100px 50px 100px;
+    border-radius: 5px;
+    background-color: rgb(37, 48, 56);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.full-form .title{
+    margin-bottom: 20px;
+    color: white;
 }
 .from-body{
     box-sizing: border-box;
@@ -301,20 +428,20 @@
 }
 .from-body input{
     position: relative;
-    width: 50px;
+    width: 250px;
     height: 50px;
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 3px;
     width: 100%;
     margin-bottom: 40px;
-    color: black;
+    color: white;
     font-size: 15px;
     padding-left: 10px;
 }
 .from-body span{
     position: absolute;
-    color: black;
+    color: white;
     padding: 15px;
     text-transform: uppercase;      
     transition: 0.5s;  
@@ -329,42 +456,20 @@
     background-color: orange;
     letter-spacing: 1px;
 }
-
-.subs-btn{
+.login-btn{
     width: 100%;
     height: 50px;
-    border: none;
+    color: white;
+    font-weight: 600;
     background-color: orange;
-    color: white;
-    font-size: 20px;
+    font-size: 15px;
+    border: none;
     transition: 0.5s;
+    border-radius: 5px;
 }
-.subs-btn:hover{
-    background-color: rgb(206, 142, 22);
+.login-btn:hover{
+    background-color: rgb(194, 135, 27);
     cursor: pointer;
-}
-.developer-note{
-    padding: 100px;
-    font-family: 'Overpass', sans-serif;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-.developer-note .title{
-    font-size: 30px;    
-}
-.developer-note .body{
-    background-color: white;
-    border: 1px solid white;
-    color: black;  
-    padding: 100px;  
-}
-.developer-note .body .ceo-img{
-    width: 200px;
-    height: 150px;
-    border: 1px solid orange;
-
 }
  /* 
     ***************************************************************************************
@@ -377,17 +482,13 @@
 */
 
 @media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
-    .main-content{
-        width: 100%;
-        height: 80vh;
-        padding: 200px 0 300px 0;
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop2.jpg);
-        background-position: center;
-        background-size: cover;
-        color: white;
-        font-family: 'Overpass', sans-serif;
+    .home-content{
+        background-image: -webkit-linear-gradient(rgba(63, 63, 63, 0.7), rgba(0, 0, 0, 0.7)), url("../images/fried_rice.jpg");
     }
-    .t-grid{
+    .most-get-foods{
+        height: 1100px;
+    }
+    .most-food-grid{
         display: grid;
         width: 100%;
         height: auto;
@@ -396,17 +497,17 @@
         grid-gap: 1rem;
         grid-template-areas: "a b c" "d e f";
         padding: 45 45 45 45;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
-    .branches-content{
+    .reg-content{
+        padding: 150px 0 800px 0;
+        background-image: -webkit-linear-gradient(rgba(78, 78, 78, 0.568), rgba(0, 0, 0, 0.7)), url("../images/hbun5.jpg");
+        height: 100%;
         width: 100%;
-        height: 100vh;
-        padding: 60px 0 60px 0;
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
         background-position: center;
         background-size: cover;
-        color: white;
-        font-family: 'Overpass', sans-serif;
+        font-family: 'PT Sans Narrow', sans-serif;
     }
 }
 
@@ -421,27 +522,41 @@
 */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
-    .footer-grid{
+    .food-grid{
         display: grid;
         width: 100%;
         height: auto;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(50px, auto);
+        grid-auto-rows: minmax(300px, auto);
         grid-gap: 1rem;
         grid-template-areas: "a b" "c d";
         padding: 45 45 45 45;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
-    .right-side{
-        margin-left: 85%;
-        margin-top: -55px;
+    .nav-right{
+        margin-left: 80%;
+        margin-top: -40px;
     }
-    .main-content{
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop3.jpg);
-        background-position: center;
-        background-size: cover;
+    .home-content{
+        background-image: -webkit-linear-gradient(rgba(63, 63, 63, 0.7), rgba(0, 0, 0, 0.7)), url("../images/dryfish.jpg");
     }
-    .t-grid{
+    .food-info-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(550px, auto);
+        grid-gap: 5rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .most-get-foods{
+        height: 1400px;
+    }
+    .most-food-grid{
         display: grid;
         width: 100%;
         height: auto;
@@ -450,34 +565,18 @@
         grid-gap: 1rem;
         grid-template-areas: "a b" "c d" "e f";
         padding: 45 45 45 45;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
-    .b-grid{
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(250px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d";
-        padding: 45 45 45 45;
-        margin-bottom: 5px;
+    .get-in .body{
+        margin: 50px 150px 50px 150px;
     }
-    .branches-content{
-        width: 100%;
-        height: 80vh;
-        padding: 60px 0 60px 0;
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
-        background-position: center;
-        background-size: cover;
-        color: white;
-        font-family: 'Overpass', sans-serif;
-    }
-    .get-in{
-        margin: 50px 200px 50px 200px;
+    .full-form{
+        border: 1px solid white;
+        margin: 0 100px 0 100px;
+        padding: 50px 100px 50px 100px;
     }
 }
-
 
 /* 
     ***************************************************************************************
@@ -490,38 +589,47 @@
 */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .footer-grid{
+    .food-grid{
         display: grid;
         width: 100%;
         height: auto;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(50px, auto);
+        grid-auto-rows: minmax(250px, auto);
         grid-gap: 1rem;
         grid-template-areas: "a" "b" "c" "d";
-        padding: 45 45 45 45;
+        padding: 30 30 30 30;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
-    .fitem1 .body{
-        text-align: center;
+    .logo-text{
+        color: white;
+        margin-left: 70px;
+        margin-top: -40px;
+        font-size: 18px;    
     }
-    .fitem4 .body{
-        margin-left: 20px;
+    .nav-right{
+        margin-left: 60%;
+        margin-top: -30px;
     }
-    .right-side{
-        margin-left: 70%;
-        margin-top: -55px;
+    .home-content{
+        background-image: -webkit-linear-gradient(rgba(63, 63, 63, 0.7), rgba(0, 0, 0, 0.7)), url("../images/cupcake2.jpg");
     }
-    .main-content{
-        padding: 250px 0 300px 0;
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
-        background-position: center;
-        background-size: cover;
+    .food-info-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(550px, auto);
+        grid-gap: 5rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-top: 20px;
+        margin-bottom: 5px;
     }
-    .trending-content{
-        padding: 60px 10px 30px 10px;
-        font-family: 'Overpass', sans-serif;
+    .most-get-foods{
+        height: 2500px;
     }
-    .t-grid{
+    .most-food-grid{
         display: grid;
         width: 100%;
         height: auto;
@@ -530,30 +638,24 @@
         grid-gap: 1rem;
         grid-template-areas: "a" "b" "c" "d" "e" "f";
         padding: 45 45 45 45;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
-    .b-grid{
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(250px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b" "c" "d";
-        padding: 45 45 45 45;
-        margin-bottom: 5px;
+    .get-in .body{
+        margin: 20px;
     }
-    .branches-content{
+    .full-form{
+        border: 1px solid white;
+        margin: 0 10px 0 10px;
+        padding: 50px 30px 50px 30px;
+    }
+    .reg-content{
+        padding: 150px 0 800px 0;
+        background-image: -webkit-linear-gradient(rgba(78, 78, 78, 0.568), rgba(0, 0, 0, 0.7)), url("../images/hbun5.jpg");
+        height: 100%;
         width: 100%;
-        height: 1300px;
-        padding: 60px 0 60px 0;
-        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
         background-position: center;
         background-size: cover;
-        color: white;
-        font-family: 'Overpass', sans-serif;
-    }
-    .get-in{
-        margin: 50px 20px 50px 20px;
+        font-family: 'PT Sans Narrow', sans-serif;
     }
 }
