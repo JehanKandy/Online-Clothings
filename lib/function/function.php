@@ -8,11 +8,11 @@
     function subsctibe($email){
         $con = Connection();
 
-        $select_data = "SELECT * FROM subscribe_tbl WHERE email = '$email'";
+        $select_data = "SELECT * FROM subscribe_tbl WHERE sub_email = '$email'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_nor = mysqli_num_rows($select_data_result);
 
-        if($select_data_nor > 0){
+        if($select_data_nor == 0){
             $insert_data = "INSERT INTO subscribe_tbl(sub_email,is_subscribe,sub_date)VALUES('$email',1,NOW())";
             $insert_data_resilt = mysqli_query($con, $insert_data);
 
@@ -35,13 +35,12 @@
         }
         else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>User Error</strong>You Already Subscribe..!
+                    <strong>Error</strong>You Already Subscribe..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                     <span aria-hidden='true'>&times;</span>
                     </button>
             </div>";
         }
-
     }
 
 
