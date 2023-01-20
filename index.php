@@ -12,5 +12,12 @@
     </div>
 </div>
 
+<div class="trending-content">
+    <div class="title">Trending Items</div>
+    <div class="body">
+        
+    </div>
+</div>
+
 <?php include("lib/layouts/main_footer.php"); ?>
 <script src="js/script.js"></script>
