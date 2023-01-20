@@ -421,7 +421,11 @@
 }
 .login-content .body{
     background-color: rgb(37, 48, 56);
-    margin: 100px;
+    margin: 50px;
+    padding: 50px 200px 50px 200px;
+}
+.login-content .body .title{
+    margin-bottom: 50px;
 }
  /* 
     ***************************************************************************************
