@@ -130,6 +130,9 @@
 .main-content .body .more-info{
     margin-top: 20px;
     padding: 12px 40px 10px 40px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: transparent;
 }
  /* 
     ***************************************************************************************
