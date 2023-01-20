@@ -162,12 +162,11 @@
 }
 .titem1{
     grid-area: a;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtsOjpkLWEzNGC7nHJ1RhPt5KuBMZ1SVMrg7_Y0ozFA3LiGXRwUXNsT3RfJSKRe0kR1M&usqp=CAU);
-    background-position: center;
-    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtsOjpkLWEzNGC7nHJ1RhPt5KuBMZ1SVMrg7_Y0ozFA3LiGXRwUXNsT3RfJSKRe0kR1M&usqp=CAU);
 }
 .titem2{
     grid-area: b;
+    background-image: url();
 }
 .titem3{
     grid-area: c;
