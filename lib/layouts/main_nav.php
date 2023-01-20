@@ -3,7 +3,12 @@
 <nav>
     <div class="nav-content">
         <div class="container">
-            hi
+            <div class="left-side">
+                Pearl Clothings
+            </div>
+            <div class="right-side">
+                Login
+            </div>                       
         </div>
     </div>
 </nav>
