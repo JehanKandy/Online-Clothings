@@ -6,7 +6,7 @@
 <div class="login-content">
     <div class="container">
         <div class="body">
-            <div class="title">Login Here</div>
+            <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Login Here</div>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="login-from">
                     <input type="text" name="username" id="" required="required">
