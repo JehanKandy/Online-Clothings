@@ -162,6 +162,7 @@
 }
 .titem1{
     grid-area: a;
+    background: url();
 }
 .titem2{
     grid-area: b;
