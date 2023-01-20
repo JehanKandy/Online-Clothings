@@ -47,7 +47,8 @@
         <div class="body">
             <?php 
                 if(isset($_POST['subscribe'])){
-                    $result = 
+                    $result = subsctibe($_POST['email']);
+                    echo $result;
                 }
             ?>
 
