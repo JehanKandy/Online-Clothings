@@ -97,6 +97,16 @@
 }
 .login-nav-btn{
     padding: 15px 30px 10px 30px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.login-nav-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
  /* 
