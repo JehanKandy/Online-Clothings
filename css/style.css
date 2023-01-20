@@ -134,6 +134,10 @@
     border-radius: 3px;
     background: transparent;
     color: white;    
+    transition: 0.5s;
+}
+.more-info:hover{
+    background-color: white;
 }
 
  /* 
