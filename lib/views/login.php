@@ -3,7 +3,7 @@
 <?php include("../layouts/login_nav.php"); ?>
 <?php include("../function/function.php"); ?>
 
-
+<br>
 
 <?php include("../layouts/page_footer.php"); ?>
 <script src="../../js/script.js"></script>
