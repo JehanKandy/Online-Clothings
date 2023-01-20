@@ -4,7 +4,11 @@
 
 <div class="main-content">
     <div class="container">
-        hi
+        <div class="title">Pearl Clothings</div>
+        <div class="body">
+            World Best Clothings
+            <a href=""><button class="more-info">Read More</button></a>
+        </div>
     </div>
 </div>
 
