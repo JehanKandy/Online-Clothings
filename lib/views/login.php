@@ -16,6 +16,8 @@
                     <input type="password" name="pass" id="" required="required">
                     <span>Password</span>
                 </div> 
+
+                <input type="submit" value="login" class="login-btn" name="login">
             </form>
         </div>
     </div>
