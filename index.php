@@ -62,6 +62,11 @@
             Veniam officia deleniti natus soluta est, quisquam molestias laudantium voluptatem repellendus culpa vero, atque mollitia ex nam repellat ipsum fuga maxime cumque provident amet. Repellat necessitatibus neque quo ab nihil?
             Quia soluta expedita, architecto impedit accusamus quam tenetur molestiae molestias vel placeat, consequuntur repellat atque dolorum. Consectetur obcaecati, iure fuga temporibus aliquid minima necessitatibus natus delectus possimus excepturi consequuntur culpa.
             Nesciunt blanditiis et deleniti consequuntur, hic vero voluptatibus earum labore possimus? Molestias facere magni, dolore officia omnis exercitationem aspernatur quos optio tempore vero illo eligendi obcaecati similique, officiis, atque voluptatem.
+
+            <br>
+            
+            <img src="https://img.freepik.com/free-photo/young-attractive-woman-modern-office-desk-working-with-laptop-thinking-about-something_1258-104524.jpg?w=2000" alt="" class="ceo-img">
+
         </div>
     </div>
 </div>
