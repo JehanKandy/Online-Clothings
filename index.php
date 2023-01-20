@@ -38,6 +38,20 @@
         </div>
     </div>
 </div>
+
+<div class="get-in">
+    <div class="container">
+        <div class="title">Get in Touch</div>
+        <div class="body">
+            <form action="" method="post">
+                <div class="from-body">
+                    <input type="text" name="" id="" required="required">
+                    <span>Email</span>
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
     
 <?php include("lib/layouts/main_footer.php"); ?>
 <script src="js/script.js"></script>
