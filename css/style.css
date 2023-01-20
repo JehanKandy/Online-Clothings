@@ -160,6 +160,24 @@
     padding: 45 45 45 45;
     margin-bottom: 5px;
 }
+.titem1{
+    grid-area: a;
+}
+.titem2{
+    grid-area: a;
+}
+.titem3{
+    grid-area: a;
+}
+.titem4{
+    grid-area: a;
+}
+.titem5{
+    grid-area: a;
+}
+.titem6{
+    grid-area: a;
+}
  /* 
     ***************************************************************************************
 
