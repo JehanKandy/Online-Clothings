@@ -216,6 +216,7 @@
 .bitem1{
     grid-area: a;
     background-image: url(../images/cshop.jpg);
+    transition: 0.5s;
 }
 .bitem2{
     grid-area: b;
@@ -236,8 +237,37 @@
     border-radius: 5px;
 }
 .bitem1 .text, .bitem2 .text, .bitem3 .text, .bitem4 .text{
-    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
 }
+.bitem1:hover .text{
+    color: black;
+    margin-top: 100px;
+}
+
+.bitem1:hover{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.815), rgbrgba(0, 0, 0, 0.815), url(../images/cshop.jpg));
+    background-size: cover;
+    background-position: center;
+}
+.bitem2:hover{
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bitem3:hover{
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bitem4:hover{
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
  /* 
     ***************************************************************************************
 
