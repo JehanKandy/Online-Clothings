@@ -166,19 +166,23 @@
 }
 .titem2{
     grid-area: b;
-    background-image: url();
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQjtH-nSJNa4-pvi51lcgsWoOs-4b_ErMi7yXuO3TkzC2zuLmlmZifSPSxKaYOfz8wkI&usqp=CAU);
 }
 .titem3{
     grid-area: c;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M4ppGMhkSBFqoSX7bXSYOLw3twuQS_OoJ_HAnTT9anaN6M4UiUOIW2SGBp1uBuhPrr4&usqp=CAU);
 }
 .titem4{
     grid-area: d;
+    background-image: url(https://static01.nyt.com/images/2021/05/28/fashion/mens-style/28sp-gear-inyt1/oakImage-1621867392181-superJumbo.jpg);
 }
 .titem5{
     grid-area: e;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2KLMKhWGFGFhHsDJEKiT6c7eIVxjsgcuRukhibU5imlE7WrJSKLex_7V_ffgAerPyZc&usqp=CAU);
 }
 .titem6{
     grid-area: f;
+    background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ed291e67-4618-49ec-8dda-2c2221a5df41/revolution-6-next-nature-mens-road-running-shoes-FgfhgR.png);
 }
 .titem1, .titem2, .titem3, .titem4, .titem5, .titem6{
     background-position: center;
