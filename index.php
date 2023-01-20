@@ -30,10 +30,10 @@
         <div class="title">Our Branches</div>
         <div class="body">
             <div class="b-grid">
-                <div class="bitem1">B1</div>
-                <div class="bitem2">B1</div>
-                <div class="bitem3">B1</div>
-                <div class="bitem4">B1</div>
+                <div class="bitem1"><div class="text">BI</div></div>
+                <div class="bitem2"><div class="text">BI</div></div>
+                <div class="bitem3"><div class="text">BI</div></div>
+                <div class="bitem4"><div class="text">BI</div></div>
             </div>
         </div>
     </div>
