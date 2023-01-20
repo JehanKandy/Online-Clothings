@@ -9,7 +9,7 @@
         <div class="title">Pearl Clothings</div>
         <div class="body">
             World Best Clothings <br>
-            <a href=""><button class="more-info">Read More</button></a>
+            <a href="lib/views/login.php"><button class="more-info">Read More</button></a>
         </div>
     </div>
 </div>
@@ -83,4 +83,3 @@
     
 <?php include("lib/layouts/main_footer.php"); ?>
 <script src="js/script.js"></script>
-
