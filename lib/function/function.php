@@ -16,6 +16,14 @@
             $insert_data = "INSERT INTO subscribe_tbl(sub_email,is_subscribe,sub_date)VALUES('$email',1,NOW())";
             $insert_data_resilt = mysqli_query($con, $insert_data);
 
+            if(!$insert_data_resilt){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error</strong>Cannot Process the Request..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
 
         }
         else{
