@@ -361,8 +361,10 @@
     padding: 100px;  
 }
 .developer-note .body .ceo-img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid orange;
+
 }
  /* 
     ***************************************************************************************
