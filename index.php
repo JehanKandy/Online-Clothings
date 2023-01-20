@@ -30,10 +30,10 @@
         <div class="title">Our Branches</div>
         <div class="body">
             <div class="b-grid">
-                <div class="bitem1"><div class="text">BI</div></div>
-                <div class="bitem2"><div class="text">BI</div></div>
-                <div class="bitem3"><div class="text">BI</div></div>
-                <div class="bitem4"><div class="text">BI</div></div>
+                <div class="bitem1"><div class="text">Kandy Branch</div></div>
+                <div class="bitem2"><div class="text">Colombo Branch</div></div>
+                <div class="bitem3"><div class="text">Preradeniya Branch</div></div>
+                <div class="bitem4"><div class="text">Pilimathalawa Branch</div></div>
             </div>
         </div>
     </div>
