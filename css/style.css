@@ -274,17 +274,17 @@
     background-position: center;
 }
 .bitem2:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop1.jpg);
     background-size: cover;
     background-position: center;
 }
 .bitem3:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop2.jpg);
     background-size: cover;
     background-position: center;
 }
 .bitem4:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
     background-size: cover;
     background-position: center;
 }
