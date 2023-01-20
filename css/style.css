@@ -333,6 +333,9 @@
 .subs-btn{
     width: 100%;
     height: 40px;
+    border: none;
+    background-color: orange;
+    color: white;
 }
 
  /* 
