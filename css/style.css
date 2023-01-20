@@ -528,4 +528,7 @@
         color: white;
         font-family: 'Overpass', sans-serif;
     }
+    .get-in{
+        margin: 50px 20px 50px 20px;
+    }
 }
