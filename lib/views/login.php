@@ -5,7 +5,15 @@
 
 <div class="login-content">
     <div class="container">
-        Login
+        <div class="body">
+            <div class="title">Login Here</div>
+            <form action="" method="post">
+                <div class="from-body">
+                    <input type="text" name="email" id="" required="required">
+                    <span>Email</span>
+                </div> 
+            </form>
+        </div>
     </div>
 </div>
 
