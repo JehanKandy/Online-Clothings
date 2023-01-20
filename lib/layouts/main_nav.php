@@ -7,7 +7,7 @@
                 Pearl Clothings
             </div>
             <div class="right-side">
-                <a href="../views/login.php"><button class="login-nav-btn">Login</button></a>
+                <a href="lib/views/login.php"><button class="login-nav-btn">Login</button></a>
             </div>                       
         </div>
     </div>
