@@ -25,6 +25,14 @@
         </div>
     </div>
 </div>
-
+<div class="branches-content">
+    <div class="container">
+        <div class="title">Our Branches</div>
+        <div class="body">
+            kandy
+        </div>
+    </div>
+</div>
+    
 <?php include("lib/layouts/main_footer.php"); ?>
 <script src="js/script.js"></script>
