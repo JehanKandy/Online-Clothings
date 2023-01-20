@@ -16,12 +16,12 @@
     <div class="title">Trending Items</div>
     <div class="body">
         <div class="t-grid">
-            <div class="titem1">item 1</div>
-            <div class="titem2">item 1</div>
-            <div class="titem3">item 1</div>
-            <div class="titem4">item 1</div>
-            <div class="titem5">item 1</div>
-            <div class="titem6">item 1</div>
+            <div class="titem1"></div>
+            <div class="titem2"></div>
+            <div class="titem3"></div>
+            <div class="titem4"></div>
+            <div class="titem5"></div>
+            <div class="titem6"></div>
         </div>
     </div>
 </div>
