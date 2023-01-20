@@ -563,6 +563,13 @@
     .developer-note{
         padding: 70px;
     }
+    .login-content .body{
+        background-color: rgb(37, 48, 56);
+        margin: 130px 50px 50px 50px;
+        padding: 50px 60px 50px 60px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
 }
 
 
