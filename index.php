@@ -47,7 +47,8 @@
                 <div class="from-body">
                     <input type="text" name="email" id="" required="required">
                     <span>Email</span>
-                </div>  
+                </div> 
+                <input type="submit" value="Subscribe" name="subscribe" class="subs-btn">
             </form>
         </div>
     </div>
