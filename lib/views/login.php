@@ -4,5 +4,7 @@
 <?php include("../function/function.php"); ?>
 
 
+
+<?php include("../layouts/page_footer.php"); ?>
 <script src="../../js/script.js"></script>
 
