@@ -29,7 +29,12 @@
     <div class="container">
         <div class="title">Our Branches</div>
         <div class="body">
-            kandy
+            <div class="b-grid">
+                <div class="bitem1">B1</div>
+                <div class="bitem2">B1</div>
+                <div class="bitem3">B1</div>
+                <div class="bitem4">B1</div>
+            </div>
         </div>
     </div>
 </div>
