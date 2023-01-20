@@ -19,6 +19,7 @@
   - lib/layouts/main_nav.php
   - lib/function/config.php
   - lib/function/function.php
+  - lib/layouts/login_nav.php
   - index.php (UPDATE)
   - css/style.css (UPDATE)
     
