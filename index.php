@@ -15,7 +15,14 @@
 <div class="trending-content">
     <div class="title">Trending Items</div>
     <div class="body">
-        
+        <div class="t-grid">
+            <div class="titem1">item 1</div>
+            <div class="titem2">item 1</div>
+            <div class="titem3">item 1</div>
+            <div class="titem4">item 1</div>
+            <div class="titem5">item 1</div>
+            <div class="titem6">item 1</div>
+        </div>
     </div>
 </div>
 
