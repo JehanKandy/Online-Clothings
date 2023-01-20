@@ -45,7 +45,11 @@
     <div class="container">
         <div class="title">Get in Touch</div>
         <div class="body">
-
+            <?php 
+                if(isset($_POST['subscribe'])){
+                    $result = 
+                }
+            ?>
 
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="from-body">
