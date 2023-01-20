@@ -357,7 +357,8 @@
 .developer-note .body{
     background-color: white;
     border: 1px solid white;
-    color: black;    
+    color: black;  
+    padding: 100px;  
 }
  /* 
     ***************************************************************************************
