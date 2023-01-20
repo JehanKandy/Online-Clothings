@@ -66,7 +66,8 @@
             <br>
             
             <img src="https://img.freepik.com/free-photo/young-attractive-woman-modern-office-desk-working-with-laptop-thinking-about-something_1258-104524.jpg?w=2000" alt="" class="ceo-img">
-
+            <div class="ceo-name">Hiruni</div>
+            <div class="ceo-roll">Founder, CEO Pearl Clothings</div>
         </div>
     </div>
 </div>
