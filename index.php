@@ -53,6 +53,14 @@
         </div>
     </div>
 </div>
+<div class="developer-note">
+    <div class="container">
+        <div class="title">CEO Note</div>
+        <div class="body">
+            kjdsahjkdhkj asdkjh
+        </div>
+    </div>
+</div>
     
 <?php include("lib/layouts/main_footer.php"); ?>
 <script src="js/script.js"></script>
