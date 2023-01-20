@@ -436,6 +436,12 @@
     background: wheat;
     border: none;
     border-radius: 2px;
+    transition: 0.5s;
+}
+.login-btn:hover{
+    background-color: rgb(252, 197, 116);
+    color: black;
+    cursor: pointer;
 }
  /* 
     ***************************************************************************************
