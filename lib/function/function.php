@@ -5,6 +5,10 @@
 
     session_start();
 
-    
+    function subsctibe($email){
+        $con = Connection();
+        
+    }
+
 
 ?>
