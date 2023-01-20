@@ -6,7 +6,7 @@
                 Pearl Clothings
             </div>
             <div class="right-side">
-                <a href=""><button class="login-nav-btn">Login</button></a>
+                <a href="../../index.php"><button class="login-nav-btn">Back</button></a>
             </div>                       
         </div>
     </div>
