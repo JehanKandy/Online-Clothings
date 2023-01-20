@@ -245,10 +245,11 @@
 .bitem1:hover .text{
     color: black;
     margin-top: 100px;
+    font-size: 30px;
 }
 
 .bitem1:hover{
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.815), rgbrgba(0, 0, 0, 0.815), url(../images/cshop.jpg));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
     background-size: cover;
     background-position: center;
 }
