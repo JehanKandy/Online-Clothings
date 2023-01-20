@@ -305,6 +305,10 @@
         background-position: center;
         background-size: cover;
     }
+    .trending-content{
+        padding: 60px 10px 30px 10px;
+        font-family: 'Overpass', sans-serif;
+    }
     .t-grid{
         display: grid;
         width: 100%;
