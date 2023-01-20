@@ -215,15 +215,19 @@
 }
 .bitem1{
     grid-area: a;
+    background-image: url(../images/cshop.jpg);
 }
 .bitem2{
     grid-area: b;
+    background-image: url(../images/cshop1.jpg);
 }
 .bitem3{
     grid-area: c;
+    background-image: url(../images/cshop2.jpg);
 }
 .bitem4{
     grid-area: d;
+    background-image: url(../images/cshop3.jpg);
 }
 .bitem1, .bitem2, .bitem3, .bitem4{
     background-position: center;
