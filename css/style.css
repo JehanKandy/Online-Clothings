@@ -153,9 +153,16 @@
 */
 
 @media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
-
-
-
+    .main-content{
+        width: 100%;
+        height: 80vh;
+        padding: 200px 0 300px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop2.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+    }
 }
 
 /* 
@@ -183,6 +190,11 @@
     .right-side{
         margin-left: 85%;
         margin-top: -55px;
+    }
+    .main-content{
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop3.jpg);
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -218,5 +230,11 @@
     .right-side{
         margin-left: 70%;
         margin-top: -55px;
+    }
+    .main-content{
+        padding: 250px 0 300px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+        background-position: center;
+        background-size: cover;
     }
 }
