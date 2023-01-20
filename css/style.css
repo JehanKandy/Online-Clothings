@@ -288,6 +288,47 @@
     background-size: cover;
     background-position: center;
 }
+.get-in{
+    margin: 50px 500px 50px 500px;
+}
+.get-in .body{
+    margin: 50px 0 50px 0;
+}
+.from-body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.from-body input{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: black;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.from-body span{
+    position: absolute;
+    color: black;
+    padding: 15px;
+    text-transform: uppercase;      
+    transition: 0.5s;  
+}
+
+.from-body input:valid ~ span,
+.from-body input:focus ~ span{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: orange;
+    letter-spacing: 1px;
+}
 
  /* 
     ***************************************************************************************
