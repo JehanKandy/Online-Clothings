@@ -481,6 +481,16 @@
     .get-in{
         margin: 50px 200px 50px 200px;
     }
+    .developer-note .body{
+        background-color: white;
+        border: 1px solid white;
+        color: black;  
+        padding: 50px;  
+        text-align: center;
+    }
+    .developer-note{
+        padding: 70px;
+    }
 }
 
 
@@ -560,5 +570,15 @@
     }
     .get-in{
         margin: 50px 20px 50px 20px;
+    }
+    .developer-note .body{
+        background-color: white;
+        border: 1px solid white;
+        color: black;  
+        padding: 10px;  
+        text-align: center;
+    }
+    .developer-note{
+        padding: 10px;
     }
 }
