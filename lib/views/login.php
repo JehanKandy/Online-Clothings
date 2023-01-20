@@ -7,7 +7,7 @@
     <div class="container">
         <div class="body">
             <div class="title">Login Here</div>
-            <form action="" method="post">
+            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="login-from">
                     <input type="text" name="username" id="" required="required">
                     <span>Username</span>
