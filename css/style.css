@@ -154,7 +154,7 @@
     width: 100%;
     height: auto;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(250px, auto);
     grid-gap: 1rem;
     grid-template-areas: "a b c d e f";
     padding: 45 45 45 45;
@@ -162,7 +162,9 @@
 }
 .titem1{
     grid-area: a;
-    background: url();
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtsOjpkLWEzNGC7nHJ1RhPt5KuBMZ1SVMrg7_Y0ozFA3LiGXRwUXNsT3RfJSKRe0kR1M&usqp=CAU);
+    background-position: center;
+    background-size: cover;
 }
 .titem2{
     grid-area: b;
@@ -178,6 +180,10 @@
 }
 .titem6{
     grid-area: f;
+}
+.titem1, .titem2, .titem3, .titem4, .titem5, .titem6{
+    background-position: center;
+    background-size: cover;
 }
  /* 
     ***************************************************************************************
