@@ -25,8 +25,8 @@
                 </div>";
             }
             else{
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Process Error</strong>Cannot Process the Request..!
+                return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <strong>Thank You </strong>For Subscribe Us..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
