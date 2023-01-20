@@ -246,7 +246,27 @@
     color: black;
     margin-top: 100px;
     font-size: 30px;
+    color: white;
 }
+.bitem2:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+.bitem3:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+.bitem4:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+
 
 .bitem1:hover{
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
@@ -254,17 +274,17 @@
     background-position: center;
 }
 .bitem2:hover{
-    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
     background-size: cover;
     background-position: center;
 }
 .bitem3:hover{
-    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
     background-size: cover;
     background-position: center;
 }
 .bitem4:hover{
-    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
     background-size: cover;
     background-position: center;
 }
