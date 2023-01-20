@@ -379,12 +379,22 @@
         display: grid;
         width: 100%;
         height: auto;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(250px, auto);
         grid-gap: 1rem;
-        grid-template-areas: "a" "b" "c" "d";
+        grid-template-areas: "a b" "c d";
         padding: 45 45 45 45;
         margin-bottom: 5px;
+    }
+    .branches-content{
+        width: 100%;
+        height: 80vh;
+        padding: 60px 0 60px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
     }
 }
 
