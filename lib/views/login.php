@@ -14,7 +14,7 @@
                 </div> 
                 <div class="login-from">
                     <input type="password" name="pass" id="" required="required">
-                    <span>Username</span>
+                    <span>Password</span>
                 </div> 
             </form>
         </div>
