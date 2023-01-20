@@ -57,7 +57,11 @@
     <div class="container">
         <div class="title">CEO Note</div>
         <div class="body">
-            kjdsahjkdhkj asdkjh
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore laboriosam dignissimos aperiam recusandae! Voluptatibus voluptas officiis rerum, eum architecto, odio eveniet dolorem enim harum repellat necessitatibus, sunt quae hic totam?
+            Officiis ab, ducimus exercitationem temporibus consequuntur commodi, similique fugit debitis sunt cum laboriosam. Nobis, blanditiis! Quasi quia quam nisi, perferendis fugit, architecto, quae praesentium eaque delectus suscipit veritatis exercitationem nesciunt.
+            Veniam officia deleniti natus soluta est, quisquam molestias laudantium voluptatem repellendus culpa vero, atque mollitia ex nam repellat ipsum fuga maxime cumque provident amet. Repellat necessitatibus neque quo ab nihil?
+            Quia soluta expedita, architecto impedit accusamus quam tenetur molestiae molestias vel placeat, consequuntur repellat atque dolorum. Consectetur obcaecati, iure fuga temporibus aliquid minima necessitatibus natus delectus possimus excepturi consequuntur culpa.
+            Nesciunt blanditiis et deleniti consequuntur, hic vero voluptatibus earum labore possimus? Molestias facere magni, dolore officia omnis exercitationem aspernatur quos optio tempore vero illo eligendi obcaecati similique, officiis, atque voluptatem.
         </div>
     </div>
 </div>
