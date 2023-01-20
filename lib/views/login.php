@@ -8,9 +8,13 @@
         <div class="body">
             <div class="title">Login Here</div>
             <form action="" method="post">
-                <div class="from-body">
-                    <input type="text" name="email" id="" required="required">
-                    <span>Email</span>
+                <div class="login-from">
+                    <input type="text" name="username" id="" required="required">
+                    <span>Username</span>
+                </div> 
+                <div class="login-from">
+                    <input type="password" name="pass" id="" required="required">
+                    <span>Username</span>
                 </div> 
             </form>
         </div>
