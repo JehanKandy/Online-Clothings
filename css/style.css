@@ -188,6 +188,16 @@
     background-position: center;
     background-size: cover;
 }
+.branches-content{
+    width: 100%;
+    height: 80vh;
+    padding: 60px 0 60px 0;
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
  /* 
     ***************************************************************************************
 
