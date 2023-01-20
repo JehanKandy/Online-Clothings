@@ -373,8 +373,10 @@
 }
 .page-footer{
     text-align: center;
-    height: 40px;
-    width: 100%;    
+    height: 50px;
+    width: 100%;   
+    background-color: rgb(238, 238, 238); 
+    padding-top: 15px;
 }
  /* 
     ***************************************************************************************
