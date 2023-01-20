@@ -379,6 +379,12 @@
     padding-top: 15px;
     border-top: 1px solid rgb(199, 199, 199);
 }
+.login-content{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
  /* 
     ***************************************************************************************
 
