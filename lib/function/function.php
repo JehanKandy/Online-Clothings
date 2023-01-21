@@ -43,7 +43,7 @@
         }
     }
 
-    function reg_user(){
+    function reg_user($username, $email, $pass, $cpass){
         $con = Connection();
     }
 
