@@ -163,6 +163,18 @@
             }
             else{
                 // user deactive check
+                $user_is_deactive = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0";
+                $user_is_deactive_result = mysqli_query($con, $user_is_deactive);
+                $user_is_deactive_nor = mysqli_num_rows($user_is_deactive_result);
+
+                if($user_is_deactive_nor != 0){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User Error</strong> User Deactive..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
             } 
         }
     }
