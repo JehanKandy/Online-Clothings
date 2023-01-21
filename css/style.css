@@ -418,9 +418,15 @@
     padding: 100px;
     height: 85vh;    
 }
-.login-content .body, .reg-content .body{
+.login-content .body{
     background-color: rgb(37, 48, 56);
     margin: 50px;
+    padding: 50px 200px 50px 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.reg-content .body{
+    background-color: rgb(37, 48, 56);
     padding: 50px 200px 50px 200px;
     border: 1px solid white;
     border-radius: 5px;
@@ -447,8 +453,9 @@
     background-size: cover;
     background-position: center;
     padding: 100px;
-    height: 100vh;    
+    height: 100%;    
 }
+
  /* 
     ***************************************************************************************
 
