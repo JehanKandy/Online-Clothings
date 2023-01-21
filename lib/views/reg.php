@@ -33,7 +33,7 @@
                 </div> 
                 <input type="submit" value="Sign Up" class="login-btn" name="register">
             </form>
-            <p style="color: white;">Don't have an Account ? <a href="reg.php" style="color: orange;">Sign Up</a></p>
+            <p style="color: white;">Already have an Account ? <a href="login.php" style="color: orange;">Login</a></p>
         </div>
     </div>
 </div>
