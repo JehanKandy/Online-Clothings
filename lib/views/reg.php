@@ -6,7 +6,7 @@
 <div class="reg-content">
     <div class="container">
         <div class="body">
-            <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Login Here</div>
+            <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Sign Up</div>
             <?php 
                 if(isset($_POST['register'])){
                     $result = reg_user($_POST['username'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
