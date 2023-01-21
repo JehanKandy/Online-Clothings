@@ -1,46 +1,101 @@
-<link rel="stylesheet" href="../../css/style.css">
-<?php include("../layouts/header.php"); ?>
-<?php include("../layouts/login_nav.php"); ?>
-<?php include("../function/function.php"); ?>
+<?php 
+    include("config.php");
 
-<div class="reg-content">
-    <div class="container">
-        <div class="body">
-            <div class="title"> <i class="fas fa-user-plus"></i> &nbsp; Sign Up</div>
-            <?php 
-                if(isset($_POST['register'])){
-                    $result = reg_user($_POST['nic'], $_POST['username'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
-                    echo $result;
-                }
-            ?>
+    use FTP\Connection;
 
-            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
-                <div class="login-from">
-                    <input type="text" name="nic" id="" required="required">
-                    <span>NIC Number</span>
-                </div> 
-                <div class="login-from">
-                    <input type="text" name="username" id="" required="required">
-                    <span>Username</span>
-                </div> 
-                <div class="login-from">
-                    <input type="email" name="email" id="" required="required">
-                    <span>Email</span>
-                </div> 
-                <div class="login-from">
-                    <input type="password" name="pass" id="" required="required">
-                    <span>Password</span>
-                </div> 
-                <div class="login-from">
-                    <input type="password" name="cpass" id="" required="required">
-                    <span>Confirm Password</span>
-                </div> 
-                <input type="submit" value="Sign Up" class="login-btn" name="register">
-            </form>
-            <p style="color: white;">Already have an Account ? <a href="login.php" style="color: orange;">Login</a></p>
-        </div>
-    </div>
-</div>
+    session_start();
 
-<?php include("../layouts/page_footer.php"); ?>
-<script src="../../js/script.js"></script>
+    function subsctibe($email){
+        $con = Connection();
+
+        $select_data = "SELECT * FROM subscribe_tbl WHERE sub_email = '$email'";
+        $select_data_result = mysqli_query($con, $select_data);
+        $select_data_nor = mysqli_num_rows($select_data_result);
+
+        if($select_data_nor == 0){
+            $insert_data = "INSERT INTO subscribe_tbl(sub_email,is_subscribe,sub_date)VALUES('$email',1,NOW())";
+            $insert_data_resilt = mysqli_query($con, $insert_data);
+
+            if(!$insert_data_resilt){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error</strong>Cannot Process the Request..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
+            else{
+                return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <strong>Thank You </strong>For Subscribe Us..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
+        }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Error</strong>You Already Subscribe..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+    }
+
+    function reg_user($nic, $username, $email, $pass, $cpass){
+        $con = Connection();
+        if(empty($nic)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>NIC Error</strong>NIC Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Username Error</strong>Username Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong>Email Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }elseif(empty($pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($cpass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Confirm Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif($pass != $cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password not Match..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        else{
+            $check_user = "";
+        }
+    }
+
+
+?>
