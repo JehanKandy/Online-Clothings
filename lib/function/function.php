@@ -186,7 +186,11 @@
                     $user_is_login_row = mysqli_fetch_assoc($user_is_login_result);       
                     
                     if($user_is_login_nor != 0){
-
+                        if($user_is_login_row['user_type'] == "user"){
+                            setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
+                            header("location:../routes/admin.php");
+                        }
                     }else{
                         return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                                 <strong>Process Error</strong> Can not Process the Request..!
