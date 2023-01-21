@@ -8,7 +8,7 @@
         <div class="body">
             <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Login Here</div>
             <?php 
-                if(isset($_POST[''])){
+                if(isset($_POST['login'])){
                     $result = login_user($_POST['username'], md5($_POST['pass']));
                     echo $result;
                 }            
