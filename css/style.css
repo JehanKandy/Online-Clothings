@@ -425,7 +425,7 @@
     border: 1px solid white;
     border-radius: 5px;
 }
-.login-content .body .title{
+.login-content .body .title, .reg-content .body .title{
     margin-bottom: 50px;
     color: white;
 }
