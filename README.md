@@ -29,6 +29,7 @@
   
   - lib/views/reg.php
   - css/style.css (UPDATE)
+  - lib/function/function.php (UPDATE)
  
 
     
