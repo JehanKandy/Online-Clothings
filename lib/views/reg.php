@@ -31,7 +31,7 @@
                     <input type="password" name="cpass" id="" required="required">
                     <span>Confirm Password</span>
                 </div> 
-                <input type="submit" value="login" class="login-btn" name="register">
+                <input type="submit" value="Sign Up" class="login-btn" name="register">
             </form>
             <a href="forget_pass.php" style="color: orange;">Forget Password</a>
             <p style="color: white;">Don't have an Account ? <a href="reg.php" style="color: orange;">Sign Up</a></p>
