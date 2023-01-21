@@ -7,6 +7,12 @@
     <div class="container">
         <div class="body">
             <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Login Here</div>
+            <?php 
+                if(isset($_POST['register'])){
+                    
+                }
+            ?>
+
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="login-from">
                     <input type="text" name="username" id="" required="required">
@@ -24,7 +30,7 @@
                     <input type="password" name="cpass" id="" required="required">
                     <span>Confirm Password</span>
                 </div> 
-                <input type="submit" value="login" class="login-btn" name="login">
+                <input type="submit" value="login" class="login-btn" name="register">
             </form>
             <a href="forget_pass.php" style="color: orange;">Forget Password</a>
             <p style="color: white;">Don't have an Account ? <a href="reg.php" style="color: orange;">Sign Up</a></p>
