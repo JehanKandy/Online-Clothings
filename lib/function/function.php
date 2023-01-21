@@ -108,7 +108,15 @@
                             <span aria-hidden='true'>&times;</span>
                             </button>
                     </div>";
+                }elseif($insert_data_result){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Successfull </strong>User Created Successfully <a href='login.php'>Login Here..!</a>
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
                 }
+
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>User Error</strong>User Doesn't Exists..!
