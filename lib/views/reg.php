@@ -16,6 +16,10 @@
 
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                 <div class="login-from">
+                    <input type="text" name="nic" id="" required="required">
+                    <span>NIC Number</span>
+                </div> 
+                <div class="login-from">
                     <input type="text" name="username" id="" required="required">
                     <span>Username</span>
                 </div> 
