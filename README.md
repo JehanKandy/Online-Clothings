@@ -25,16 +25,9 @@
   - index.php (UPDATE)
   - css/style.css (UPDATE)
   
-   <h4> 20 January 2023</h4>
-  
-  - lib/layouts/main_nav.php
-  - lib/function/config.php
-  - lib/function/function.php
-  - lib/layouts/login_nav.php
-  - lib/views/login.php
-  - lib/layouts/page_footer.php
-  - index.php (UPDATE)
-  - css/style.css (UPDATE)
+   <h4> 21 January 2023</h4>
+ 
+
     
 
 
