@@ -3,6 +3,11 @@
 <?php include("../layouts/login_nav.php"); ?>
 <?php include("../function/function.php"); ?>
 
+<div class="reg-content">
+    <div class="container">
+
+    </div>
+</div>
 
 <?php include("../layouts/page_footer.php"); ?>
 <script src="../../js/script.js"></script>
