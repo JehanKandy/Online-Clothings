@@ -160,6 +160,12 @@
             $check_user_deactive_result = mysqli_query($con, $check_user_deactive);
             $check_user_deactive_nor = mysqli_num_rows($check_user_deactive_result);
             $check_user_deactive_row = mysqli_fetch_assoc($check_user_deactive_result);
+
+            if($check_user_deactive_nor != 0){
+
+            }else{
+
+            }
         }
     }
 
