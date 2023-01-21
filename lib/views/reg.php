@@ -9,7 +9,8 @@
             <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Login Here</div>
             <?php 
                 if(isset($_POST['register'])){
-                    
+                    $result = reg_user($_POST['username'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
+                    echo $result;
                 }
             ?>
 
