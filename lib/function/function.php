@@ -189,6 +189,10 @@
                         if($user_is_login_row['user_type'] == "user"){
                             setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
                             $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
+                            header("location:../routes/user.php");
+                        }elseif($user_is_login_row['user_type'] == "admin"){
+                            setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
                             header("location:../routes/admin.php");
                         }
                     }else{
