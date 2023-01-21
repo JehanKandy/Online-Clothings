@@ -46,8 +46,6 @@
     function reg_user($nic, $username, $email, $pass, $cpass){
         $con = Connection();
 
-        $_SESSION['UserName'] = $username;
-
         if(empty($nic)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>NIC Error</strong>NIC Cannot be empty..!
@@ -151,17 +149,24 @@
                     </button>
             </div>";
         }else{
+            /* 
+                1st check the user is pending 
+                2nd check the user is deactive
+            */
 
+            $user_is_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1";
+            $user_is_pending_result = mysqli_query($con, $user_is_pending);
+            $user_is_pending_nor = mysqli_num_rows($user_is_pending_result);
+
+            if($user_is_pending_nor != 0){
+                header("location:waiting_user.php");
+            }
+            else{
+                // user deactive check
+            } 
         }
     }
 
-    function waiting_user(){
-        $con = Connection();
-        
-        $username = strval($_SESSION['UserName']);
-
-
-    }
 
 
 ?>
