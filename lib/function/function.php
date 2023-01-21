@@ -26,7 +26,7 @@
             }
             else{
                 return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                        <strong>Thank You </strong>For Subscribe Us..!
+                        <strong>Thank You </strong>For Subscribe Us Exists..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -93,7 +93,20 @@
             </div>";
         }
         else{
-            $check_user = "";
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+            $check_user_result = mysqli_query($con, $check_user);
+            $check_user_nor = mysqli_num_rows($check_user_result);
+
+            if($check_user_nor > 0){
+                
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error</strong>User Doesn't 
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
         }
     }
 
