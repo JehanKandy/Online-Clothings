@@ -85,6 +85,9 @@
                     </button>
             </div>";
         }
+        else{
+            $check_user = "";
+        }
     }
 
 
