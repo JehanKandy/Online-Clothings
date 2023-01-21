@@ -133,7 +133,26 @@
 
     function login_user($username, $pass){
         $con = Connection();
-        
+
+
+        if(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Username Error</strong>Username Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }else{
+            
+        }
     }
 
     function waiting_user(){
