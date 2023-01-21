@@ -9,7 +9,7 @@
             <div class="title"> <i class="fas fa-user-plus"></i> &nbsp; Sign Up</div>
             <?php 
                 if(isset($_POST['register'])){
-                    $result = reg_user($_POST['username'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
+                    $result = reg_user($_POST['nic'], $_POST['username'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
                     echo $result;
                 }
             ?>
