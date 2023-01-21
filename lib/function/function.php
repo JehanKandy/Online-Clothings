@@ -165,10 +165,14 @@
                 if($check_user_pending_nor == 0){
                     if($username == $check_user_row['username']){
                         if($check_user_row['user_type'] == 'user'){
-
+                            setcookie('Login',$check_user_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $check_user_row['nic_no'];
+                            header("location:../routes/user.php");
                         }
                         elseif($check_user_row['user_type'] == 'admin'){
-
+                            setcookie('Login',$check_user_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $check_user_row['nic_no'];
+                            header("location:../routes/admin.php");
                         }
                     }
                 }
