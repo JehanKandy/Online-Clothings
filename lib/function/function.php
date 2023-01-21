@@ -26,7 +26,7 @@
             }
             else{
                 return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                        <strong>Thank You </strong>For Subscribe Us Exists..!
+                        <strong>Thank You </strong>For Subscribe Us..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -101,7 +101,7 @@
                 
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>User Error</strong>User Doesn't 
+                        <strong>User Error</strong>User Doesn't Exists..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
