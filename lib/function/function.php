@@ -45,6 +45,15 @@
 
     function reg_user($username, $email, $pass, $cpass){
         $con = Connection();
+
+        if(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Username Error</strong>Username Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
     }
 
 
