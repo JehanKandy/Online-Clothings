@@ -183,7 +183,18 @@
                     $user_is_login = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1";
                     $user_is_login_result = mysqli_query($con, $user_is_login);
                     $user_is_login_nor = mysqli_num_rows($user_is_login_result);    
-                    $user_is_login_row = mysqli_fetch_assoc($user_is_login_result);                
+                    $user_is_login_row = mysqli_fetch_assoc($user_is_login_result);       
+                    
+                    if($user_is_login_nor != 0){
+
+                    }else{
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>Process Error</strong> Can not Process the Request..!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                        </div>"; 
+                    }
                 }
             } 
         }
