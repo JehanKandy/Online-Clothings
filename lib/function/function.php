@@ -45,6 +45,9 @@
 
     function reg_user($nic, $username, $email, $pass, $cpass){
         $con = Connection();
+
+        $_SESSION['UserName'] = $username;
+
         if(empty($nic)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>NIC Error</strong>NIC Cannot be empty..!
@@ -126,6 +129,12 @@
                 </div>";
             }
         }
+    }
+
+    function waiting_user(){
+        $con = Connection();
+        
+        
     }
 
 
