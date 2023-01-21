@@ -43,5 +43,9 @@
         }
     }
 
+    function reg_user(){
+        $con = Connection();
+    }
+
 
 ?>
