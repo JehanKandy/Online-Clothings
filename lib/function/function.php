@@ -180,22 +180,22 @@
                 }
                 else{
                     //user successfully login
-                    $user_is_login = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1";
+                    $user_is_login = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 1 && is_pending = 0";
                     $user_is_login_result = mysqli_query($con, $user_is_login);
                     $user_is_login_nor = mysqli_num_rows($user_is_login_result);    
                     $user_is_login_row = mysqli_fetch_assoc($user_is_login_result);       
                     
-                    if($user_is_login_nor != 0){
+                    if($user_is_login_nor > 0){
                         if($user_is_login_row['user_type'] == "user"){
                             setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
                             $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
                             header("location:../routes/user.php");
-                        }elseif($user_is_login_row['user_type'] == "admin"){
+                        }if($user_is_login_row['user_type'] == "admin"){
                             setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
                             $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
                             header("location:../routes/admin.php");
                         }
-                    }else{
+                    }elseif($user_is_login_nor == 0){
                         return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                                 <strong>User Error</strong> User Doesn't Exists..!
                                 <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
