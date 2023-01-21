@@ -184,6 +184,9 @@
                         </div>";
                     }
                 }
+                elseif($check_user_pending_nor != 0){
+                    header("location:waiting_user.php");
+                }
             }else{
 
             }
