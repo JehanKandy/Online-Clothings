@@ -182,7 +182,7 @@
                         }
                         else{
                             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>User Error</strong>User Doesn't Existssssssssssss..!
+                                    <strong>Process Error</strong>Can not Process the Request...!
                                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                                     <span aria-hidden='true'>&times;</span>
                                     </button>
@@ -194,12 +194,20 @@
                     }
                 }else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>User Error</strong>User Doesn't Exists..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>";
+                            <strong>User Error</strong>User Deactive..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
                 }
+            }
+            elseif($check_user_deactive_nor == 0){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error</strong>User Doesn't Exists..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
             }
         }
     }
