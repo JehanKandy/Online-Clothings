@@ -188,7 +188,12 @@
                     header("location:waiting_user.php");
                 }
             }else{
-
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error</strong>User Deactive..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
             }
         }
     }
