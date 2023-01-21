@@ -152,6 +152,7 @@
             /* 
                 1st check the user is pending 
                 2nd check the user is deactive
+                3rd successfully login
             */
 
             $user_is_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1";
@@ -174,6 +175,9 @@
                             <span aria-hidden='true'>&times;</span>
                             </button>
                     </div>";
+                }
+                else{
+
                 }
             } 
         }
