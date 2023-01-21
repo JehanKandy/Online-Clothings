@@ -13,16 +13,16 @@
                     <span>Username</span>
                 </div> 
                 <div class="login-from">
-                    <input type="password" name="pass" id="" required="required">
-                    <span>Password</span>
+                    <input type="email" name="email" id="" required="required">
+                    <span>Email</span>
                 </div> 
                 <div class="login-from">
                     <input type="password" name="pass" id="" required="required">
                     <span>Password</span>
                 </div> 
                 <div class="login-from">
-                    <input type="password" name="pass" id="" required="required">
-                    <span>Password</span>
+                    <input type="password" name="cpass" id="" required="required">
+                    <span>Confirm Password</span>
                 </div> 
                 <input type="submit" value="login" class="login-btn" name="login">
             </form>
