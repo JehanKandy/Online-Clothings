@@ -98,7 +98,8 @@
             $check_user_nor = mysqli_num_rows($check_user_result);
 
             if($check_user_nor > 0){
-                
+                $insert_data = "INSERT INTO user_tbl(nic_no,username,email,pass1,is_pending,is_active,join_date)VALUES('$nic','$username','$email','$pass',1,0,NOW())";
+                $insert_data_result = mysqli_query($con, $insert_data);
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>User Error</strong>User Doesn't Exists..!
