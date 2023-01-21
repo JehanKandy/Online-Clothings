@@ -122,7 +122,7 @@
 
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>User Error</strong>User Doesn't Exists..!
+                        <strong>User Error</strong>User Already Exists..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -174,6 +174,9 @@
                             $_SESSION['LoginSession'] = $check_user_row['nic_no'];
                             header("location:../routes/admin.php");
                         }
+                    }
+                    else{
+
                     }
                 }
             }else{
