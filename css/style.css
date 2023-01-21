@@ -416,8 +416,7 @@
     background-size: cover;
     background-position: center;
     padding: 100px;
-    height: 85vh;
-    
+    height: 85vh;    
 }
 .login-content .body{
     background-color: rgb(37, 48, 56);
@@ -442,6 +441,13 @@
     background-color: rgb(252, 197, 116);
     color: black;
     cursor: pointer;
+}
+.reg-content{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 85vh;    
 }
  /* 
     ***************************************************************************************
