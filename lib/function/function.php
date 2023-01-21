@@ -151,64 +151,7 @@
                     </button>
             </div>";
         }else{
-            $check_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_pending = 0 && is_active = 1";
-            $check_user_result = mysqli_query($con, $check_user);
-            $check_user_nor = mysqli_num_rows($check_user_result);
-            $check_user_row = mysqli_fetch_assoc($check_user_result);
 
-            $check_user_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_pending = 1 && is_active = 0";
-            $check_user_pending_result = mysqli_query($con, $check_user_pending);
-            $check_user_pending_nor = mysqli_num_rows($check_user_pending_result);
-            $check_user_pending_row = mysqli_fetch_assoc($check_user_pending_result);
-
-            $check_user_deactive = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_pending = 0 && is_active = 0";
-            $check_user_deactive_result = mysqli_query($con, $check_user);
-            $check_user_deactive_nor = mysqli_num_rows($check_user_deactive_result);
-
-            if($check_user_deactive_nor != 0){
-                if($check_user_nor != 0){
-                    if($check_user_pending_nor == 0){
-                        if($username == $check_user_row['username']){
-                            if($check_user_row['user_type'] == 'user'){
-                                setcookie('Login',$check_user_row['nic_no'],time()+60*60,'/');
-                                $_SESSION['LoginSession'] = $check_user_row['nic_no'];
-                                header("location:../routes/user.php");
-                            }
-                            elseif($check_user_row['user_type'] == 'admin'){
-                                setcookie('Login',$check_user_row['nic_no'],time()+60*60,'/');
-                                $_SESSION['LoginSession'] = $check_user_row['nic_no'];
-                                header("location:../routes/admin.php");
-                            }
-                        }
-                        else{
-                            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>Process Error</strong>Can not Process the Request...!
-                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                    <span aria-hidden='true'>&times;</span>
-                                    </button>
-                            </div>";
-                        }
-                    }
-                    elseif($check_user_pending_nor != 0){
-                        header("location:waiting_user.php");
-                    }
-                }else{
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Error</strong>User Deactive..!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                    </div>";
-                }
-            }
-            elseif($check_user_deactive_nor == 0){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>User Error</strong>User Doesn't Exists..!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                </div>";
-            }
         }
     }
 
