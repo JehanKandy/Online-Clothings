@@ -156,7 +156,7 @@
             $check_user_nor = mysqli_num_rows($check_user_result);
             $check_user_row = mysqli_fetch_assoc($check_user_result);
 
-            $check_user_pending = "SELECT * FROM user_tbl WHERE is_pending = 1 && is_active = 0";
+            $check_user_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_pending = 1 && is_active = 0";
             $check_user_pending_result = mysqli_query($con, $check_user_pending);
             $check_user_pending_nor = mysqli_num_rows($check_user_pending_result);
             $check_user_pending_row = mysqli_fetch_assoc($check_user_pending_result);
