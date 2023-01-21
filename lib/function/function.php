@@ -155,6 +155,11 @@
             $check_user_result = mysqli_query($con, $check_user);
             $check_user_nor = mysqli_num_rows($check_user_result);
             $check_user_row = mysqli_fetch_assoc($check_user_result);
+
+            $check_user_deactive = "SELECT * FROM user_tbl WHERE is_pending = 1 && is_active = 0";
+            $check_user_deactive_result = mysqli_query($con, $check_user_deactive);
+            $check_user_deactive_nor = mysqli_num_rows($check_user_deactive_result);
+            $check_user_deactive_row = mysqli_fetch_assoc($check_user_deactive_result);
         }
     }
 
