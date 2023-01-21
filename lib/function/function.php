@@ -97,7 +97,7 @@
             $check_user_result = mysqli_query($con, $check_user);
             $check_user_nor = mysqli_num_rows($check_user_result);
 
-            if($check_user_nor > 0){
+            if($check_user_nor == 0){
                 $insert_data = "INSERT INTO user_tbl(nic_no,username,email,pass1,is_pending,is_active,join_date)VALUES('$nic','$username','$email','$pass',1,0,NOW())";
                 $insert_data_result = mysqli_query($con, $insert_data);
 
@@ -109,7 +109,7 @@
                             </button>
                     </div>";
                 }elseif($insert_data_result){
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
                             <strong>Successfull </strong>User Created Successfully <a href='login.php'>Login Here..!</a>
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
