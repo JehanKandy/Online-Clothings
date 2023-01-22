@@ -38,6 +38,7 @@
   - lib/views/waiting_user.php
   - lib/views/verify_otp.php
   - lib/views/update_pass.php
+  - lib/views/logout.php
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
   
