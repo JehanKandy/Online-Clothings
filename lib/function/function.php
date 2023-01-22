@@ -385,6 +385,11 @@
                     </button>
             </div>";
         }
+        else{
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+            $check_user_result = mysqli_query($con, $check_user);
+
+        }
 
     }
 ?>
