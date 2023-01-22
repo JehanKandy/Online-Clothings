@@ -36,6 +36,7 @@
   
   - lib/views/forget_pass.php
   - lib/views/waiting_user.php
+  - lib/views/verify_otp.php
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
   
