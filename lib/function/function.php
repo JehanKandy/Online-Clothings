@@ -284,6 +284,12 @@
                     $otp_number = rand(10000,99999);
                     $enc_otp = md5($otp_number);
 
+                    $recever = $email;
+                    $subject = "Password Reset";
+                    $body = "OTP For Resent Password";
+                    $body .= " use the OTP to update Password : " .$otp_number;
+                    $sender = "From:jehankandy@gmail.com";
+
                 }else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Process Error</strong>Can not Process the Request..!
