@@ -710,21 +710,21 @@
     .developer-note{
         padding: 10px;
     }
-    .login-content{
+    .login-content, .forget-pass-content{
         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
         background-size: cover;
         background-position: center;
         padding: 10px;
         height: 85vh;        
     }
-    .login-content .body, .waiting-content .body{
+    .login-content .body, .waiting-content .body, .forget-pass-content .body{
         background-color: rgb(37, 48, 56);
         margin: 130px 10px 50px 10px;
         padding: 50px 20px 50px 20px;
         border: 1px solid white;
         border-radius: 5px;
     }
-    .waiting-content{
+    .waiting-content {
         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
         background-size: cover;
         background-position: center;
