@@ -39,6 +39,7 @@
   - lib/views/verify_otp.php
   - lib/views/update_pass.php
   - lib/views/logout.php
+  - lib/routes/admin.php
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
   
