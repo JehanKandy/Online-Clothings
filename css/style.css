@@ -603,12 +603,19 @@
     .developer-note{
         padding: 70px;
     }
-    .login-content .body{
+    .login-content .body, .waiting-content .body{
         background-color: rgb(37, 48, 56);
         margin: 130px 50px 50px 50px;
         padding: 50px 60px 50px 60px;
         border: 1px solid white;
         border-radius: 5px;
+    }
+    .waiting-content{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        height: 85vh;    
     }
 }
 
