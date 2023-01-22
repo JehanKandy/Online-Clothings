@@ -339,6 +339,10 @@
 
     function check_otp($otp_no){
         $con = Connection();
+        $nic_no = strval($_SESSION['OTP']);
+
+        $check_otp = "SELECT * FROM pass_reset_tbl WHERE "
+        
     }
 
 ?>
