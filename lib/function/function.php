@@ -367,7 +367,7 @@
         }        
     }
     
-    function update_pass($nic, $email, $oass, $cpass){
+    function update_pass($nic, $email, $pass, $cpass){
         $con = Connection();
     }
 ?>
