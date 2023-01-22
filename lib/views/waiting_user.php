@@ -10,6 +10,7 @@
             <hr class="waiting-hr">
             <h4>Hi <?php waiting_user(); ?>...!</h4>
             <p>Your Account Approval is Still Pending</p>
+            <a href="login.php"><button class="back-login">Back To Login</button></a>
         </div>
     </div>
 </div>
