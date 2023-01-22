@@ -290,6 +290,10 @@
                     $body .= " use the OTP to update Password : " .$otp_number;
                     $sender = "From:jehankandy@gmail.com";
 
+                    if(mail($recever,$subject,$body,$sender)){
+                        
+                    }
+
                 }else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Process Error</strong>Can not Process the Request..!
