@@ -276,6 +276,17 @@
                 $check_otp_user_result = mysqli_query($con, $check_otp_user);
                 $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
                 
+                if($check_otp_user_nor == 0){
+
+                }else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error</strong>Can not Process the Request..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+                }
+
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>User Error</strong> User Doesn't Exists..!
