@@ -396,7 +396,7 @@
 
                 }elseif($email != $check_user_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error</strong> User Doesn't Exists..!
+                        <strong>Email Error</strong> Email Cannot Find...!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
