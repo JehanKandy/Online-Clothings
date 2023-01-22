@@ -347,7 +347,11 @@
         $check_otp_row = mysqli_fetch_assoc($check_otp_result);
 
         if($check_otp_nor > 0){
+            if($otp_no == $check_otp_row['otp_no']){
 
+            }elseif($otp_no != $check_otp_row['otp_no']){
+
+            }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                 <strong>User Error</strong> User Doesn't Exists..!
