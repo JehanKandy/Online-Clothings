@@ -31,6 +31,5 @@
         </div>
     </div>
 </div>
-
 <?php include("../layouts/page_footer.php"); ?>
 <script src="../../js/script.js"></script>
