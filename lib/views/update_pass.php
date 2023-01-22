@@ -11,7 +11,7 @@
             </div>
             <?php 
                 if(isset($_POST['update_pass'])){
-                    $result = update_pass($_POST['nic'], $_POST['email']);
+                    $result = update_pass($_POST['nic'], $_POST['email'], md5($_POST['pass']), md5($_POST['cpass']));
                 }            
             ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
