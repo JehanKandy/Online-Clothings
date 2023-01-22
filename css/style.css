@@ -455,6 +455,13 @@
     padding: 100px;
     height: 100%;    
 }
+.waiting-content{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 85vh;    
+}
 
  /* 
     ***************************************************************************************
@@ -688,4 +695,3 @@
         border-radius: 5px;
     }
 }
-
