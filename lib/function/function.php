@@ -341,7 +341,10 @@
         $con = Connection();
         $nic_no = strval($_SESSION['OTP']);
 
-        $check_otp = "SELECT * FROM pass_reset_tbl WHERE "
+        $check_otp = "SELECT * FROM pass_reset_tbl WHERE nic_no = '$nic_no'";
+        $check_otp_result = mysqli_query($con, $check_otp);
+        $check_otp_nor = mysqli_num_rows($check_otp_result);
+        $check_otp_row = mysqli_fetch_assoc($check_otp_result);
         
     }
 
