@@ -5,7 +5,9 @@
 
 <div class="forget-pass-content">
     <div class="container">
-        <i class="fa fa-key"></i>
+        <div class="body">
+            <i class="fa fa-key"></i> Forget Password
+        </div>
     </div>
 </div>
 
