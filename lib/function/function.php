@@ -80,7 +80,16 @@
                     <span aria-hidden='true'>&times;</span>
                     </button>
             </div>";
-        }elseif(empty($pass)){
+        }
+        elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($pass)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Password Error</strong>Password Cannot be empty..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -96,6 +105,7 @@
                     </button>
             </div>";
         }
+
         elseif($pass != $cpass){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Password Error</strong>Password not Match..!
