@@ -366,5 +366,8 @@
         </div>"; 
         }        
     }
-
+    
+    function update_pass($nic, $email, $oass, $cpass){
+        $con = Connection();
+    }
 ?>
