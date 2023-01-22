@@ -11,7 +11,8 @@
             </div>
             <?php 
                 if(isset($_POST['otp'])){
-                    
+                    $result = request_otp($_POST['nic'], $_POST['email']);
+                    echo $result;
                 }
             ?>
 
