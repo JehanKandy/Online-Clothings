@@ -9,7 +9,24 @@
             <div class="title">
                 <i class="fas fa-key"></i>Update Password
             </div>
-            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST"></form>
+            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+                <div class="login-from">
+                    <input type="password" name="cpass" id="" required="required">
+                    <span>Confirm Password</span>
+                </div> 
+                <div class="login-from">
+                    <input type="password" name="cpass" id="" required="required">
+                    <span>Confirm Password</span>
+                </div>
+                <div class="login-from">
+                    <input type="password" name="cpass" id="" required="required">
+                    <span>Confirm Password</span>
+                </div>
+                <div class="login-from">
+                    <input type="password" name="cpass" id="" required="required">
+                    <span>Confirm Password</span>
+                </div>
+            </form>
         </div>
     </div>
 </div>
