@@ -277,9 +277,13 @@
                 $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
                 
                 if($check_otp_user_nor == 0){
+                    /**
+                     * Get the OTP number as random number between 10000 and 99999
+                     * 
+                     */
                     $otp_number = rand(10000,99999);
                     $enc_otp = md5($otp_number);
-                    
+
                 }else{
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Process Error</strong>Can not Process the Request..!
