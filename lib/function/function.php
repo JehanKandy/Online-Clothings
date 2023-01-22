@@ -237,4 +237,8 @@
         echo $username;
     }
 
+    function request_otp($nic, $email){
+        $con = Connection();
+    }
+
 ?>
