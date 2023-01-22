@@ -10,7 +10,9 @@
                 <i class="fa fa-key"></i> Verify OTP
             </div>
             <?php 
-                if(isset($_POST['']))            
+                if(isset($_POST['otp_check'])){
+                    
+                }            
             
             ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
