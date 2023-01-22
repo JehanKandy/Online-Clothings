@@ -7,7 +7,7 @@
     <div class="container">
         <div class="body">
             <div class="title">
-                
+                <i class="fa fa-key"></i> Verify OTP
             </div>
         </div>
     </div>
