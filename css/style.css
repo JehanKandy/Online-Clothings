@@ -465,6 +465,11 @@
 .waiting-hr{
     border-top: 1px solid white;
 }
+.back-login{
+    width: 25%;
+    height: 40px;
+    border: none;
+}
 
  /* 
     ***************************************************************************************
