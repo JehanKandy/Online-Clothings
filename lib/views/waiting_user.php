@@ -6,7 +6,7 @@
 <div class="waiting-content">
     <div class="container">
         <div class="body">
-            <div class="title"> <i class="fas fa-user-alt"></i> &nbsp; Waiting User</div>
+            <div class="title"> <i class="fas fa-user-clock"></i> &nbsp; Waiting User</div>
             
         </div>
     </div>
