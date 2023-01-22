@@ -369,5 +369,17 @@
     
     function update_pass($nic, $email, $pass, $cpass){
         $con = Connection();
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif($pass != $cpass){
+
+        }
+
     }
 ?>
