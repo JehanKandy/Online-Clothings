@@ -274,6 +274,8 @@
             if($check_user_nor > 0){
                 $check_otp_user = "SELECT * FROM pass_reset_tbl WHERE nic_no = '$nic'";
                 $check_otp_user_result = mysqli_query($con, $check_otp_user);
+                $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
+                
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>User Error</strong> User Doesn't Exists..!
