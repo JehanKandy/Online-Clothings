@@ -337,4 +337,8 @@
         }
     }
 
+    function check_otp($otp_no){
+        $con = Connection();
+    }
+
 ?>
