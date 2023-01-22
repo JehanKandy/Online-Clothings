@@ -474,6 +474,10 @@
     border-radius: 5px;
     transition: 0.5s;
 }
+.back-login:hover{
+    background-color: rgb(0, 54, 172);
+    cursor: pointer;
+}
 .waiting-content .body{
     color: white;
 }
