@@ -350,7 +350,12 @@
             if($otp_no == $check_otp_row['otp_no']){
 
             }elseif($otp_no != $check_otp_row['otp_no']){
-
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error</strong>Can not Process the Request..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
             }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
