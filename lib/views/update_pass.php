@@ -11,15 +11,15 @@
             </div>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
-                    <input type="password" name="cpass" id="" required="required">
+                    <input type="text" name="nic" id="" required="required">
                     <span>NIC Number</span>
                 </div> 
                 <div class="login-from">
-                    <input type="password" name="cpass" id="" required="required">
+                    <input type="email" name="email" id="" required="required">
                     <span>Email</span>
                 </div>
                 <div class="login-from">
-                    <input type="password" name="cpass" id="" required="required">
+                    <input type="password" name="pass" id="" required="required">
                     <span>New Password</span>
                 </div>
                 <div class="login-from">
