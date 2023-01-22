@@ -433,6 +433,7 @@
 
         $nic = strval($_SESSION['LoginSession']);
 
-        $check_roll = "";
+        $check_roll = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_roll_result = 
     }
 ?>
