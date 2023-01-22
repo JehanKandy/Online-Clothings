@@ -426,6 +426,13 @@
             }
 
         }
+    }
 
+    function user_access(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $check_roll = "";
     }
 ?>
