@@ -291,7 +291,7 @@
                     $sender = "From:jehankandy@gmail.com";
 
                     if(mail($recever,$subject,$body,$sender)){
-                        $insert_data = "INSERT INTO pass_reset_tbl(nic_no,email,otp_no,get_date)VALUES('$nic','$email','$enc_otp','NOW())";
+                        $insert_data = "INSERT INTO pass_reset_tbl(nic_no,email,otp_no,get_date)VALUES('$nic','$email','$enc_otp',NOW())";
                         $insert_data_result = mysqli_query($con, $insert_data);
 
                         if(!$insert_data_result){
