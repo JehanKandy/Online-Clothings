@@ -418,8 +418,8 @@
     padding: 100px;
     height: 85vh;    
 }
-.login-content .body , .waiting-content .body, .forget-pass-content .body{
-    background-color: rgb(37, 48, 56);
+.login-content .body , .waiting-content .body, .forget-pass-content .body, .verify-content .body{
+    background-color: rgb(37, 48, 56); 
     margin: 50px;
     padding: 50px 200px 50px 200px;
     border: 1px solid white;
