@@ -742,4 +742,12 @@
     .back-login{
         width: 50%;
     }
+    .reg-content, .update-pass{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 10px 100px 10px;
+        height: 100%;    
+        width: 100%;
+    }
 }
