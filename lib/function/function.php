@@ -434,6 +434,9 @@
         $nic = strval($_SESSION['LoginSession']);
 
         $check_roll = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
-        $check_roll_result = 
+        $check_roll_result = mysqli_query($con, $check_roll);
+        $check_roll_row = mysqli_fetch_assoc($check_roll_result);
+
+        if($check_roll_row[''])
     }
 ?>
