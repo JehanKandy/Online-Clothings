@@ -248,7 +248,15 @@
                     </button>
             </div>";
         }
-        if(empty($nic)){
+        elseif(empty($email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong>Email Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($nic)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>NIC Error</strong>NIC Cannot be empty..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -256,6 +264,7 @@
                     </button>
             </div>";
         }
+
     }
 
 ?>
