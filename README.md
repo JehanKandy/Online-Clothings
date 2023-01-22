@@ -32,7 +32,7 @@
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
  
-   <h4> 21 January 2023</h4>
+   <h4> 22 January 2023</h4>
   
   - lib/views/reg.php
   - lib/views/login.php (UPDATE)
