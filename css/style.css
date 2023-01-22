@@ -603,7 +603,7 @@
     .developer-note{
         padding: 70px;
     }
-    .login-content .body, .waiting-content .body{
+    .login-content .body, .waiting-content .body, .forget-pass-content .body{
         background-color: rgb(37, 48, 56);
         margin: 130px 50px 50px 50px;
         padding: 50px 60px 50px 60px;
