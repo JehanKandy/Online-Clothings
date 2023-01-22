@@ -266,7 +266,7 @@
         }
 
         else{
-            
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic' && email = '$email'";
         }
     }
 
