@@ -293,6 +293,15 @@
                     if(mail($recever,$subject,$body,$sender)){
                         $insert_data = "INSERT INTO pass_reset_tbl(nic_no,email,otp_no,get_date)VALUES('$nic','$email','$enc_otp','NOW())";
                         $insert_data_result = mysqli_query($con, $insert_data);
+
+                        if(!$insert_data_result){
+                            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <strong>Process Error</strong>Cannot Process the Request..!
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                    </button>
+                            </div>";
+                        }
                     }
                     else{
                         return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
