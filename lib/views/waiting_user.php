@@ -7,7 +7,7 @@
     <div class="container">
         <div class="body">
             <div class="title"> <i class="fas fa-user-clock"></i> &nbsp; Waiting User</div>
-            
+            <hr class="waiting-hr">
         </div>
     </div>
 </div>
