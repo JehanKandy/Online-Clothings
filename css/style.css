@@ -617,6 +617,9 @@
         padding: 50px;
         height: 85vh;    
     }
+    .back-login{
+        width: 50%;
+    }
 }
 
 
