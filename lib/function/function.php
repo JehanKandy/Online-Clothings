@@ -120,7 +120,7 @@
             $check_user_nor = mysqli_num_rows($check_user_result);
 
             if($check_user_nor == 0){
-                $insert_data = "INSERT INTO user_tbl(nic_no,username,email,pass1,user_type,is_pending,is_active,join_date)VALUES('$nic','$username','$email','$pass',1,0,NOW())";
+                $insert_data = "INSERT INTO user_tbl(nic_no,username,email,pass1,user_type,is_pending,is_active,join_date)VALUES('$nic','$username','$email','$pass','user',1,0,NOW())";
                 $insert_data_result = mysqli_query($con, $insert_data);
 
                 if(!$insert_data_result){
