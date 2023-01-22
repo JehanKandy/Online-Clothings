@@ -12,7 +12,7 @@
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
                     <input type="password" name="cpass" id="" required="required">
-                    <span>Confirm Password</span>
+                    <span>NIC Number</span>
                 </div> 
                 <div class="login-from">
                     <input type="password" name="cpass" id="" required="required">
