@@ -26,6 +26,7 @@
                     <input type="password" name="cpass" id="" required="required">
                     <span>Confirm Password</span>
                 </div>
+                <input type="submit" value="Sign Up" class="login-btn" name="register">
             </form>
         </div>
     </div>
