@@ -16,15 +16,15 @@
                 </div> 
                 <div class="login-from">
                     <input type="password" name="cpass" id="" required="required">
-                    <span>Confirm Password</span>
+                    <span>Email</span>
                 </div>
                 <div class="login-from">
                     <input type="password" name="cpass" id="" required="required">
-                    <span>Confirm Password</span>
+                    <span>New Password</span>
                 </div>
                 <div class="login-from">
                     <input type="password" name="cpass" id="" required="required">
-                    <span>Confirm Password</span>
+                    <span>Confirm New Password</span>
                 </div>
                 <input type="submit" value="Update Password" class="login-btn" name="update_pass">
             </form>
