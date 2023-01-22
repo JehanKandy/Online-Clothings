@@ -707,7 +707,7 @@
         padding: 10px;
         height: 85vh;        
     }
-    .login-content .body{
+    .login-content .body, .waiting-content .body{
         background-color: rgb(37, 48, 56);
         margin: 130px 10px 50px 10px;
         padding: 50px 20px 50px 20px;
