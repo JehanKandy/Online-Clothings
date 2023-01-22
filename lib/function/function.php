@@ -209,6 +209,10 @@
         }
     }
 
+    function waiting_user(){
+        $username = strval($_SESSION['Username']);
 
+        echo $username;
+    }
 
 ?>
