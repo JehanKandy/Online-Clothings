@@ -404,7 +404,7 @@
                             </button>
                     </div>";
                     }elseif($update_data_result){
-                        
+                        $delete_otp = "DELETE FROM "
                     }
                 }elseif($email != $check_user_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
