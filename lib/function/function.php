@@ -345,6 +345,17 @@
         $check_otp_result = mysqli_query($con, $check_otp);
         $check_otp_nor = mysqli_num_rows($check_otp_result);
         $check_otp_row = mysqli_fetch_assoc($check_otp_result);
+
+        if($check_otp_nor > 0){
+
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                <strong>User Error</strong> User Doesn't Exists..!
+                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                <span aria-hidden='true'>&times;</span>
+                </button>
+        </div>"; 
+        }
         
     }
 
