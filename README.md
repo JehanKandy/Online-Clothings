@@ -40,6 +40,7 @@
   - lib/views/update_pass.php
   - lib/views/logout.php
   - lib/routes/admin.php
+  - css/dashboad.php
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
   
