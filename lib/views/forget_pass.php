@@ -9,6 +9,11 @@
             <div class="title">
                 <i class="fa fa-key"></i> Forget Password
             </div>
+            <?php 
+                if(isset($_POST['otp'])){
+                    
+                }
+            ?>
 
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
