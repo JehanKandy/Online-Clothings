@@ -11,7 +11,7 @@
             </div>
             <?php 
                 if(isset($_POST['otp_check'])){
-                    $result = check_otp($_POST['otp_no']);
+                    $result = check_otp(md5($_POST['otp_no']));
                     echo $result;
                 }            
             
