@@ -406,6 +406,7 @@
                     }elseif($update_data_result){
                         $delete_otp = "DELETE FROM pass_reset_tbl WHERE nic_no = '$nic'";
                         $delete_otp_result = mysqli_query($con, $delete_otp);
+                        header("location:logout.php");
                     }
                 }elseif($email != $check_user_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
