@@ -9,6 +9,18 @@
             <div class="title">
                 <i class="fa fa-key"></i> Verify OTP
             </div>
+            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+                <div class="login-from">
+                    <input type="text" name="nic" id="" required="required">
+                    <span>NIC Number</span>
+                </div> 
+                <div class="login-from">
+                    <input type="email" name="email" id="" required="required">
+                    <span>Email</span>
+                </div> 
+
+                <input type="submit" value="Request OTP" class="login-btn" name="otp">
+            </form>
         </div>
     </div>
 </div>
