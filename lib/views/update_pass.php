@@ -9,6 +9,10 @@
             <div class="title">
                 <i class="fas fa-key"></i> Update Password
             </div>
+            <?php 
+                
+            
+            ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
                     <input type="text" name="nic" id="" required="required">
