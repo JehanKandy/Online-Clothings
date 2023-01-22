@@ -393,7 +393,14 @@
 
             if($check_user_nor > 0){
                 if($email == $check_user_row['email']){
+                    $update_data = "UPDATE user_tbl SET pass1 = '$pass' WHERE nic_no = '$nic' && email = '$email'";
+                    $update_data_result = mysqli_query($con, $update_data);
+                    
+                    if(!$update_data_result){
 
+                    }elseif($update_data_result){
+                        
+                    }
                 }elseif($email != $check_user_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Email Error</strong> Email Cannot Find...!
