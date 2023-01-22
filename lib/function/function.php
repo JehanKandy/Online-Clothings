@@ -132,6 +132,7 @@
     function login_user($username, $pass){
         $con = Connection();
 
+        $_SESSION['Username'] = $username;
 
         if(empty($username)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
