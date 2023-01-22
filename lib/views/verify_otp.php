@@ -14,11 +14,6 @@
                     <input type="text" name="nic" id="" required="required">
                     <span>NIC Number</span>
                 </div> 
-                <div class="login-from">
-                    <input type="email" name="email" id="" required="required">
-                    <span>Email</span>
-                </div> 
-
                 <input type="submit" value="Request OTP" class="login-btn" name="otp">
             </form>
         </div>
