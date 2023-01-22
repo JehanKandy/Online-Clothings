@@ -11,7 +11,7 @@
             </div>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
-                    <input type="text" name="nic" id="" required="required">
+                    <input type="number" name="otp_no" id="" required="required">
                     <span>OTP Number</span>
                 </div> 
                 <input type="submit" value="Request OTP" class="login-btn" name="otp">
