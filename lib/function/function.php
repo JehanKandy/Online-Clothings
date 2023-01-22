@@ -397,9 +397,14 @@
                     $update_data_result = mysqli_query($con, $update_data);
                     
                     if(!$update_data_result){
-
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Can not Process the Request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
                     }elseif($update_data_result){
-                        
+
                     }
                 }elseif($email != $check_user_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
