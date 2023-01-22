@@ -266,13 +266,14 @@
         }
 
         else{
-            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic' && email = '$email'";
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
             $check_user_result = mysqli_query($con, $check_user);
             $check_user_nor = mysqli_num_rows($check_user_result);
             $check_user_row = mysqli_fetch_assoc($check_user_result);
 
             if($check_user_nor > 0){
-
+                $check_otp_user = "SELECT * FROM pass_reset_tbl WHERE nic_no = '$nic'";
+                $check_otp_user_result = mysqli_query($con, $check_otp_user);
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>User Error</strong> User Doesn't Exists..!
