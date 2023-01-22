@@ -210,6 +210,7 @@
     }
 
     function waiting_user(){
+        $con = Connection();
         $username = strval($_SESSION['Username']);
 
         echo $username;
