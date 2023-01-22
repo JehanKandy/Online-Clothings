@@ -437,6 +437,8 @@
         $check_roll_result = mysqli_query($con, $check_roll);
         $check_roll_row = mysqli_fetch_assoc($check_roll_result);
 
-        if($check_roll_row[''])
+        if(!$check_roll_row['user_type'] == "user"){
+            header("location:../views/logout.php");
+        }
     }
 ?>
