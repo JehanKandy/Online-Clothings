@@ -10,10 +10,9 @@
                 <i class="fas fa-key"></i> Update Password
             </div>
             <?php 
-                if(isset($_POST[''])){
+                if(isset($_POST['update_pass'])){
                     
-                }
-            
+                }            
             ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
