@@ -292,7 +292,7 @@
 
                     if(mail($recever,$subject,$body,$sender)){
                         $insert_data = "INSERT INTO pass_reset_tbl(nic_no,email,otp_no,get_date)VALUES('$nic','$email','$enc_otp','NOW())";
-                        $insert_data_result = mysqli_query($con, $insert_datar);
+                        $insert_data_result = mysqli_query($con, $insert_data);
                     }
 
                 }else{
