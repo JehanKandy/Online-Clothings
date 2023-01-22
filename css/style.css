@@ -471,6 +471,8 @@
     border: none;
     color: white;
     background-color: rgb(18, 74, 196);
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
  /* 
