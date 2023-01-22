@@ -302,6 +302,11 @@
                                     </button>
                             </div>";
                         }
+                        elseif($insert_data_result){
+                            setcookie('Otp',$check_user_row['nic_no'],time()+60*5,'/');
+                            $_SESSION['OTP'] = $check_user_row['nic_no'];
+                            header("location:verify_otp.php"); 
+                        }
                     }
                     else{
                         return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
