@@ -2,6 +2,10 @@
 <?php include("../function/function.php"); ?>
 <?php include("../layouts/header.php"); ?>
 
+<?php 
+
+
+?>
 
 <div class="product-view">
     <div class="container">
