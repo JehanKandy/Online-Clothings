@@ -20,7 +20,7 @@
                     <span>Email</span>
                 </div> 
 
-                <input type="submit" value="Login" class="login-btn" name="login">
+                <input type="submit" value="Request OTP" class="login-btn" name="otp">
             </form>
         </div>
     </div>
