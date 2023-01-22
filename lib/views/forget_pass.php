@@ -12,17 +12,17 @@
 
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="login-from">
-                    <input type="text" name="username" id="" required="required">
+                    <input type="text" name="nic" id="" required="required">
                     <span>Username</span>
                 </div> 
                 <div class="login-from">
-                    <input type="password" name="pass" id="" required="required">
+                    <input type="email" name="email" id="" required="required">
                     <span>Password</span>
                 </div> 
 
                 <input type="submit" value="Login" class="login-btn" name="login">
             </form>
-            
+
         </div>
     </div>
 </div>
