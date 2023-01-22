@@ -36,6 +36,7 @@
   
   - lib/views/waiting_user.php
   - css/style.css (UPDATE)
+  - lib/function/function.php (UPDATE)
   
  
 
