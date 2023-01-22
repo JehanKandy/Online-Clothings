@@ -34,14 +34,7 @@
  
    <h4> 22 January 2023</h4>
   
-  - lib/views/reg.php
-  - lib/views/login.php (UPDATE)
-  - css/style.css (UPDATE)
-  - lib/function/function.php (UPDATE)
-
-    
-
-
+ 
 
 <h1>Developers</h1>
   <h4>JehanKandy</h4>
