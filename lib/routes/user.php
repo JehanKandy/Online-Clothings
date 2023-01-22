@@ -3,8 +3,7 @@
 <?php include("../layouts/header.php"); ?>
 
 <?php 
-
-
+    user_access();
 ?>
 
 <div class="product-view">
