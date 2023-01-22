@@ -750,4 +750,10 @@
         height: 100%;    
         width: 100%;
     }
+    .reg-content .body, .update-pass .body{
+        background-color: rgb(37, 48, 56);
+        padding: 50px 20px 50px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
 }
