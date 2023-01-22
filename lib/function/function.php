@@ -239,6 +239,23 @@
 
     function request_otp($nic, $email){
         $con = Connection();
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        if(empty($nic)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>NIC Error</strong>NIC Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
     }
 
 ?>
