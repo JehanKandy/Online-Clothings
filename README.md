@@ -49,7 +49,7 @@
 
   - lib/function/function.php (UPDATE)
   - lib/routes/admin.php (UPDATE)
-  - lib/routes/user.php
+  - lib/routes/user.php (UPDATE)
   
  
 
