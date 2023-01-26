@@ -45,16 +45,7 @@
   - lib/function/function.php (UPDATE)
    
   <h4> 26 January 2023</h4>
-  
-  - lib/views/forget_pass.php
-  - lib/views/waiting_user.php
-  - lib/views/verify_otp.php
-  - lib/views/update_pass.php
-  - lib/views/logout.php
-  - lib/routes/admin.php
-  - css/dashboad.php
-  - css/style.css (UPDATE)
-  - lib/function/function.php (UPDATE)
+
   
  
 
