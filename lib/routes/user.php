@@ -3,6 +3,10 @@
 <?php include("../layouts/header.php"); ?>
 
 <?php 
+
+    if(empty($_SESSION['LoginSession'])){
+        header("location:../views/logout.php");
+    }
     user_access();
 ?>
 
