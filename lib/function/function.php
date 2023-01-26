@@ -437,7 +437,7 @@
         $check_roll_result = mysqli_query($con, $check_roll);
         $check_roll_row = mysqli_fetch_assoc($check_roll_result);
 
-        if(!$check_roll_row['user_type'] != "user"){
+        if($check_roll_row['user_type'] != "user"){
             header("location:../views/logout.php");
         }
     }
@@ -451,7 +451,7 @@
         $check_roll_result = mysqli_query($con, $check_roll);
         $check_roll_row = mysqli_fetch_assoc($check_roll_result);
 
-        if(!$check_roll_row['user_type'] != "admin"){
+        if($check_roll_row['user_type'] != "admin"){
             header("location:../views/logout.php");
         }
     }
