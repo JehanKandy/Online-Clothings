@@ -441,4 +441,18 @@
             header("location:../views/logout.php");
         }
     }
+
+    function admin_access(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $check_roll = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_roll_result = mysqli_query($con, $check_roll);
+        $check_roll_row = mysqli_fetch_assoc($check_roll_result);
+
+        if(!$check_roll_row['user_type'] != "admin"){
+            header("location:../views/logout.php");
+        }
+    }
 ?>
