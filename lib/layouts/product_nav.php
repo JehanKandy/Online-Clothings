@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="../../css/style.css">
 <link rel="stylesheet" href="../../css/dashboard.css">
+
+<?php include("../function/function.php"); ?>
+
+
 <nav>
     <div class="product-nav-content">
         <div class="container">
