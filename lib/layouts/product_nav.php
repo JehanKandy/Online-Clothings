@@ -8,7 +8,7 @@
     <div class="product-nav-content">
         <div class="container">
             <div class="left-side">
-                Pearl Clothings - All Products
+                All Products
             </div>
             <div class="right-side">
                 <?php to_dashboard();?>
