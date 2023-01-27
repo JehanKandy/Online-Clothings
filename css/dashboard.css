@@ -20,7 +20,12 @@
     color: white;
     margin-top: -5px;
 }
-
+.product-nav-content .right-side{
+    margin-top: -40px;
+}
+.product-nav-content .right-side .product-nav-btn{
+    
+}
 
  /* 
     ***************************************************************************************
