@@ -181,4 +181,11 @@
         padding: 45 45 45 45;
         margin-bottom: 5px;
     }
+    .pitem1 .product-img{
+        width: 210px;
+        height: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
 }
