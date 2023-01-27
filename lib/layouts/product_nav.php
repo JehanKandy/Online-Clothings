@@ -7,7 +7,7 @@
                 Pearl Clothings - All Products
             </div>
             <div class="right-side">
-                <a href="../../index.php"><button class="login-nav-btn">Back</button></a>
+                <a href="../../index.php"><button class="product-nav-btn">Back</button></a>
             </div>                       
         </div>
     </div>
