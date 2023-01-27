@@ -52,7 +52,8 @@
   - lib/routes/user.php (UPDATE)
   
   <h4> 27 January 2023</h4>
-
+  
+  - lib/layouts/product_nav.php 
   - lib/routes/all_products.php 
   - lib/function/function.php (UPDATE)
 
