@@ -13,9 +13,24 @@
                         Product
                     </div>
                 </div>
-                <div class="pitem2"></div>
-                <div class="pitem3"></div>
-                <div class="pitem4"></div>
+                <div class="pitem2">
+                    <div class="title">Product</div>
+                    <div class="body">
+                        Product
+                    </div>
+                </div>
+                <div class="pitem3">
+                    <div class="title">Product</div>
+                    <div class="body">
+                        Product
+                    </div>
+                </div>
+                <div class="pitem4">
+                    <div class="title">Product</div>
+                    <div class="body">
+                        Product
+                    </div>
+                </div>
             </div>
         </div>
     </div>
