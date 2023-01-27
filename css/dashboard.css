@@ -332,9 +332,11 @@
 .loged-nav-content{
     width: 100%;
     height: 70px;
+    padding: 0 50px;
 }
+
 .loged-nav-content .right-side{
-    
+
 }
 
 
