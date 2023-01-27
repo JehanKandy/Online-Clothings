@@ -170,4 +170,15 @@
         margin-top: -35px;
         margin-left: 58%;
     }
+    .product-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(350px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
 }
