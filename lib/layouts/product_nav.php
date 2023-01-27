@@ -7,7 +7,7 @@
                 Pearl Clothings - All Products
             </div>
             <div class="right-side">
-                <a href="../../index.php"><button class="product-nav-btn"><i class="fas fa-tachometer-alt"></i> &nbsp; To Dashboard</button></a>
+                <a href="user.php"><button class="product-nav-btn"><i class="fas fa-tachometer-alt"></i> &nbsp; To Dashboard</button></a>
             </div>                       
         </div>
     </div>
