@@ -19,3 +19,18 @@
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
+
+
+ /* 
+    ***************************************************************************************
+
+                             commen laptop screen and small screens
+
+                                            769px - 1400px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
+    
+}
