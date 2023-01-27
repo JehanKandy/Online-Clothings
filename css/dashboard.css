@@ -74,7 +74,9 @@
 .pitem1 .product-img{
     width: 200px;
     height: auto;
-    padding-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 .pitem1 .body .product-price{
     font-size: 15px;
