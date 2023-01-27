@@ -33,7 +33,7 @@
     border-radius: 2px;
     color: white;
 }
-.product-nav-btn:hover{
+.product-nav-content .right-side .product-nav-btn:hover{
     color: black;
     background-color: white;
     cursor: pointer;
@@ -79,5 +79,8 @@
 */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
+    .product-nav-content .right-side{
+        margin-top: -35px;
+        margin-left: 58%;
+    }
 }
