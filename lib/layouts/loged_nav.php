@@ -5,7 +5,7 @@
         Pearl Clothings - ADMIN
     </div>
     <div class="right-side">
-        <a href=""><button class="logout-btn"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</button></a>
+        <a href="../views/logout.php"><button class="logout-btn"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</button></a>
     </div>
 </div>
 
