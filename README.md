@@ -53,10 +53,7 @@
   
   <h4> 27 January 2023</h4>
 
-  - lib/function/function.php (UPDATE)
-  - lib/routes/admin.php (UPDATE)
-  - lib/routes/user.php (UPDATE)
-  
+
  
 
 <h1>Developers</h1>
