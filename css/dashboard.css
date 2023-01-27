@@ -27,6 +27,9 @@
 .product-nav-content .right-side .product-nav-btn{
     padding: 5px 10px;
     width: 150px;
+    border: 2px solid white;
+    background: transparent;
+    transition: 0.5s;
 }
 
  /* 
