@@ -352,6 +352,9 @@
 .logout-btn{
     padding: 5px 10px;
     width: 100px;
+    background: transparent;
+    border: 2px solid red;
+    color: red;
 }
 
 
