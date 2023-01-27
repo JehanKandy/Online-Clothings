@@ -358,7 +358,11 @@
     border-radius: 2px;
     transition: 0.5s;
 }
-
+.logout-btn:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
 
  /* 
     ***************************************************************************************
