@@ -33,6 +33,11 @@
     border-radius: 2px;
     color: white;
 }
+.product-nav-btn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
 
  /* 
     ***************************************************************************************
