@@ -57,7 +57,7 @@
   - lib/routes/all_products.php 
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
-  - js/script.js
+  - js/script.js (UPDATE)
 
  
 
