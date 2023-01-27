@@ -7,7 +7,12 @@
         <div class="title">All Prodcuts</div>
         <div class="body">
             <div class="product-grid">
-                <div class="pitem1"></div>
+                <div class="pitem1">
+                    <div class="title">Product</div>
+                    <div class="body">
+                        Product
+                    </div>
+                </div>
                 <div class="pitem2"></div>
                 <div class="pitem3"></div>
             </div>
