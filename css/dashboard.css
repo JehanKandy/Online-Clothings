@@ -76,6 +76,12 @@
 }
 .pitem1 .body .product-price{
     font-size: 15px;
+    color: blue;
+    font-weight: 600;
+}
+.pitem1 .body .in-stock{
+    color: green;
+    font-size: 14px;
 }
  /* 
     ***************************************************************************************
