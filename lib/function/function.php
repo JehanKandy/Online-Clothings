@@ -201,9 +201,11 @@
                     </div>";
                 }
                 
+                $user_is_access = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0 && un_access = 1";
+                $user_is_access_result = mysqli_query($con, $user_is_access);
+                $user_is_access_nor = mysqli_num_rows($user_is_access_result);
                 
-                
-                if(){
+                if($user_is_access_nor != 0){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>User Error</strong> User Deactivessssssssssssssssssssssssssssss..!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
