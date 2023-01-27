@@ -499,6 +499,8 @@
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
 
-        if($select_data_row[''])
+        if($select_data_row['user_type'] == "admin"){
+            echo "";
+        }
     }
 ?>
