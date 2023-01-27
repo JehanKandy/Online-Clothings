@@ -452,6 +452,9 @@
         $check_roll_row = mysqli_fetch_assoc($check_roll_result);
 
         if($check_roll_row['user_type'] != "admin"){
+            $update_user = "UPDATE user_tbl SET is_active = 0 WHERE nic_no = '$nic'";
+            $update_user_result = mysqli_query($con, $update_user);
+
             header("location:../views/logout.php");
         }
     }
