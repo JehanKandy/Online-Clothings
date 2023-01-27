@@ -56,7 +56,7 @@
   - lib/layouts/product_nav.php 
   - lib/routes/all_products.php 
   - lib/function/function.php (UPDATE)
-  - css
+  - css/dashboard.css (UPDATE)
 
  
 
