@@ -355,6 +355,7 @@
     background: transparent;
     border: 2px solid red;
     color: red;
+    border-radius: 2px;
 }
 
 
