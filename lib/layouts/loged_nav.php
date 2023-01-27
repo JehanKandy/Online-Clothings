@@ -5,7 +5,7 @@
         Pearl Clothings - ADMIN
     </div>
     <div class="right-side">
-        
+        <a href=""><button class="logout-btn">Logout</button></a>
     </div>
 </div>
 
