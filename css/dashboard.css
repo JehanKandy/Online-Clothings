@@ -21,10 +21,12 @@
     margin-top: -5px;
 }
 .product-nav-content .right-side{
-    margin-top: -40px;
+    margin-top: -35px;
+    margin-left: 90%;
 }
 .product-nav-content .right-side .product-nav-btn{
-    
+    padding: 5px 10px;
+    width: 150px;
 }
 
  /* 
