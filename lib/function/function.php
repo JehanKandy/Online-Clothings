@@ -500,7 +500,10 @@
         $select_data_row = mysqli_fetch_assoc($select_data_result);
 
         if($select_data_row['user_type'] == "admin"){
-            echo "";
+            echo "<a href='admin.php'><button class='product-nav-btn'><i class='fas fa-tachometer-alt'></i> &nbsp; To Dashboard</button></a>";
+        }
+        elseif($select_data_row['user_type'] == "user"){
+            echo "<a href='user.php'><button class='product-nav-btn'><i class='fas fa-tachometer-alt'></i> &nbsp; To Dashboard</button></a>";
         }
     }
 ?>
