@@ -201,15 +201,11 @@
                     </div>";
                 }
                 
-                $access_tbl_data = "SELECT * FROM u_accsess_tbl WHERE username = '$username'";
-                $access_tbl_data_result = mysqli_query($con, $access_tbl_data);
-                $access_tbl_data_nor = mysqli_num_rows($access_tbl_data_result);
-                $access_tbl_data_row = mysqli_fetch_assoc($access_tbl_data_result);
                 
                 
-                if($access_tbl_data_nor != 0){
+                if(){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Error</strong> User Deactive..!
+                            <strong>User Error</strong> User Deactivessssssssssssssssssssssssssssss..!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
