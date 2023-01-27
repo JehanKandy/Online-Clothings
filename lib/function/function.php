@@ -207,7 +207,7 @@
                 
                 if($user_is_access_nor != 0){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Error</strong> User Deactivessssssssssssssssssssssssssssss..!
+                            <strong>Unauthorized Access </strong> You trying to access the admin Account, so that Your account is suspended. Contact Admin
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
