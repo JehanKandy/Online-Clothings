@@ -267,10 +267,6 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-.std-hr {
-    border-top: 1px solid rgb(29, 152, 235);
-}
-
 .admin-item2 {
     grid-area: b;
     height: 200px;
@@ -281,10 +277,6 @@
     font-size: 25px;
     color: #50be50;
     font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.tea-hr {
-    border-top: 1px solid #50be50;
 }
 
 .admin-item3 {
@@ -335,8 +327,9 @@
     padding: 0 50px;
 }
 
-.loged-nav-content .right-side{
-
+.loged-nav-content .left-side{
+    padding-top: 20px;
+    font-size: 25px;
 }
 
 
