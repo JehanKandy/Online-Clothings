@@ -49,6 +49,26 @@
 .all-product-contant .body{
     font-family: 'Merriweather Sans', sans-serif;
 }
+.product-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-bottom: 5px;
+}
+.pitem1{
+    border: 2px solid rgb(156, 156, 156);
+    border-radius: 5px;
+    padding: 20px;
+}
+.pitem1 .title{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
  /* 
     ***************************************************************************************
 
