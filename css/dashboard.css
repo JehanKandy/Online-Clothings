@@ -40,6 +40,8 @@
 }
 .all-product-contant{
     padding: 100px 0;
+    background-color: rgb(21, 19, 29);
+    color: white;
 }
 .all-product-contant .title{
     font-size: 40px;
@@ -88,6 +90,7 @@
 .pitem1 .body .product-book-btn{
     width: 100%;
     height: 40px;
+
 }
  /* 
     ***************************************************************************************
