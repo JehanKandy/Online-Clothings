@@ -54,10 +54,12 @@
   <h4> 27 January 2023</h4>
   
   - lib/layouts/product_nav.php 
-  - lib/routes/all_products.php 
+  - lib/routes/all_products.php
+  - lib/
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
   - js/script.js (UPDATE)
+  
 
  
 
