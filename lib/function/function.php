@@ -492,5 +492,7 @@
 
     function to_dashboard(){
         $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
     }
 ?>
