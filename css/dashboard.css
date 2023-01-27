@@ -92,6 +92,10 @@
 .pitem1 .body .product-book-btn{
     width: 100%;
     height: 40px;
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+    border-radius: 2px;
 
 }
  /* 
