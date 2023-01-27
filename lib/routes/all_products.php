@@ -13,25 +13,34 @@
                     <div class="body">
                         <div class="product-price">5000.00</div>
                         <div class="in-stock">In Stock</div>
-                        <button class="product-book-btn">Buy</button>
+                        <a href=""><button class="product-book-btn">Buy</button></a>
                     </div>
                 </div>
                 <div class="pitem1">
                     <div class="title">Product</div>
+                    <img src="../../images/1.jpg" alt="" class="product-img">
                     <div class="body">
-                        Product
+                        <div class="product-price">5000.00</div>
+                        <div class="in-stock">In Stock</div>
+                        <a href=""><button class="product-book-btn">Buy</button></a>
                     </div>
                 </div>
                 <div class="pitem1">
                     <div class="title">Product</div>
+                    <img src="../../images/1.jpg" alt="" class="product-img">
                     <div class="body">
-                        Product
+                        <div class="product-price">5000.00</div>
+                        <div class="in-stock">In Stock</div>
+                        <a href=""><button class="product-book-btn">Buy</button></a>
                     </div>
                 </div>
                 <div class="pitem1">
                     <div class="title">Product</div>
+                    <img src="../../images/1.jpg" alt="" class="product-img">
                     <div class="body">
-                        Product
+                        <div class="product-price">5000.00</div>
+                        <div class="in-stock">In Stock</div>
+                        <a href=""><button class="product-book-btn">Buy</button></a>
                     </div>
                 </div>
             </div>
