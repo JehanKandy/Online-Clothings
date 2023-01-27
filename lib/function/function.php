@@ -489,4 +489,8 @@
             header("location:../views/logout.php");
         }
     }
+
+    function to_dashboard(){
+        $con = Connection();
+    }
 ?>
