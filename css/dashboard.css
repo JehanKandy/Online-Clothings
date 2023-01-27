@@ -46,7 +46,9 @@
     text-transform: uppercase;
     padding-bottom: 50px;
 }
-
+.all-product-contant .body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
  /* 
     ***************************************************************************************
 
