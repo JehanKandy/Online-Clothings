@@ -179,7 +179,7 @@
 
             // user pending check
 
-            $user_is_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1";
+            $user_is_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1 && un_access = 0";
             $user_is_pending_result = mysqli_query($con, $user_is_pending);
             $user_is_pending_nor = mysqli_num_rows($user_is_pending_result);
 
@@ -188,7 +188,7 @@
             }
             else{
                 // user deactive check
-                $user_is_deactive = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0";
+                $user_is_deactive = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0 && un_access = 0";
                 $user_is_deactive_result = mysqli_query($con, $user_is_deactive);
                 $user_is_deactive_nor = mysqli_num_rows($user_is_deactive_result);
 
