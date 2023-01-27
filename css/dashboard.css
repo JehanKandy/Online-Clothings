@@ -98,6 +98,12 @@
     border-radius: 2px;
     border: 1px solid white;
 }
+.pitem1 .body .product-book-btn{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
  /* 
     ***************************************************************************************
 
