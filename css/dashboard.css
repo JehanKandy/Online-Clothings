@@ -346,11 +346,12 @@
     font-size: 25px;
 }
 .loged-nav-content .right-side{
-    margin-left: 95%;
-    margin-top: -30px;
+    margin-left: 93%;
+    margin-top: -40px;
 }
 .logout-btn{
-    padding: 5px 15px;
+    padding: 5px 10px;
+    width: 100px;
 }
 
 
