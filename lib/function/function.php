@@ -200,6 +200,14 @@
                             </button>
                     </div>";
                 }
+                
+                $access_tbl_data = "SELECT * FROM u_accsess_tbl WHERE username = '$username'";
+                
+                
+                if(){
+
+                }
+                
                 else{
                     //user successfully login
                     $user_is_login = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 1 && is_pending = 0";
@@ -456,10 +464,11 @@
             $update_user_result = mysqli_query($con, $update_user);
 
             $email = $check_roll_row['email'];
+            $username = $check_roll_row['username'];
 
             $desc = "Tyring to Access Admin Account";
 
-            $insert_data = "INSERT INTO u_accsess_tbl(nic_no,email,decs1,access_time)VALUES('$nic','$email','$desc',NOW())";
+            $insert_data = "INSERT INTO u_accsess_tbl(nic_no,username,email,decs1,access_time)VALUES('$nic','$username','$email','$desc',NOW())";
             $insert_data_result = mysqli_query($con, $insert_data);
             
             header("location:../views/logout.php");
