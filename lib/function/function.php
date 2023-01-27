@@ -455,6 +455,8 @@
             $update_user = "UPDATE user_tbl SET is_active = 0 WHERE nic_no = '$nic'";
             $update_user_result = mysqli_query($con, $update_user);
 
+            $insert_data = "INSERT INTO u_accsess_tbl(nic_no,email,decs1,access_time)";
+            
             header("location:../views/logout.php");
         }
     }
