@@ -212,9 +212,11 @@
                 $access_tbl_data_result = mysqli_query($con, $access_tbl_data);
                 $access_tbl_data_row = mysqli_fetch_assoc($access_tbl_data_result);
 
+                $access_time = $access_tbl_data_row['access_time'];
+
                 if($user_is_access_nor != 0){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Unauthorized Access </strong> You tried to access the admin Account at, so Your account is suspended. 
+                            <strong>Unauthorized Access </strong> You tried to access the admin Account at , so Your account is suspended. 
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
