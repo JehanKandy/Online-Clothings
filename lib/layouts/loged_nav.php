@@ -1,5 +1,12 @@
 <link rel="stylesheet" href="../../css/dashboard.css">
-<?php include("../layouts/header.php"); ?>
 
+<div class="loged-nav-content">
+    <div class="left-side">
+        Pearl Clothings - ADMIN
+    </div>
+    <div class="right-side">
+        
+    </div>
+</div>
 
 <script src="../../js/script.js"></script>
