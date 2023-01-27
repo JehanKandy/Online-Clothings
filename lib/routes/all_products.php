@@ -9,23 +9,26 @@
             <div class="product-grid">
                 <div class="pitem1">
                     <div class="title">Product</div>
+                    <img src="../../images/1.jpg" alt="" class="product-img">
                     <div class="body">
-                        Product
+                        <div class="product-price">5000.00</div>
+                        <div class="in-stock">In Stock</div>
+                        <button class="product-book-btn">Buy</button>
                     </div>
                 </div>
-                <div class="pitem2">
+                <div class="pitem1">
                     <div class="title">Product</div>
                     <div class="body">
                         Product
                     </div>
                 </div>
-                <div class="pitem3">
+                <div class="pitem1">
                     <div class="title">Product</div>
                     <div class="body">
                         Product
                     </div>
                 </div>
-                <div class="pitem4">
+                <div class="pitem1">
                     <div class="title">Product</div>
                     <div class="body">
                         Product
