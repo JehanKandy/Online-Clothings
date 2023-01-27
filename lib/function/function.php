@@ -193,6 +193,8 @@
                 $user_is_deactive_result = mysqli_query($con, $user_is_deactive);
                 $user_is_deactive_nor = mysqli_num_rows($user_is_deactive_result);
 
+                
+
                 if($user_is_deactive_nor != 0){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>User Error</strong> User Deactive..!
@@ -206,9 +208,13 @@
                 $user_is_access_result = mysqli_query($con, $user_is_access);
                 $user_is_access_nor = mysqli_num_rows($user_is_access_result);
                 
+                $access_tbl_data = "SELECT * FROM u_accsess_tbl WHERE username = '$username'";
+                $access_tbl_data_result = mysqli_query($con, $access_tbl_data);
+                $access_tbl_data_row = mysqli_fetch_assoc($access_tbl_data_result);
+
                 if($user_is_access_nor != 0){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Unauthorized Access </strong> You tried to access the admin Account, so Your account is suspended. 
+                            <strong>Unauthorized Access </strong> You tried to access the admin Account at, so Your account is suspended. 
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
