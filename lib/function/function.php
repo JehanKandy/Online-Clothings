@@ -174,7 +174,8 @@
             /* 
                 1st check the user is pending 
                 2nd check the user is deactive
-                3rd successfully login
+                3rd is user tring to access admin account - Unauthorized Access
+                4th user successfully login
             */
 
             // user pending check
