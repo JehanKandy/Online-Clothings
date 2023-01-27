@@ -2,7 +2,7 @@
 
 <div class="loged-nav-content">
     <div class="left-side">
-        Pearl Clothings - ADMIN
+        Pearl Clothings 
     </div>
     <div class="right-side">
         <a href="../views/logout.php"><button class="logout-btn"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</button></a>
