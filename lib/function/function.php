@@ -494,5 +494,11 @@
         $con = Connection();
 
         $nic = strval($_SESSION['LoginSession']);
+
+        $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $select_data_result = mysqli_query($con, $select_data);
+        $select_data_row = mysqli_fetch_assoc($select_data_result);
+
+        if($select_data_row[''])
     }
 ?>
