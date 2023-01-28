@@ -59,7 +59,8 @@
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
   - js/script.js (UPDATE)
-  - lib/
+  - lib
+  
   
 
  
