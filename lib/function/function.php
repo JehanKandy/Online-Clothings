@@ -506,4 +506,10 @@
             echo "<a href='user.php'><button class='product-nav-btn'><i class='fas fa-tachometer-alt'></i> &nbsp; To Dashboard</button></a>";
         }
     }
+
+    function user_data(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+    }
 ?>
