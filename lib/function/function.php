@@ -516,7 +516,15 @@
         $select_user_data_result = mysqli_query($con, $select_user_data);
         $user_row = mysqli_fetch_assoc($select_user_data_result);
 
-        $user_data = "";
+        $user_data = "
+            <table border='0'>
+                <tr>
+                    <td>NIC Number : </td>
+                    <td>".$user_row['nic_no']."</td>
+                </tr>
+            </table>
+        
+        ";
 
         echo $user_data;
     }
