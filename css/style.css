@@ -9,3 +9,751 @@
 
 */
 
+.main-footer{
+    padding: 80px 0 80px 0;
+    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.footer-title{
+    font-size: 40px;
+}
+.footer-hr{
+    border-top: 1px solid white;
+}
+.footer-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-bottom: 5px;
+}
+.fitem1{
+    grid-area: a;
+}
+.fitem2{
+    grid-area: b;
+}
+.fitem3{
+    grid-area: c;
+}
+.fitem4{
+    grid-area: d;
+}
+
+.fitem1, .fitem2, .fitem3, .fitem4, .title{
+    text-align: center;
+    font-size: 25px;
+}
+.fitem1 .body{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+.fitem2 .body, .fitem3 .body{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+}
+.fitem2 .body ul, .fitem3 .body ul{
+    list-style-type: none;
+}
+.fitem2 .body ul li, .fitem3 .body ul li{
+    margin-top: 10px;
+}
+.fitem2 .body ul li a, .fitem3 .body ul li a{
+    color: white;
+}
+.fitem4 .body{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 15px;
+}
+.copy{
+    text-align: center;
+}
+.nav-content{
+    width: 100%;
+    height: 80px;
+    background: -webkit-linear-gradient(rgba(7, 7, 7, 0.815), rgba(19, 18, 18, 0.815)), url(../images/5.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    border-bottom: 1px solid white;
+}
+.left-side{
+    padding-top: 25px;
+    font-size: 30px;
+}
+.right-side{
+    margin-left: 90%;
+    margin-top: -55px;
+}
+.login-nav-btn{
+    padding: 15px 30px 10px 30px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.login-nav-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.main-content{
+    width: 100%;
+    height: 80vh;
+    padding: 280px 0 300px 0;
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.main-content .title{
+    text-align: center;
+    font-size: 50px
+}
+.main-content .body{
+    text-align: center;
+    font-size: 20px;
+}
+.more-info{
+    margin-top: 20px;
+    padding: 12px 40px 10px 40px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background: transparent;
+    color: white;    
+    transition: 0.5s;
+}
+.more-info:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+.trending-content{
+    padding: 100px;
+    font-family: 'Overpass', sans-serif;
+}
+.trending-content .title{
+    font-size: 40px;
+    text-align: center;
+}
+.t-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d e f";
+    padding: 45 45 45 45;
+    margin-bottom: 5px;
+}
+.titem1{
+    grid-area: a;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtsOjpkLWEzNGC7nHJ1RhPt5KuBMZ1SVMrg7_Y0ozFA3LiGXRwUXNsT3RfJSKRe0kR1M&usqp=CAU);
+}
+.titem2{
+    grid-area: b;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQjtH-nSJNa4-pvi51lcgsWoOs-4b_ErMi7yXuO3TkzC2zuLmlmZifSPSxKaYOfz8wkI&usqp=CAU);
+}
+.titem3{
+    grid-area: c;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M4ppGMhkSBFqoSX7bXSYOLw3twuQS_OoJ_HAnTT9anaN6M4UiUOIW2SGBp1uBuhPrr4&usqp=CAU);
+}
+.titem4{
+    grid-area: d;
+    background-image: url(https://static01.nyt.com/images/2021/05/28/fashion/mens-style/28sp-gear-inyt1/oakImage-1621867392181-superJumbo.jpg);
+}
+.titem5{
+    grid-area: e;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2KLMKhWGFGFhHsDJEKiT6c7eIVxjsgcuRukhibU5imlE7WrJSKLex_7V_ffgAerPyZc&usqp=CAU);
+}
+.titem6{
+    grid-area: f;
+    background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ed291e67-4618-49ec-8dda-2c2221a5df41/revolution-6-next-nature-mens-road-running-shoes-FgfhgR.png);
+}
+.titem1, .titem2, .titem3, .titem4, .titem5, .titem6{
+    background-position: center;
+    background-size: cover;
+}
+.branches-content{
+    width: 100%;
+    height: 90vh;
+    padding: 60px 0 60px 0;
+    background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.branches-content .title{
+    font-size: 40px;
+    text-align: center;
+}
+.b-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b" "c d";
+    padding: 45 45 45 45;
+    margin-bottom: 5px;
+}
+.bitem1{
+    grid-area: a;
+    background-image: url(../images/cshop.jpg);
+    transition: 0.5s;
+}
+.bitem2{
+    grid-area: b;
+    background-image: url(../images/cshop1.jpg);
+}
+.bitem3{
+    grid-area: c;
+    background-image: url(../images/cshop2.jpg);
+}
+.bitem4{
+    grid-area: d;
+    background-image: url(../images/cshop3.jpg);
+}
+.bitem1, .bitem2, .bitem3, .bitem4{
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+}
+.bitem1 .text, .bitem2 .text, .bitem3 .text, .bitem4 .text{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.bitem1:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+.bitem2:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+.bitem3:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+.bitem4:hover .text{
+    color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.bitem1:hover{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bitem2:hover{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bitem3:hover{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bitem4:hover{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.get-in{
+    margin: 50px 500px 50px 500px;
+}
+.get-in .body{
+    margin: 50px 0 50px 0;
+}
+.from-body, .login-from{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.from-body input{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: black;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.login-from input{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.from-body span{
+    position: absolute;
+    color: black;
+    padding: 15px;
+    text-transform: uppercase;      
+    transition: 0.5s;  
+}
+.login-from span{
+    position: absolute;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;      
+    transition: 0.5s;  
+}
+
+.from-body input:valid ~ span,
+.from-body input:focus ~ span{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: orange;
+    letter-spacing: 1px;
+}
+
+.login-from input:valid ~ span,
+.login-from input:focus ~ span{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: orange;
+    letter-spacing: 1px;
+}
+
+.subs-btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.subs-btn:hover{
+    background-color: rgb(206, 142, 22);
+    cursor: pointer;
+}
+.developer-note{
+    padding: 100px;
+    font-family: 'Overpass', sans-serif;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/cshop3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.developer-note .title{
+    font-size: 30px;    
+}
+.developer-note .body{
+    background-color: white;
+    border: 1px solid white;
+    color: black;  
+    padding: 100px;  
+    text-align: center;
+}
+.developer-note .body .ceo-img{
+    width: 200px;
+    height: 150px;
+    border: 1px solid orange;
+    margin-top: 50px;
+}
+.ceo-name{
+    color: orange;
+    font-size: 30px;
+}
+.page-footer{
+    text-align: center;
+    height: 50px;
+    width: 100%;   
+    background-color: rgb(238, 238, 238); 
+    padding-top: 15px;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+.login-content, .forget-pass-content, .verify-content{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 85vh;    
+}
+.login-content .body , .waiting-content .body, .forget-pass-content .body, .verify-content .body{
+    background-color: rgb(37, 48, 56); 
+    margin: 50px;
+    padding: 50px 200px 50px 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.reg-content .body, .update-pass .body{
+    background-color: rgb(37, 48, 56);
+    padding: 50px 200px 50px 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.login-content .body .title, .reg-content .body .title, .waiting-content .body .title, .forget-pass-content .body .title, .verify-content .body .title, .update-pass .body .title{
+    margin-bottom: 50px;
+    color: white;
+}
+.login-btn{
+    width: 100%;
+    height: 50px;
+    background: wheat;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.login-btn:hover{
+    background-color: rgb(252, 197, 116);
+    color: black;
+    cursor: pointer;
+}
+.reg-content, .update-pass{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 100%;     
+}
+.waiting-content{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    height: 85vh;    
+}
+.waiting-hr{
+    border-top: 1px solid white;
+}
+.back-login{
+    width: 25%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(18, 74, 196);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.back-login:hover{
+    background-color: rgb(0, 54, 172);
+    cursor: pointer;
+}
+.waiting-content .body{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+ /* 
+    ***************************************************************************************
+
+                             commen laptop screen and small screens
+
+                                            769px - 1400px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
+    .main-content{
+        width: 100%;
+        height: 80vh;
+        padding: 200px 0 300px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop2.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+    }
+    .t-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(350px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a b c" "d e f";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .branches-content{
+        width: 100%;
+        height: 100vh;
+        padding: 60px 0 60px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+    }
+}
+
+/* 
+    ***************************************************************************************
+
+                                        iPads, Tablets
+
+                                        481px — 768px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
+    .footer-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a b" "c d";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .right-side{
+        margin-left: 85%;
+        margin-top: -55px;
+    }
+    .main-content{
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .t-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(350px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a b" "c d" "e f";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .b-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a b" "c d";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .branches-content{
+        width: 100%;
+        height: 80vh;
+        padding: 60px 0 60px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+    }
+    .get-in{
+        margin: 50px 200px 50px 200px;
+    }
+    .developer-note .body{
+        background-color: white;
+        border: 1px solid white;
+        color: black;  
+        padding: 50px;  
+        text-align: center;
+    }
+    .developer-note{
+        padding: 70px;
+    }
+    .login-content .body, .waiting-content .body, .forget-pass-content .body{
+        background-color: rgb(37, 48, 56);
+        margin: 130px 50px 50px 50px;
+        padding: 50px 60px 50px 60px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .waiting-content{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        height: 85vh;    
+    }
+    .back-login{
+        width: 50%;
+    }
+    .reg-content, .update-pass{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 50px 100px 50px;
+        height: 100%;    
+        width: 100%;
+    }
+}
+
+
+/* 
+    ***************************************************************************************
+
+                                     commen mobile screen
+
+                                            320x480
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .footer-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .fitem1 .body{
+        text-align: center;
+    }
+    .fitem4 .body{
+        margin-left: 20px;
+    }
+    .right-side{
+        margin-left: 70%;
+        margin-top: -55px;
+    }
+    .main-content{
+        padding: 250px 0 300px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/cshop.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .trending-content{
+        padding: 60px 10px 30px 10px;
+        font-family: 'Overpass', sans-serif;
+    }
+    .t-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(350px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .b-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 1rem;
+        grid-template-areas: "a" "b" "c" "d";
+        padding: 45 45 45 45;
+        margin-bottom: 5px;
+    }
+    .branches-content{
+        width: 100%;
+        height: 1300px;
+        padding: 60px 0 60px 0;
+        background: -webkit-linear-gradient(rgba(68, 68, 68, 0.815), rgba(19, 18, 18, 0.815)), url(../images/3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+    }
+    .get-in{
+        margin: 50px 20px 50px 20px;
+    }
+    .developer-note .body{
+        background-color: white;
+        border: 1px solid white;
+        color: black;  
+        padding: 10px;  
+        text-align: center;
+    }
+    .developer-note{
+        padding: 10px;
+    }
+    .login-content, .forget-pass-content{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+        height: 85vh;        
+    }
+    .login-content .body, .waiting-content .body, .forget-pass-content .body{
+        background-color: rgb(37, 48, 56);
+        margin: 130px 10px 50px 10px;
+        padding: 50px 20px 50px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .waiting-content {
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+        height: 85vh;    
+    }
+    .back-login{
+        width: 50%;
+    }
+    .reg-content, .update-pass{
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.452)), url(../images/1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 10px 100px 10px;
+        height: 115vh;    
+        width: 100%;
+    }
+    .reg-content .body, .update-pass .body{
+        background-color: rgb(37, 48, 56);
+        padding: 50px 20px 50px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+}
