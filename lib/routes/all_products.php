@@ -1,53 +1,42 @@
 <link rel="stylesheet" href="../../css/dashboard.css">
+<?php include("../function/function.php"); ?>
 <?php include("../layouts/header.php"); ?>
-<?php include("../layouts/product_nav.php"); ?>
+<?php include("../layouts/loged_nav.php"); ?>
 
-<div class="all-product-contant">
-    <div class="container">
-        <div class="title">All Prodcuts</div>
-        <div class="body">
-            <div class="product-grid">
-                <div class="pitem1">
-                    <div class="title">Product</div>
-                    <img src="../../images/1.jpg" alt="" class="product-img">
-                    <div class="body">
-                        <div class="product-price">5000.00</div>
-                        <div class="in-stock">In Stock</div>
-                        <a href=""><button class="product-book-btn">Buy</button></a>
-                    </div>
-                </div>
-                <div class="pitem1">
-                    <div class="title">Product</div>
-                    <img src="../../images/1.jpg" alt="" class="product-img">
-                    <div class="body">
-                        <div class="product-price">5000.00</div>
-                        <div class="in-stock">In Stock</div>
-                        <a href=""><button class="product-book-btn">Buy</button></a>
-                    </div>
-                </div>
-                <div class="pitem1">
-                    <div class="title">Product</div>
-                    <img src="../../images/1.jpg" alt="" class="product-img">
-                    <div class="body">
-                        <div class="product-price">5000.00</div>
-                        <div class="in-stock">In Stock</div>
-                        <a href=""><button class="product-book-btn">Buy</button></a>
-                    </div>
-                </div>
-                <div class="pitem1">
-                    <div class="title">Product</div>
-                    <img src="../../images/1.jpg" alt="" class="product-img">
-                    <div class="body">
-                        <div class="product-price">5000.00</div>
-                        <div class="in-stock">In Stock</div>
-                        <a href=""><button class="product-book-btn">Buy</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<?php 
+
+    if(empty($_SESSION['LoginSession'])){
+        header("location:../views/logout.php");
+    }
+    admin_access();
+
+?>
+
+<div class="app">
+	<div class="menu-toggle">
+		<div class="hamburger">
+			<span></span>
+		</div>
+	</div>
+
+	<aside class="sidebar">
+		<nav class="menu">
+			<?php //profile_img();?>
+			<p class="profile-name"><?php //user_id_loged();?></p>
+			<a href="admin.php" class="menu-item"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+			<a href="members.php" class="menu-item"><i class="fas fa-user-alt"></i>Members 
+			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin   
+			<a href="products.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  
+            <a href="plans.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  
+			<a href="my_account_admin.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
+		</nav>
+		
+	</aside>
+
+	<main class="content">
+		<h1>Admin, <?php ?> </h1>
+		<hr>
+		<?php user_data(); ?>
+	</main>
 </div>
 
-
-<?php include("../layouts/page_footer.php"); ?>
-<script src="../../js/script.js"></script>
