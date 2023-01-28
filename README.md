@@ -56,6 +56,7 @@
   - lib/layouts/product_nav.php 
   - lib/routes/all_products.php
   - lib/layouts/loged_nav.php
+  - lib/
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
   - js/script.js (UPDATE)
