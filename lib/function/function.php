@@ -520,7 +520,19 @@
             <table border='0'>
                 <tr>
                     <td>NIC Number : </td>
-                    <td>".$user_row['nic_no']."</td>
+                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['username']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
                 </tr>
             </table>
         
