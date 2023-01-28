@@ -61,6 +61,16 @@
   - css/dashboard.css (UPDATE)
   - js/script.js (UPDATE)
 
+  <h4> 27 January 2023</h4>
+  
+  - lib/layouts/product_nav.php 
+  - lib/routes/all_products.php
+  - lib/layouts/loged_nav.php
+  - lib/routes/my_account_admin.php
+  - lib/function/function.php (UPDATE)
+  - css/dashboard.css (UPDATE)
+  - js/script.js (UPDATE)
+
 
   
 
