@@ -70,7 +70,7 @@
   
   <h4> 29 January 2023</h4>
   
-  - lib/routes/edit_user
+  - lib/routes/edit_user.php
   - lib/routes/edit_user.php (RENAME) as edit_admin.php
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
