@@ -32,7 +32,7 @@
   - lib/views/login.php (UPDATE)
   - css/style.css (UPDATE)
   - lib/function/function.php (UPDATE)
-  - lib/
+  
    <h4> 22 January 2023</h4>
   
   - lib/views/forget_pass.php
