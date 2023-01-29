@@ -589,6 +589,10 @@
 
             $user_data .="
                 </tr>
+                <tr>
+                    <td>Join Date : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
+                </tr>
             </table>";
 
             if($user_row['user_type'] == "admin"){
