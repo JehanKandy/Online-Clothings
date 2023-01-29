@@ -591,7 +591,7 @@
                 </tr>
                 <tr>
                     <td>Join Date : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['join_date']."' disabled></td>
                 </tr>
             </table>";
 
