@@ -424,7 +424,8 @@
     transition: 0.5s;
 }
 .user-data-edit-btn:hover{
-
+    background-color: rgb(31, 102, 184);
+    cursor: pointer;
 }
 
 
