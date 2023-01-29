@@ -591,7 +591,7 @@
                 </tr>
             </table>
 
-            <a href='edit_user.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'>Edit Information</button></a>
+            <a href='edit_admin.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'> <i class='fas fa-user-edit'></i> Edit Information</button></a>
         
         ";
 
