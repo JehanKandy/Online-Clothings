@@ -69,7 +69,7 @@
   
   <h4> 29 January 2023</h4>
   
-  - lib/routes/
+  - lib/routes/edit_user
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
   
