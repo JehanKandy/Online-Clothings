@@ -590,6 +590,8 @@
             $user_data .="
                 </tr>
             </table>
+
+            <a href='edit_user.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'></button></a>
         
         ";
 
