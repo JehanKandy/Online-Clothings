@@ -439,6 +439,15 @@
 .pass-edit-btn{
     background-color: rgb(255, 50, 50);
 }
+.email-edit-btn{
+    background-color: rgb(255, 172, 19);
+    color: black;
+}
+
+.pass-edit-btn:hover{
+    background-color: rgb(216, 26, 26);
+    cursor: pointer;
+}
 
 .pass-edit-btn:hover{
     background-color: rgb(216, 26, 26);
