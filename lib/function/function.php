@@ -534,6 +534,10 @@
                     <td>First Name : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['fname']."' disabled></td>
                 </tr>
+                <tr>
+                    <td>Last Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
+                </tr>
             </table>
         
         ";
