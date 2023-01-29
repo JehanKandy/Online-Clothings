@@ -639,7 +639,10 @@
                 </tr>
                 <tr>
                     <td>Last Name : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' ></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' >
+                        <input type='radio' name='update_gender' value='Male'> Male
+                        <input type='radio' name='update_gender' value='Female'> Female
+                </td>
                 </tr>
                 <tr>
                     <td style='vertical-align:top; padding-top:10px;'>Address : </td>
