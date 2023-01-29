@@ -658,7 +658,7 @@
                 </tr>
                 <tr>
                     <td>Date Of Birth : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['dob']."'></td>
                 </tr>";
         echo $user_data;
     
