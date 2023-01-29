@@ -418,6 +418,9 @@
     padding: 10px 20px;
     width: 400px;
     border-radius: 5px;
+    background-color: rgb(33, 113, 204);
+    color: white;
+    border: none;
 }
 
 
