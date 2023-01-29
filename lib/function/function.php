@@ -562,6 +562,9 @@
                 if($user_row['user_type'] == "admin"){
                     $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>Admin</span></td>";              
                 }
+                elseif($user_row['user_type'] == "user"){
+                    $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>User</span></td>";              
+                }
 
 
                 $user_data .="
