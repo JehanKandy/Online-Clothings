@@ -577,9 +577,13 @@
             $user_data .="
                 </tr>
                 <tr>
-                    <td style='padding-top:20px;'>Active Status : </td>
-                           
-            ";    
+                    <td style='padding-top:20px;'>Active Status : </td>";
+                    
+                if($user_row['is_active'] == 1){
+                    $user_data .="<td style='padding-top:20px;'><span class='user_active_b'>Active User</span></td>";
+                }
+
+
             $user_data .="
                 </tr>
             </table>
