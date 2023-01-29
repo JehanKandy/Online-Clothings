@@ -34,7 +34,7 @@
 	</aside>
 
 	<main class="content">
-		<h1>Edit Admin, <?php ?> </h1>
+		<h1>Edit Admin,</h1>
 		<hr>
 		<?php //user_data(); ?>
 	</main>
