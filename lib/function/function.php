@@ -603,6 +603,7 @@
             }
             $user_data .="
                 <br><a href='pass_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
+                <br><a href='pass_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
             ";      
 
         echo $user_data;
@@ -616,5 +617,45 @@
         $select_user_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
         $select_user_data_result = mysqli_query($con, $select_user_data);
         $user_row = mysqli_fetch_assoc($select_user_data_result);
+
+
+        $user_data = "
+            <table border='0'>
+                <tr>
+                    <td>NIC Number : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['username']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>First Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['fname']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Last Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
+                </tr>
+                <tr>
+                    <td style='vertical-align:top; padding-top:10px;'>Address : </td>
+                    <td>
+                        <textarea class='input-area' disabled>".$user_row['address_user']."</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
+                </tr>";
+        echo $user_data;
+    
     }
 ?>
