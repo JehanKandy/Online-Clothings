@@ -384,7 +384,8 @@
 .user_type_b{
     border: none;
     background-color: orange;
-    color: white;
+    color: black;
+    padding: 5px 10px;
 }
  /* 
     ***************************************************************************************
