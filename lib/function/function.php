@@ -557,7 +557,7 @@
                     <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
                 </tr>
                 <tr>
-                    <td>User Type : </td>";
+                    <td  style='padding-top:10px;'>User Type : </td>";
 
                 if($user_row['user_type'] == "admin"){
                     $user_data .= "<td><span class='user_type_b'>Admin</span></td>";              
