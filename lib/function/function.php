@@ -539,8 +539,9 @@
                     <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
                 </tr>
                 <tr>
-                    <td>Address : </td>
+                    <td style='vertical-align:top;'>Address : </td>
                     <td>
+                        <textarea class='input-area'>jo</textarea>
                     </td>
                 </tr>
             </table>
