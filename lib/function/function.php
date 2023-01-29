@@ -575,8 +575,10 @@
                 }
 
             $user_data .="
-            
-            
+                </tr>
+                <tr>
+                    <td style='padding-top:20px;'>Active Status : </td>
+                </tr>            
             ";    
             $user_data .="
                 </tr>
