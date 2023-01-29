@@ -431,6 +431,9 @@
     margin-top: 20px;
     width: 400px;
     padding: 10px 20px;
+    color: white;
+    border: none;
+    transition: 0.5s;
 }
 
 
