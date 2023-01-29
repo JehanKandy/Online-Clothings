@@ -73,7 +73,7 @@
   - lib/routes/edit_user.php (RENAME) as edit_admin.php
   - lib/function/function.php (UPDATE)
   - css/dashboard.css (UPDATE)
-  - lib/routes/my_account_admin
+  - lib/routes/my_account_admin.php
   
 
  
