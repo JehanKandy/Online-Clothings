@@ -555,14 +555,16 @@
                 <tr>
                     <td>Date Of Birth : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
-                </tr>";
+                </tr>
+                <tr>";
 
                 if($user_row['user_type'] == "admin"){
-                    $user_data = "<h1>Admin</h1>";              
+                    $user_data .= "<h1>Admin</h1>";              
                 }
 
 
-                $user_data ="
+                $user_data .="
+                </tr>
             </table>
         
         ";
