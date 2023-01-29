@@ -531,8 +531,8 @@
                     <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
                 </tr>
                 <tr>
-                    <td>Email : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
+                    <td>First Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['fname']."' disabled></td>
                 </tr>
             </table>
         
