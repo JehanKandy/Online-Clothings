@@ -373,10 +373,11 @@
     margin-top: 10px;
 }
 .input-area{
-    height: 70px;
+    height: 100px;
     width: 250px;
     margin-left: 20px;
     margin-top: 10px;
+    resize: none;
 }
  /* 
     ***************************************************************************************
