@@ -603,7 +603,7 @@
             }
             $user_data .="
                 <br><a href='pass_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
-                <br><a href='email_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-at'></i> Update Email</button></a>
+                <br><a href='email_update.php?id=".$user_row['nic_no']."'><button class='email-edit-btn'><i class='fas fa-at'></i> Update Email</button></a>
             ";      
 
         echo $user_data;
