@@ -1,579 +1,586 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
+<?php 
+    include("config.php");
 
-/*
+    use FTP\Connection;
 
-    font-family: 'Merriweather Sans', sans-serif;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    session_start();
 
-*/
+    function subsctibe($email){
+        $con = Connection();
 
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        else{
 
+            $select_data = "SELECT * FROM subscribe_tbl WHERE sub_email = '$email'";
+            $select_data_result = mysqli_query($con, $select_data);
+            $select_data_nor = mysqli_num_rows($select_data_result);
 
-.product-nav-content{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(14, 28, 68);
-}
-.product-nav-content .left-side{
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    margin-top: -5px;
-}
-.product-nav-content .right-side{
-    margin-top: -35px;
-    margin-left: 90%;
-}
-.product-nav-content .right-side .product-nav-btn{
-    padding: 5px 10px;
-    width: 150px;
-    border: 2px solid white;
-    background: transparent;
-    transition: 0.5s;
-    border-radius: 2px;
-    color: white;
-}
-.product-nav-content .right-side .product-nav-btn:hover{
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
-.all-product-contant{
-    padding: 100px 0;
-    background-color: rgb(21, 19, 29);
-    color: white;
-}
-.all-product-contant .title{
-    font-size: 40px;
-    text-transform: uppercase;
-    padding-bottom: 50px;
-}
-.all-product-contant .body{
-    font-family: 'Merriweather Sans', sans-serif;
-}
-.product-grid{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(350px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d";
-    padding: 45 45 45 45;
-    margin-bottom: 5px;
-}
-.pitem1{
-    border: 2px solid rgb(156, 156, 156);
-    border-radius: 5px;
-    padding: 20px;
-}
-.pitem1 .title{
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-.pitem1 .product-img{
-    width: 200px;
-    height: auto;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.pitem1 .body .product-price{
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-}
-.pitem1 .body .in-stock{
-    color: green;
-    font-size: 14px;
-    font-weight: 700;
-    padding-bottom: 15px;
-}
-.pitem1 .body .product-book-btn{
-    width: 100%;
-    height: 40px;
-    background: transparent;
-    color: white;
-    transition: 0.5s;
-    border-radius: 2px;
-    border: 1px solid white;
-}
-.pitem1 .body .product-book-btn:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    font-weight: 600;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+            if($select_data_nor == 0){
+                $insert_data = "INSERT INTO subscribe_tbl(sub_email,is_subscribe,sub_date)VALUES('$email',1,NOW())";
+                $insert_data_resilt = mysqli_query($con, $insert_data);
 
-.app {
-    display: flex;
-    min-height: 100vh;
-}
-
-.menu-toggle {
-    display: none;
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 99px;
-    background-color: #464646;
-    cursor: pointer;
-}
-
-.hamburger {
-    position: relative;
-    top: calc(50% - 2px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 32px;
-}
-
-.hamburger>span,
-.hamburger>span::before,
-.hamburger>span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 99px;
-    background-color: #FFF;
-    transition-duration: .25s;
-}
-
-.hamburger>span::before {
-    content: '';
-    top: -8px;
-}
-
-.hamburger>span::after {
-    content: '';
-    top: 8px;
-}
-
-.menu-toggle.is-active .hamburger>span {
-    transform: rotate(45deg);
-}
-
-.menu-toggle.is-active .hamburger>span::before {
-    top: 0;
-    transform: rotate(0deg);
-}
-
-.menu-toggle.is-active .hamburger>span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-.sidebar {
-    flex: 1 1 0;
-    max-width: 300px;
-    padding: 2rem 1rem;
-    background-color: #313131;
-    border-top: 1px solid white;
-}
-
-.sidebar h3 {
-    color: #707793;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-}
-
-.sidebar .menu {
-    margin: 0 -1rem;
-}
-
-.sidebar .menu .menu-item {
-    display: block;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #FFF;
-    text-decoration: none;
-    transition: 0.2s linear;
-    font-size: 20px;
-}
-
-.sidebar .menu i {
-    margin-right: 15px;
-}
-
-.sidebar .menu .menu-item:hover {
-    background-color: white;
-    color: black;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 0 2px 4px 0 rgba(31, 21, 165, 0.678), 0 3px 10px 0 rgba(31, 21, 165, 0.678);
-}
-
-.sidebar .profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    margin-left: 80px;
-    margin-bottom: 20px;
-    border: 3px solid white;
-    align-items: center;
-}
-
-.sidebar .profile-name {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: -15%;
-}
-
-.admin-content {
-    z-index: -1;
-}
-
-.content {
-    flex: 1 1 0;
-    padding: 2rem;
-}
-
-.content h1 {
-    color: #3C3F58;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.content p {
-    color: #707793;
-}
-
-.admin-content {
-    margin-top: 15px
-}
-
-.admin-content .grid {
-    display: grid;
-    min-width: 100%;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d" "e f g h";
-}
-
-.admin-item1 {
-    grid-area: a;
-    height: 200px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    border: 1px solid rgb(29, 152, 235);
-    font-size: 25px;
-    color: rgb(29, 152, 235);
-    font-family: 'Bebas Neue', cursive;
-}
-
-.admin-item2 {
-    grid-area: b;
-    height: 200px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    border: 1px solid #50be50;
-    font-size: 25px;
-    color: #50be50;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.admin-item3 {
-    grid-area: c;
-    height: 200px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    border: 1px solid #f09712;
-    font-size: 25px;
-    color: #f09712;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.admin-hr {
-    border-top: 1px solid #f09712;
-}
-
-.admin-item4 {
-    grid-area: d;
-    height: 200px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    border: 1px solid #50be50;
-    font-size: 25px;
-    color: #50be50;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.qui-hr {
-    border-top: 1px solid #50be50;
-}
-
-.admin-title {
-    padding-top: 20px;
-    padding-left: 30px;
-}
-
-.admin-body {
-    text-align: center;
-    padding-top: 25px;
-    font-size: 30px;
-}
-.loged-nav-content{
-    width: 100%;
-    height: 70px;
-    padding: 0 50px;
-    background-color: #363636;
-    color: white;
-}
-
-.loged-nav-content .left-side{
-    padding-top: 20px;
-    font-size: 25px;
-}
-.loged-nav-content .right-side{
-    margin-left: 93%;
-    margin-top: -40px;
-}
-.logout-btn{
-    padding: 5px 10px;
-    width: 100px;
-    background: transparent;
-    border: 2px solid red;
-    color: red;
-    border-radius: 2px;
-    transition: 0.5s;
-}
-.logout-btn:hover{
-    background-color: red;
-    color: white;
-    cursor: pointer;
-}
-.input-feild{
-    height: 40px;
-    width: 250px;
-    margin-left: 20px;
-    padding-left: 10px;
-    border-radius: 2px;
-    border: 1px solid rgb(211, 211, 211);
-    margin-top: 10px;
-}
-.input-area{
-    height: 100px;
-    width: 250px;
-    margin-left: 20px;
-    margin-top: 10px;
-    resize: none;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 5px 10px;
-}
-.user_type_b{
-    border: none;
-    background-color: orange;
-    color: black;
-    padding: 5px 10px;
-    margin-left: 20px;
-}
-.user_pending_b{
-    border: none;
-    background-color: green;
-    color: white;
-    padding: 5px 10px;
-}
- /* 
-    ***************************************************************************************
-
-                             commen laptop screen and small screens
-
-                                            769px - 1400px
-
-    ***************************************************************************************
-*/
-
-@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
-    .menu-toggle {
-        display: block;
+                if(!$insert_data_resilt){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Cannot Process the Request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
+                else{
+                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Thank You </strong>For Subscribe Us..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
+            }
+            else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error</strong>You Already Subscribe..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
+        }
     }
-    .content {
-        padding-top: 8rem;
-    }
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        height: 100vh;
-        width: 100%;
-        max-width: 300px;
-        transition: 0.2s linear;
-    }
-    .sidebar.is-active {
-        left: 0;
-    }
-}
 
-/* 
-    ***************************************************************************************
+    function reg_user($nic, $username, $email, $pass, $cpass){
+        $con = Connection();
 
-                                        iPads, Tablets
+        if(empty($nic)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>NIC Error</strong>NIC Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Username Error</strong>Username Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong>Email Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($cpass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Confirm Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
 
-                                        481px — 768px
+        elseif($pass != $cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password not Match..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        else{
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+            $check_user_result = mysqli_query($con, $check_user);
+            $check_user_nor = mysqli_num_rows($check_user_result);
 
-    ***************************************************************************************
-*/
+            if($check_user_nor == 0){
+                $insert_data = "INSERT INTO user_tbl(nic_no,username,email,pass1,user_type,is_pending,is_active,join_date)VALUES('$nic','$username','$email','$pass','user',1,0,NOW())";
+                $insert_data_result = mysqli_query($con, $insert_data);
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
-    .product-nav-content .right-side{
-        margin-top: -35px;
-        margin-left: 80%;
+                if(!$insert_data_result){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Can not Process the Request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }elseif($insert_data_result){
+                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Successfull </strong>User Created Successfully <a href='login.php'>Login Here..!</a>
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
+
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error</strong>User Already Exists..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }
+        }
     }
-    .product-grid{
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(350px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d";
-        padding: 45 45 45 45;
-        margin-bottom: 5px;
+
+    function login_user($username, $pass){
+        $con = Connection();
+
+        $_SESSION['Username'] = $username;
+
+        if(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Username Error</strong>Username Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }else{
+            /* 
+                1st check the user is pending 
+                2nd check the user is deactive
+                3rd is user tring to access admin account - Unauthorized Access
+                4th user successfully login
+            */
+
+            // user pending check
+
+            $user_is_pending = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 1 && un_access = 0";
+            $user_is_pending_result = mysqli_query($con, $user_is_pending);
+            $user_is_pending_nor = mysqli_num_rows($user_is_pending_result);
+
+            if($user_is_pending_nor != 0){
+                header("location:waiting_user.php");
+            }
+            else{
+                // user deactive check
+                $user_is_deactive = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0 && un_access = 0";
+                $user_is_deactive_result = mysqli_query($con, $user_is_deactive);
+                $user_is_deactive_nor = mysqli_num_rows($user_is_deactive_result);
+
+                
+
+                if($user_is_deactive_nor != 0){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User Error</strong> User Deactive..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
+                
+                $user_is_access = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 0 && is_pending = 0 && un_access = 1";
+                $user_is_access_result = mysqli_query($con, $user_is_access);
+                $user_is_access_nor = mysqli_num_rows($user_is_access_result);
+                
+                $access_tbl_data = "SELECT * FROM u_accsess_tbl WHERE username = '$username'";
+                $access_tbl_data_result = mysqli_query($con, $access_tbl_data);
+                $access_tbl_data_row = mysqli_fetch_assoc($access_tbl_data_result);
+
+                $access_time = $access_tbl_data_row['access_time'];
+
+                if($user_is_access_nor != 0){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Unauthorized Access </strong> You tried to access the admin Account at ".$access_time.", so Your account is suspended. 
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }
+                
+                else{
+                    //user successfully login
+                    $user_is_login = "SELECT * FROM user_tbl WHERE username = '$username' && pass1 = '$pass' && is_active = 1 && is_pending = 0";
+                    $user_is_login_result = mysqli_query($con, $user_is_login);
+                    $user_is_login_nor = mysqli_num_rows($user_is_login_result);    
+                    $user_is_login_row = mysqli_fetch_assoc($user_is_login_result);       
+                    
+                    if($user_is_login_nor > 0){
+                        if($user_is_login_row['user_type'] == "user"){
+                            setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
+                            header("location:../routes/all_products.php");
+                        }if($user_is_login_row['user_type'] == "admin"){
+                            setcookie('login',$user_is_login_row['nic_no'],time()+60*60,'/');
+                            $_SESSION['LoginSession'] = $user_is_login_row['nic_no'];
+                            header("location:../routes/admin.php");
+                        }
+                    }elseif($user_is_login_nor == 0){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>User Error</strong> User Doesn't Exists..!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                        </div>"; 
+                    }
+                }
+            } 
+        }
     }
-    .pitem1 .product-img{
-        width: 250px;
-        height: auto;
-        border: 1px solid white;
-        border-radius: 5px;
-        margin-bottom: 10px;
+
+    function waiting_user(){
+        $con = Connection();
+        $username = strval($_SESSION['Username']);
+
+        echo $username;
     }
-    .menu-toggle {
-        display: block;
+
+    function request_otp($nic, $email){
+        $con = Connection();
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong>Email Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif(empty($nic)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>NIC Error</strong>NIC Cannot be empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+
+        else{
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+            $check_user_result = mysqli_query($con, $check_user);
+            $check_user_nor = mysqli_num_rows($check_user_result);
+            $check_user_row = mysqli_fetch_assoc($check_user_result);
+
+            if($check_user_nor > 0){
+                $check_otp_user = "SELECT * FROM pass_reset_tbl WHERE nic_no = '$nic'";
+                $check_otp_user_result = mysqli_query($con, $check_otp_user);
+                $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
+                
+                if($check_otp_user_nor == 0){
+                    /**
+                     * Get the OTP number as random number between 10000 and 99999
+                     * 
+                     */
+                    $otp_number = rand(10000,99999);
+                    $enc_otp = md5($otp_number);
+
+                    $recever = $email;
+                    $subject = "Password Reset";
+                    $body = "OTP For Resent Password";
+                    $body .= " use the OTP to update Password : " .$otp_number;
+                    $sender = "From:jehankandy@gmail.com";
+
+                    if(mail($recever,$subject,$body,$sender)){
+                        $insert_data = "INSERT INTO pass_reset_tbl(nic_no,email,otp_no,get_date)VALUES('$nic','$email','$enc_otp',NOW())";
+                        $insert_data_result = mysqli_query($con, $insert_data);
+
+                        if(!$insert_data_result){
+                            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <strong>Process Error</strong>Cannot Process the Request..!
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                    </button>
+                            </div>";
+                        }
+                        elseif($insert_data_result){
+                            setcookie('Otp',$check_user_row['nic_no'],time()+60*5,'/');
+                            $_SESSION['OTP'] = $check_user_row['nic_no'];
+                            header("location:verify_otp.php"); 
+                        }
+                    }
+                    else{
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Cannot send the OTP..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                    }                    
+
+                }else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error</strong>Can not Process the Request..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+                }
+
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>User Error</strong> User Doesn't Exists..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+            }
+        }
     }
-    .content {
-        padding-top: 8rem;
-    }
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        height: 100vh;
-        width: 100%;
-        max-width: 300px;
-        transition: 0.2s linear;
-    }
-    .sidebar.is-active {
-        left: 0;
-    }
-    .admin-content .grid {
-        display: grid;
-        min-width: 80%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(50px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d" "e f" "g h";
-    }
-    .admin-item1,
-    .admin-item2,
-    .admin-item3,
-    .admin-item4,
-    .admin-item5,
-    .admin-item6,
-    .admin-item7,
-    .admin-item8 {
-        width: 300px;
-    }
-    .loged-nav-content .right-side{
-        margin-left: 90%;
-        margin-top: -40px;
+
+    function check_otp($otp_no){
+        $con = Connection();
+        $nic_no = strval($_SESSION['OTP']);
+
+        $check_otp = "SELECT * FROM pass_reset_tbl WHERE nic_no = '$nic_no'";
+        $check_otp_result = mysqli_query($con, $check_otp);
+        $check_otp_nor = mysqli_num_rows($check_otp_result);
+        $check_otp_row = mysqli_fetch_assoc($check_otp_result);
+
+        if($check_otp_nor > 0){
+            if($otp_no == $check_otp_row['otp_no']){
+                header("location:update_pass.php");
+            }elseif($otp_no != $check_otp_row['otp_no']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error</strong>Can not Process the Request..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+            }
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                <strong>User Error</strong> User Doesn't Exists..!
+                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                <span aria-hidden='true'>&times;</span>
+                </button>
+        </div>"; 
+        }        
     }
     
-}
+    function update_pass($nic, $email, $pass, $cpass){
+        $con = Connection();
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Invalied Email Format..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        elseif($pass != $cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong>Password not Match..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
+        else{
+            $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+            $check_user_result = mysqli_query($con, $check_user);
+            $check_user_nor = mysqli_num_rows($check_user_result);
+            $check_user_row = mysqli_fetch_assoc($check_user_result);
 
-/* 
-    ***************************************************************************************
+            if($check_user_nor > 0){
+                if($email == $check_user_row['email']){
+                    $update_data = "UPDATE user_tbl SET pass1 = '$pass' WHERE nic_no = '$nic' && email = '$email'";
+                    $update_data_result = mysqli_query($con, $update_data);
+                    
+                    if(!$update_data_result){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Can not Process the Request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                    }elseif($update_data_result){
+                        $delete_otp = "DELETE FROM pass_reset_tbl WHERE nic_no = '$nic'";
+                        $delete_otp_result = mysqli_query($con, $delete_otp);
+                        header("location:logout.php");
+                    }
+                }elseif($email != $check_user_row['email']){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error</strong> Email Cannot Find...!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
+                }
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error</strong> User Doesn't Exists..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
+            }
 
-                                     commen mobile screen
+        }
+    }
 
-                                            320x480
+    function user_access(){
+        $con = Connection();
 
-    ***************************************************************************************
-*/
+        $nic = strval($_SESSION['LoginSession']);
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .product-nav-content .right-side{
-        margin-top: -35px;
-        margin-left: 58%;
+        $check_roll = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_roll_result = mysqli_query($con, $check_roll);
+        $check_roll_row = mysqli_fetch_assoc($check_roll_result);
+
+        if($check_roll_row['user_type'] != "user"){
+            header("location:../views/logout.php");
+        }
     }
-    .product-grid{
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(350px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b" "c" "d";
-        padding: 45 45 45 45;
-        margin-bottom: 5px;
+
+    function admin_access(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $check_roll = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_roll_result = mysqli_query($con, $check_roll);
+        $check_roll_row = mysqli_fetch_assoc($check_roll_result);
+
+        if($check_roll_row['user_type'] != "admin"){
+            $update_user = "UPDATE user_tbl SET is_active = 0, un_access = 1 WHERE nic_no = '$nic'";
+            $update_user_result = mysqli_query($con, $update_user);
+
+            $email = $check_roll_row['email'];
+            $username = $check_roll_row['username'];
+
+            $desc = "Tyring to Access Admin Account";
+
+            $insert_data = "INSERT INTO u_accsess_tbl(nic_no,username,email,decs1,access_time)VALUES('$nic','$username','$email','$desc',NOW())";
+            $insert_data_result = mysqli_query($con, $insert_data);
+            
+            header("location:../views/logout.php");
+        }
     }
-    .pitem1 .product-img{
-        width: 210px;
-        height: auto;
-        border: 1px solid white;
-        border-radius: 5px;
-        margin-bottom: 10px;
+
+    function to_dashboard(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $select_data_result = mysqli_query($con, $select_data);
+        $select_data_row = mysqli_fetch_assoc($select_data_result);
+
+        if($select_data_row['user_type'] == "admin"){
+            echo "<a href='admin.php'><button class='product-nav-btn'><i class='fas fa-tachometer-alt'></i> &nbsp; To Dashboard</button></a>";
+        }
+        elseif($select_data_row['user_type'] == "user"){
+            echo "<a href='user.php'><button class='product-nav-btn'><i class='fas fa-tachometer-alt'></i> &nbsp; To Dashboard</button></a>";
+        }
     }
-    .menu-toggle {
-        display: block;
+
+    function user_data(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $select_user_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $select_user_data_result = mysqli_query($con, $select_user_data);
+        $user_row = mysqli_fetch_assoc($select_user_data_result);
+
+        $user_data = "
+            <table border='0'>
+                <tr>
+                    <td>NIC Number : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['username']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>First Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['fname']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Last Name : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
+                </tr>
+                <tr>
+                    <td style='vertical-align:top; padding-top:10px;'>Address : </td>
+                    <td>
+                        <textarea class='input-area' disabled>".$user_row['address_user']."</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
+                </tr>
+                <tr>
+                    <td style='padding-top:10px;'>User Type : </td>";
+
+                if($user_row['user_type'] == "admin"){
+                    $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>Admin</span></td>";              
+                }
+                elseif($user_row['user_type'] == "user"){
+                    $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>User</span></td>";              
+                }               
+
+            $user_data .="
+                </tr>
+                <tr>
+                    <td style='padding-top:20px;'>Pending Status : </td>";
+
+                if($user_row['is_pending'] == 1){
+                    $user_data .="<td style='padding-top:10px;'><span class='user_pending_b'>Active</span></td>";
+                }
+                elseif($user_row['is_pending'] == 0){
+
+                }
+
+
+                $user_data .="
+                </tr>
+            </table>
+        
+        ";
+
+        echo $user_data;
     }
-    .content {
-        padding-top: 8rem;
-    }
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        height: 100%;
-        width: 100%;
-        max-width: 300px;
-        transition: 0.2s linear;
-    }
-    .sidebar.is-active {
-        left: 0;
-    }
-    .admin-content .grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(50px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h";
-    }
-    .admin-item1,
-    .admin-item2,
-    .admin-item3,
-    .admin-item4,
-    .admin-item5,
-    .admin-item6,
-    .admin-item7,
-    .admin-item8 {
-        width: 300px;
-    }  
-    .loged-nav-content .right-side{
-        margin-left: 79%;
-        margin-top: -40px;
-    }  
-}
+?>
