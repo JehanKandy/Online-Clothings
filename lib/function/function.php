@@ -553,7 +553,7 @@
                     <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
                 </tr>
                 <tr>
-                    <td  style='padding-top:10px;'>User Type : </td>";
+                    <td style='padding-top:10px;'>User Type : </td>";
 
                 if($user_row['user_type'] == "admin"){
                     $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>Admin</span></td>";              
@@ -565,7 +565,7 @@
             $user_data .="
                 </tr>
                 <tr>
-                    <td>Pending Status : </td>
+                    <td style='padding-top:20px;'>Pending Status : </td>
 
                 
             ";
