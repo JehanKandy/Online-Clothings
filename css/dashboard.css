@@ -427,7 +427,7 @@
     background-color: rgb(31, 102, 184);
     cursor: pointer;
 }
-.pass-edit-btn{
+.pass-edit-btn, .email-edit-btn{
     margin-top: 20px;
     width: 400px;
     padding: 10px 20px;
