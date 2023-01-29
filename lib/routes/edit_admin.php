@@ -36,6 +36,7 @@
 	<main class="content">
 		<h1>Edit Admin,</h1>
 		<hr>
+		<a href="my_account_admin.php"><button class="btn btn-primary">Back</button></a>
 		<?php //user_data(); ?>
 	</main>
 </div>
