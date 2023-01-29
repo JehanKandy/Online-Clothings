@@ -437,7 +437,10 @@
     background-color: rgb(255, 50, 50);
     border-radius: 5px;
 }
-
+.pass-edit-btn:hover{
+    background-color: rgb(216, 26, 26);
+    cursor: pointer;
+}
 
  /* 
     ***************************************************************************************
