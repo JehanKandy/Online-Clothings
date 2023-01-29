@@ -549,8 +549,8 @@
                     <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
                 </tr>
                 <tr>
-                    <td>Gender : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
+                    <td>Date Of Birth : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['dob']."' disabled></td>
                 </tr>
             </table>
         
