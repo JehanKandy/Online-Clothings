@@ -574,8 +574,11 @@
                     $user_data .="<td style='padding-top:20px;'><span class='user_not_pending_b'>Active User</span></td>";
                 }
 
-
-                $user_data .="
+            $user_data .="
+            
+            
+            ";    
+            $user_data .="
                 </tr>
             </table>
         
