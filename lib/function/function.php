@@ -645,7 +645,7 @@
                 <tr>
                     <td style='vertical-align:top; padding-top:10px;'>Address : </td>
                     <td>
-                        <textarea class='input-area' >".$user_row['address_user']."</textarea>
+                        <textarea class='input-area' name='user_address'>".$user_row['address_user']."</textarea>
                     </td>
                 </tr>
                 <tr>
