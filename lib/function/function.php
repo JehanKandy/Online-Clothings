@@ -1,7 +1,6 @@
 <?php 
     include("config.php");
 
-
     use FTP\Connection;
 
     session_start();
@@ -569,10 +568,10 @@
                     <td style='padding-top:20px;'>Pending Status : </td>";
 
                 if($user_row['is_pending'] == 1){
-                    $user_data .="<td style='padding-top:10px;'><span class='user_pending_b'>Pending</span></td>";
+                    $user_data .="<td style='padding-top:20px; padding-left:20px;'><span class='user_pending_b'>Pending</span></td>";
                 }
                 elseif($user_row['is_pending'] == 0){
-                    $user_data .="<td style='padding-top:10px;'><span class='user_not_pending_b'>Active</span></td>";
+                    $user_data .="<td style='padding-top:20px;'><span class='user_not_pending_b'>Active</span></td>";
                 }
 
 
