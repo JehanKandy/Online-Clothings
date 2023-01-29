@@ -569,11 +569,13 @@
             $user_data .="
                 </tr>
                 <tr>
+                    <td>Pending Status : </td>
 
-                </tr>
+                
             ";
 
                 $user_data .="
+                </tr>
             </table>
         
         ";
