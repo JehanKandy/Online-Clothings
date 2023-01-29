@@ -405,6 +405,14 @@
     border-radius: 2px;
     margin-left: 20px;
 }
+.user_deactive_b{
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-left: 20px; 
+}
  /* 
     ***************************************************************************************
 
