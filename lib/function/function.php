@@ -568,7 +568,7 @@
                     <td style='padding-top:20px;'>Pending Status : </td>";
 
                 if($user_data['is_pending'] == 1){
-                    $user_data .="";
+                    $user_data .="<td style='padding-top:10px;'><span class='user_active_b'>Active</span></td>";
                 }
                 elseif($user_data['is_pending'] == 0){
 
