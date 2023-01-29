@@ -39,3 +39,5 @@
 		<?php user_data(); ?>
 	</main>
 </div>
+
+<script src="../../js/script.js"></script>
