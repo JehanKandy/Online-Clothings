@@ -560,7 +560,7 @@
                     <td  style='padding-top:10px;'>User Type : </td>";
 
                 if($user_row['user_type'] == "admin"){
-                    $user_data .= "<td><span class='user_type_b'>Admin</span></td>";              
+                    $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>Admin</span></td>";              
                 }
 
 
