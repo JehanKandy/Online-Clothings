@@ -544,6 +544,10 @@
                         <textarea class='input-area' disabled>".$user_row['address_user']."</textarea>
                     </td>
                 </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
+                </tr>
             </table>
         
         ";
