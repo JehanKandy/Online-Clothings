@@ -41,3 +41,4 @@
 	</main>
 </div>
 
+<?php include("../layouts/page_footer.php"); ?>
