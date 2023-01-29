@@ -565,10 +565,15 @@
             $user_data .="
                 </tr>
                 <tr>
-                    <td style='padding-top:20px;'>Pending Status : </td>
+                    <td style='padding-top:20px;'>Pending Status : </td>";
 
-                
-            ";
+                if($user_data['is_pending'] == 1){
+
+                }
+                elseif($user_data['is_pending'] == 0){
+                    
+                }
+
 
                 $user_data .="
                 </tr>
