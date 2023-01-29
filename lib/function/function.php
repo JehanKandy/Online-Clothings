@@ -559,7 +559,7 @@
                 <tr>";
 
                 if($user_row['user_type'] == "admin"){
-                    $user_data .= "<h1>Admin</h1>";              
+                    $user_data .= "<td><h1>Admin</h1></td>";              
                 }
 
 
