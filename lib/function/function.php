@@ -595,14 +595,8 @@
                 $user_data .= " <a href='edit_admin.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'> <i class='fas fa-user-edit'></i> Edit Information</button></a>";
             }
             elseif($user_row['user_type'] == "user"){
-                
-            }
-
-            
-
-           
-        
-        
+                $user_data .= " <a href='edit_user.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'> <i class='fas fa-user-edit'></i> Edit Information</button></a>";
+            }      
 
         echo $user_data;
     }
