@@ -640,7 +640,8 @@
                 <tr>
                     <td>Last Name : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['lname']."' >
-                        <input type='radio' name='update_gender' value='Male'> Male
+                        <br>
+                        <input type='radio' name='update_gender' value='Male' style='margin-left:20px; margin-top:10px'> Male
                         <input type='radio' name='update_gender' value='Female'> Female
                 </td>
                 </tr>
