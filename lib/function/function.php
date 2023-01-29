@@ -627,7 +627,7 @@
                 </tr>
                 <tr>
                     <td>Username : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['username']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['username']."' ></td>
                 </tr>
                 <tr>
                     <td>Email : </td>
@@ -635,16 +635,16 @@
                 </tr>
                 <tr>
                     <td>First Name : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['fname']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['fname']."' ></td>
                 </tr>
                 <tr>
                     <td>Last Name : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['lname']."' ></td>
                 </tr>
                 <tr>
                     <td style='vertical-align:top; padding-top:10px;'>Address : </td>
                     <td>
-                        <textarea class='input-area' disabled>".$user_row['address_user']."</textarea>
+                        <textarea class='input-area' >".$user_row['address_user']."</textarea>
                     </td>
                 </tr>
                 <tr>
