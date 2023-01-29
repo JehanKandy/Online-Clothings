@@ -568,10 +568,10 @@
                     <td style='padding-top:20px;'>Pending Status : </td>";
 
                 if($user_data['is_pending'] == 1){
-
+                    $user_data .="";
                 }
                 elseif($user_data['is_pending'] == 0){
-                    
+
                 }
 
 
