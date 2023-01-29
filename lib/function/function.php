@@ -600,7 +600,10 @@
             }
             elseif($user_row['user_type'] == "user"){
                 $user_data .= " <a href='edit_user.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'> <i class='fas fa-user-edit'></i> Edit Information</button></a>";
-            }      
+            }
+            $user_data .="
+                <a href='pass_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'>Update Password</button></a>
+            ";      
 
         echo $user_data;
     }
