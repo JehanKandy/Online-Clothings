@@ -435,6 +435,7 @@
     border: none;
     transition: 0.5s;
     background-color: rgb(255, 50, 50);
+    border-radius: 5px;
 }
 
 
