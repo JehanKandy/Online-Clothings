@@ -421,6 +421,10 @@
     background-color: rgb(43, 137, 245);
     color: white;
     border: none;
+    transition: 0.5s;
+}
+.user-data-edit-btn:hover{
+
 }
 
 
