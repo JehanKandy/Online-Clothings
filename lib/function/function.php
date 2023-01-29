@@ -538,6 +538,11 @@
                     <td>Last Name : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['lname']."' disabled></td>
                 </tr>
+                <tr>
+                    <td>Address : </td>
+                    <td>
+                    </td>
+                </tr>
             </table>
         
         ";
