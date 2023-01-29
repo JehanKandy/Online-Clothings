@@ -659,7 +659,7 @@
                 <tr>
                     <td>Date Of Birth : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['dob']."'>
-                        <p style='color:red;'></p>
+                        <p style='color:red;'>use this date formart to enter Date of Birth ()</p>
                     </td>
                 </tr>";
         echo $user_data;
