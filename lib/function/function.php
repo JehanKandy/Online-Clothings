@@ -640,9 +640,6 @@
                 <tr>
                     <td>Last Name : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['lname']."' >
-                        <br>
-                        <input type='radio' name='update_gender' value='Male' style='margin-left:20px; margin-top:10px'> Male
-                        <input type='radio' name='update_gender' value='Female'> Female
                 </td>
                 </tr>
                 <tr>
@@ -653,7 +650,11 @@
                 </tr>
                 <tr>
                     <td>Gender : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled>
+                        <br>
+                        <input type='radio' name='update_gender' value='Male' style='margin-left:20px; margin-top:10px'> Male
+                        <input type='radio' name='update_gender' value='Female'> Female
+                    </td>
                 </tr>
                 <tr>
                     <td>Date Of Birth : </td>
