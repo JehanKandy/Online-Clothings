@@ -712,5 +712,6 @@
         $con = Connection();
 
         $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $select_data_result = mysqli_query($con, $select_data);
     }
 ?>
