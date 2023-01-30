@@ -453,8 +453,8 @@
     background-color: rgb(197, 132, 11);
     cursor: pointer;
 }
-.edit-btn{
-    width: 25%;
+.edit-data-btn{
+    margin-top: 20px;
 }
  /* 
     ***************************************************************************************
