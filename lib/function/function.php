@@ -727,9 +727,9 @@
                 if($nic == $select_data_row['nic_no']){
 
                 }elseif($nic != $select_data_row['nic_no']){
-                    
+
                 }
-            }else{
+            }elseif($username == $alredy_row['username']){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Username Error</strong>Username Already have in Databae..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
