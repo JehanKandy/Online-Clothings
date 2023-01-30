@@ -709,8 +709,9 @@
         echo $user_data;    
     }
 
-    function user_edit($nic,$username,$fn,$ln,$address_user,$gender,$dob){
+    function user_edit($username,$fn,$ln,$address_user,$gender,$dob){
         $con = Connection();
+        $nic = strval($_SESSION['LoginSession']);
 
         $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
         $select_data_result = mysqli_query($con, $select_data);
@@ -719,12 +720,12 @@
 
         //check user edit values are already in the table
 
-        $select_already_data = "SELECT * FROM user_tbl";
+        $select_already_data = "SELECT username FROM user_tbl";
         $select_already_data_result = mysqli_query($con, $select_already_data);
         $alredy_row = mysqli_fetch_assoc($select_already_data_result);
 
         if($select_data_nor != 0){
-            if($username != $alredy_row['username']){
+            
                 if($nic == $select_data_row['nic_no']){
                     $update_data = "UPDATE user_tbl SET username = '$username', fname = '$fn', lname = '$ln', address_user = '$address_user', gender = '$gender', dob = '$dob' WHERE nic_no = '$nic'";
                     $update_data_result = mysqli_query($con, $update_data);
@@ -749,14 +750,7 @@
                             </button>
                     </div>";
                 }
-            }elseif($username == $alredy_row['username']){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Username Error</strong>Username Already have in Databae..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>";
-            }
+           
         }
         elseif($select_data_nor == 0){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
