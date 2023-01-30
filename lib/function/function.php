@@ -723,7 +723,16 @@
         $alredy_row = mysqli_fetch_assoc($select_already_data_result);
 
         if($select_data_nor != 0){
-            
+            if($username != $alredy_row['username']){
+
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error</strong>Can not Process the Request..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+            }
         }
         elseif($select_data_nor == 0){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
