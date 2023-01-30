@@ -724,7 +724,11 @@
 
         if($select_data_nor != 0){
             if($username != $alredy_row['username']){
+                if($nic == $select_data_row['nic_no']){
 
+                }elseif($nic != $select_data_row['nic_no']){
+                    
+                }
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Username Error</strong>Username Already have in Databae..!
