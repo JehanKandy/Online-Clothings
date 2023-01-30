@@ -621,11 +621,10 @@
 
         $user_data = "
             <table border='0'>
-            <form action='' method='POST'>
+            <form action='' method='post'>
                 <tr>
                     <td>NIC Number : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled>
-                    <input type='hidden' name='nic_no' value='".$user_row['nic_no']."'>
+                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled>                    
                     </td>
                 </tr>
                 <tr>
