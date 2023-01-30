@@ -80,7 +80,7 @@
   
   - css/dashboard.css (UPDATE)
   - lib/function/function.php (UPDATE)
-  - lib/routes/edit_admin
+  - lib/routes/edit_admin.php 
 
  
 
