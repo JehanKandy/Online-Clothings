@@ -698,8 +698,11 @@
                     }
                 
                 $user_data .="
-                    <input type='submit' name='edit_user' value='Update Data' class='btn btn-success'>
-                
+                    </tr>
+
+                    <tr>
+                        <td colspan='2'><input type='submit' name='edit_user' value='Update Data' class='btn btn-success'></td>
+                    </tr>
                 </form>
                 ";
         echo $user_data;
