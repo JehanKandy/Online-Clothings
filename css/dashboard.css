@@ -430,7 +430,7 @@
 .pass-edit-btn, .email-edit-btn{
     margin-top: 20px;
     width: 400px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: white;
     border: none;
     transition: 0.5s;
@@ -638,7 +638,7 @@
     }  
     .input-feild{
         height: 40px;
-        width: 200px;
+        width: 100px;
         margin-left: 0;
         padding-left: 10px;
         border-radius: 2px;
@@ -647,7 +647,7 @@
     }
     .input-area{
         height: 100px;
-        width: 200px;
+        width: 100px;
         margin-left: 0;
         margin-top: 10px;
         resize: none;
