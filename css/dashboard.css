@@ -461,6 +461,7 @@
     border: none;
     background-color: rgb(16, 156, 16);
     color: white;
+    transition: 0.5s;
 }
 .edit-data-btn:hover{
     background-color: rgb(11, 121, 11);
