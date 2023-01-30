@@ -698,7 +698,7 @@
                     }
                 
                 $user_data .="
-                
+                    <input type='submit' name='edit_user' value='Update Data' class='btn btn-success'>
                 
                 </form>
                 ";
