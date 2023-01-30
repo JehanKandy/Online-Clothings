@@ -654,4 +654,13 @@
         border: 1px solid rgb(211, 211, 211);
         padding: 5px 10px;
     }
+    .pass-edit-btn, .email-edit-btn{
+        margin-top: 20px;
+        width: 400px;
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
 }
