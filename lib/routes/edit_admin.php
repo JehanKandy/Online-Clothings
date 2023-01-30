@@ -40,7 +40,7 @@
 
 		<?php 
 			if(isset($_POST['edit_user'])){
-				$result = user_edit($_POST['nic_num'],$_POST['username'],$_POST['email'],$_POST['fn'],$_POST['ln'],$_POST['user_address'],$_POST['update_gender'],$_POST['date_birth']);
+				$result = user_edit($_POST['nic_num'],$_POST['username'],$_POST['fn'],$_POST['ln'],$_POST['user_address'],$_POST['update_gender'],$_POST['date_birth']);
 				echo $result;
 			}
 		
