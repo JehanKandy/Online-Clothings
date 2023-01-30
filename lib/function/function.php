@@ -727,7 +727,12 @@
                 if($nic == $select_data_row['nic_no']){
 
                 }elseif($nic != $select_data_row['nic_no']){
-
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Can not Process the Request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
                 }
             }elseif($username == $alredy_row['username']){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
