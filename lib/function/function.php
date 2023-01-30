@@ -701,7 +701,7 @@
                     </tr>
 
                     <tr>
-                        <td colspan='2'><input type='submit' name='edit_user' value='Update Data' class='btn btn-success'></td>
+                        <td colspan='2'><input type='submit' name='edit_user' value='Update Data' class='edit-data-btn'></td>
                     </tr>
                 </form>
                 ";
