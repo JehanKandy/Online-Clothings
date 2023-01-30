@@ -705,7 +705,10 @@
                     </tr>
                 </form>
                 ";
-        echo $user_data;
-    
+        echo $user_data;    
+    }
+
+    function user_edit($nic,$username,$email,$fn,$ln,$address_user,$gender,$dob){
+        $con = Connection();
     }
 ?>
