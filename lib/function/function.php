@@ -621,6 +621,7 @@
 
         $user_data = "
             <table border='0'>
+            <form action='' method='POST'>
                 <tr>
                     <td>NIC Number : </td>
                     <td><input type='text' name='nic_num' class='input-feild' value='".$user_row['nic_no']."' disabled></td>
@@ -695,7 +696,12 @@
                     elseif($user_row['is_active'] == 0){
                         $user_data .="<td style='padding-top:20px;'><span class='user_deactive_b'>Deactive User</span></td>";
                     }
-
+                
+                $user_data .="
+                
+                
+                </form>
+                ";
         echo $user_data;
     
     }
