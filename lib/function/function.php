@@ -671,6 +671,20 @@
                     elseif($user_row['user_type'] == "user"){
                         $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>User</span></td>";              
                     }     
+
+                $user_data .="
+                    </tr>
+                    <tr>
+                        <td style='padding-top:20px;'>Pending Status : </td>";
+    
+                    if($user_row['is_pending'] == 1){
+                        $user_data .="<td style='padding-top:20px;'><span class='user_pending_b'>Pending User</span></td>";
+                    }
+                    elseif($user_row['is_pending'] == 0){
+                        $user_data .="<td style='padding-top:20px;'><span class='user_not_pending_b'>Active User</span></td>";
+                    }    
+
+                    
         echo $user_data;
     
     }
