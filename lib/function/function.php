@@ -625,7 +625,7 @@
                 <tr>
                     <td>NIC Number : </td>
                     <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled>
-                    <input type='hidden' name='nic_no' class='input-feild' value='".$user_row['nic_no']."' disabled>
+                    <input type='hidden' name='nic_no' value='".$user_row['nic_no']."'>
                     </td>
                 </tr>
                 <tr>
@@ -720,7 +720,7 @@
 
         //check user edit values are already in the table
 
-        $select_already_data = "SELECT * FORM user_tbl";
+        $select_already_data = "SELECT * FROM user_tbl";
         $select_already_data_result = mysqli_query($con, $select_already_data);
         $alredy_row = mysqli_fetch_assoc($select_already_data_result);
 
