@@ -710,5 +710,7 @@
 
     function user_edit($nic,$username,$email,$fn,$ln,$address_user,$gender,$dob){
         $con = Connection();
+
+        $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
     }
 ?>
