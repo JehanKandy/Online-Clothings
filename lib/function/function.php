@@ -731,6 +731,14 @@
                     if($update_data_result){
                         header("location:my_account_admin.php");
                     }
+                    elseif(!$update_data_result){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>Update Error</strong>Update Query not Working..!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                        </div>";
+                    }
                 
                 }elseif($nic != $select_data_row['nic_no']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
