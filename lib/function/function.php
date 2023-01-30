@@ -639,7 +639,7 @@
                 </tr>
                 <tr>
                     <td>Last Name : </td>
-                    <td><input type='text' class='input-feild' name='ln' value='".$user_row['lname']."' >
+                    <td><input type='text' name='ln' class='input-feild' value='".$user_row['lname']."' >
                 </td>
                 </tr>
                 <tr>
