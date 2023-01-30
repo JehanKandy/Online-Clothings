@@ -722,6 +722,8 @@
         $select_already_data_result = mysqli_query($con, $select_already_data);
         $alredy_row = mysqli_fetch_assoc($select_already_data_result);
 
-        
+        if($select_data_nor != 0){
+            
+        }
     }
 ?>
