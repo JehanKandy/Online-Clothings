@@ -725,5 +725,13 @@
         if($select_data_nor != 0){
             
         }
+        elseif($select_data_nor == 0){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error</strong>Can not Process the Request..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";
+        }
     }
 ?>
