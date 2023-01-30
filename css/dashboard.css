@@ -636,4 +636,13 @@
         margin-left: 79%;
         margin-top: -40px;
     }  
+    .input-feild{
+        height: 40px;
+        width: 200px;
+        margin-left: 0;
+        padding-left: 10px;
+        border-radius: 2px;
+        border: 1px solid rgb(211, 211, 211);
+        margin-top: 10px;
+    }
 }
