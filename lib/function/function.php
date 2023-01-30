@@ -627,7 +627,7 @@
                 </tr>
                 <tr>
                     <td>Username : </td>
-                    <td><input type='text' name='username' class='input-feild' name='username' value='".$user_row['username']."' ></td>
+                    <td><input type='text' name='username' class='input-feild' value='".$user_row['username']."' ></td>
                 </tr>
                 <tr>
                     <td>Email : </td>
