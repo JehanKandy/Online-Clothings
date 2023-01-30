@@ -715,6 +715,8 @@
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
 
-        
+        //check user edit values are already in the table
+
+        $select_already_data = "SELECT * FORM user_tbl";
     }
 ?>
