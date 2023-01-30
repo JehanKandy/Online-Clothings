@@ -631,7 +631,7 @@
                 </tr>
                 <tr>
                     <td>Email : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['email']."' disabled></td>
+                    <td><input type='text' name='email' class='input-feild' value='".$user_row['email']."' disabled></td>
                 </tr>
                 <tr>
                     <td>First Name : </td>
