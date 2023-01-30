@@ -654,7 +654,7 @@
         border: 1px solid rgb(211, 211, 211);
         padding: 5px 10px;
     }
-    .pass-edit-btn, .email-edit-btn{
+    .pass-edit-btn, .email-edit-btn, .user-data-edit-btn{
         margin-top: 20px;
         width: 320px;
         padding: 10px 20px;
