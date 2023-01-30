@@ -714,11 +714,14 @@
         $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
+        $select_data_nor = mysqli_num_rows($select_data_result);
 
         //check user edit values are already in the table
 
         $select_already_data = "SELECT * FORM user_tbl";
         $select_already_data_result = mysqli_query($con, $select_already_data);
         $alredy_row = mysqli_fetch_assoc($select_already_data_result);
+
+        
     }
 ?>
