@@ -635,7 +635,7 @@
                 </tr>
                 <tr>
                     <td>First Name : </td>
-                    <td><input type='text' class='input-feild' name='fn' value='".$user_row['fname']."' ></td>
+                    <td><input type='text' name='fn' class='input-feild' value='".$user_row['fname']."' ></td>
                 </tr>
                 <tr>
                     <td>Last Name : </td>
