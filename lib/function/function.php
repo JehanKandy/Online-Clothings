@@ -661,7 +661,16 @@
                     <td><input type='text' name='date_birth' class='input-feild' value='".$user_row['dob']."'>
                         <p style='color:red;'>use this date formart to enter Date of Birth (yyyy-mm-dd)</p>
                     </td>
-                </tr>";
+                </tr>
+                <tr>
+                <td style='padding-top:10px;'>User Type : </td>";
+
+                    if($user_row['user_type'] == "admin"){
+                        $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>Admin</span></td>";              
+                    }
+                    elseif($user_row['user_type'] == "user"){
+                        $user_data .= "<td style='padding-top:10px;'><span class='user_type_b'>User</span></td>";              
+                    }     
         echo $user_data;
     
     }
