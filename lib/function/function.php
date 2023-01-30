@@ -725,7 +725,7 @@
         if($select_data_nor != 0){
             if($username != $alredy_row['username']){
                 if($nic == $select_data_row['nic_no']){
-                    $update_data = "UPDATE user_tbl SET username = '$username', fname = '$fn', lname = '$ln', address_user = '$address_user', gender = '$gender', ";
+                    $update_data = "UPDATE user_tbl SET username = '$username', fname = '$fn', lname = '$ln', address_user = '$address_user', gender = '$gender', dob = '$dob'";
                 }elseif($nic != $select_data_row['nic_no']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>Process Error</strong>Can not Process the Request..!
