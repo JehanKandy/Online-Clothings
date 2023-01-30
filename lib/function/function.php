@@ -624,11 +624,13 @@
             <form action='' method='POST'>
                 <tr>
                     <td>NIC Number : </td>
-                    <td><input type='text' name='nic_num' class='input-feild' value='".$user_row['nic_no']."' disabled></td>
+                    <td><input type='text' class='input-feild' value='".$user_row['nic_no']."' disabled>
+                    <input type='hidden' name='nic_no' class='input-feild' value='".$user_row['nic_no']."' disabled>
+                    </td>
                 </tr>
                 <tr>
                     <td>Username : </td>
-                    <td><input type='text' name='username' class='input-feild' value='".$user_row['username']."' ></td>
+                    <td><input type='text' name='username' class='input-feild' value='".$user_row['username']."'></td>
                 </tr>
                 <tr>
                     <td>Email : </td>
