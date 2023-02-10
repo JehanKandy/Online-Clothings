@@ -759,5 +759,10 @@
 
     function update_pass_login(){
         $con = Connection();
+
+        $id = $_GET['id'];
+        echo $id;
+
+        //$nic = strval($_SESSION['LoginSession']);
     }
 ?>
