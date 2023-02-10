@@ -36,6 +36,13 @@
 	<main class="content">
 		<h1>Update Password, <?php ?> </h1>
 		<hr>
+        <?php 
+            if(isset($_POST['update_dpass'])){
+                
+            }
+        
+        ?>
+
 		<?php update_pass_login(); ?>
 	</main>
 </div>
