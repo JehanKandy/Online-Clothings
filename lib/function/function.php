@@ -792,6 +792,14 @@
                             <label>Old Password : </label>
                             <input type='password' name='old_pass' class='form-control'>
                         </div>
+                        <div class='form-group'>
+                            <label>New Password : </label>
+                            <input type='password' name='new_pass' class='form-control'>
+                        </div>
+                        <div class='form-group'>
+                            <label>Confirm New Password : </label>
+                            <input type='password' name='new_cpass' class='form-control'>
+                        </div>
                     </div>
                 </form>
             ";
