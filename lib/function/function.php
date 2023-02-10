@@ -846,6 +846,17 @@
                     <span aria-hidden='true'>&times;</span>
                     </button>
             </div>"; 
+        }else{
+            if($old_pass == $check_user_row['pass1']){
+
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error</strong> Old Password Cannot be find in database..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
+            }
         }
     }
 ?>
