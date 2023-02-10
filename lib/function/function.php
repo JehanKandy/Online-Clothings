@@ -846,9 +846,17 @@
                     <span aria-hidden='true'>&times;</span>
                     </button>
             </div>"; 
-        }else{
+        }elseif($new_pass != $cnew_pass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong> Passwords Not Match..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }
+        else{
             if($old_pass == $check_user_row['pass1']){
-
+                $update_data = "UPDATE user_tbl SET pass1";
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Password Error</strong> Old Password Cannot be find in database..!
