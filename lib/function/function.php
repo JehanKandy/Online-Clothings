@@ -763,6 +763,14 @@
         $id = $_GET['id'];
         echo $id;
 
-        //$nic = strval($_SESSION['LoginSession']);
+        $nic = strval($_SESSION['LoginSession']);
+
+        if($id == $nic){
+            $pass_update = "";
+
+            echo $pass_update;
+        }else{
+            header("location:../views/logout.php");
+        }
     }
 ?>
