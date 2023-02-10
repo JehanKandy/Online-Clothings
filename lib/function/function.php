@@ -761,7 +761,6 @@
         $con = Connection();
 
         $id = $_GET['id'];
-        echo $id;
 
         $nic = strval($_SESSION['LoginSession']);
 
@@ -771,8 +770,29 @@
 
         if($id == $nic){
             $pass_update = "
-                <form action='' method='POST'>
+                <table class='tabel'>
+                    <tr>
+                        <td>NIC : </td>
+                        <td>".$nic."</td>
+                    </tr>
+                    <tr>
+                        <td>Name : </td>
+                        <td>".$check_user_row['username']."</td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td>".$check_user_row['email']."</td>
+                    </tr>
+                </table>
 
+
+                <form action='' method='POST'>
+                    <div class='container' style='margin-top:20px;'>
+                        <div class='form-group'>
+                            <label>Old Password : </label>
+                            <input type='password' name='old_pass' class='form-control'>
+                        </div>
+                    </div>
                 </form>
             ";
 
