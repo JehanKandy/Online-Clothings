@@ -803,6 +803,9 @@
                             <label>Confirm New Password : </label>
                             <input type='password' name='new_cpass' class='form-control'>
                         </div>
+                        <div class='form-group'>
+                            <input type='submit' name='update_dpass' class='btn btn-success' value='Update Password'>
+                        </div>
                     </div>
                 </form>
             ";
