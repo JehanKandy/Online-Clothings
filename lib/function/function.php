@@ -841,7 +841,7 @@
             </div>"; 
         }elseif(empty($cnew_pass)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Password Error</strong> New Password Cannot be Empty..!
+                    <strong>Password Error</strong>Confirm New Password Cannot be Empty..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                     <span aria-hidden='true'>&times;</span>
                     </button>
