@@ -36,7 +36,7 @@
 	<main class="content">
 		<h1>Update Password, <?php ?> </h1>
 		<hr>
-		<?php //user_data(); ?>
+		<?php update_pass_login(); ?>
 	</main>
 </div>
 
