@@ -839,6 +839,13 @@
                     <span aria-hidden='true'>&times;</span>
                     </button>
             </div>"; 
+        }elseif($cnew_pass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong> New Password Cannot be Empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
         }
     }
 ?>
