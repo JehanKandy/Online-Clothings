@@ -856,7 +856,8 @@
         }
         else{
             if($old_pass == $check_user_row['pass1']){
-                $update_data = "UPDATE user_tbl SET pass1";
+                $update_data = "UPDATE user_tbl SET pass1 = '$new_pass' WHERE nic_no = '$nic'";
+                $
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Password Error</strong> Old Password Cannot be find in database..!
