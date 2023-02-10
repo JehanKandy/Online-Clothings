@@ -765,8 +765,16 @@
 
         $nic = strval($_SESSION['LoginSession']);
 
+        $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_user_result = mysqli_query($con, $check_user);
+        $check_user_row = mysqli_fetch_assoc($check_user_result);
+
         if($id == $nic){
-            $pass_update = "";
+            $pass_update = "
+                <form action='' method='POST'>
+
+                </form>
+            ";
 
             echo $pass_update;
         }else{
