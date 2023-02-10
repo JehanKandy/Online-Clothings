@@ -44,7 +44,7 @@
         
         ?>
 
-		<?php update_pass_login(); ?>
+		<?php update_email(); ?>
 	</main>
 </div>
 
