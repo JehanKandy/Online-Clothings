@@ -84,9 +84,6 @@
 
   <h4> 10 February 2023</h4>
   
-  - css/dashboard.css (UPDATE)
-  - lib/function/function.php (UPDATE)
-  - lib/routes/edit_admin.php (UPDATE)
 
  
 
