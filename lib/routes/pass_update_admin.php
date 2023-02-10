@@ -39,7 +39,7 @@
         <?php 
             if(isset($_POST['update_dpass'])){
                 $result = update_pass_data($_POST['old_pass'], $_POST['new_pass'], $_POST['new_cpass']);
-                
+                echo $result;
             }
         
         ?>
