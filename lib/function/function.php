@@ -816,7 +816,7 @@
         }
     }
 
-    function update_pass_data(){
+    function update_pass_data($old_pass, $new_pass, $cnew_pass){
         $con = Connection();
     }
 ?>
