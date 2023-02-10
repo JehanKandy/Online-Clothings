@@ -818,5 +818,11 @@
 
     function update_pass_data($old_pass, $new_pass, $cnew_pass){
         $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_user_result = mysqli_query($con, $check_user);
+        $check_user_row = mysqli_fetch_assoc($check_user_result);
     }
 ?>
