@@ -815,4 +815,8 @@
             header("location:../views/logout.php");
         }
     }
+
+    function update_pass_data(){
+        $con = Connection();
+    }
 ?>
