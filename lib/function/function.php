@@ -870,4 +870,8 @@
             }
         }
     }
+
+    function update_email(){
+        $con = Connection();
+    }
 ?>
