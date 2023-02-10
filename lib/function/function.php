@@ -858,6 +858,8 @@
             if($old_pass == $check_user_row['pass1']){
                 $update_data = "UPDATE user_tbl SET pass1 = '$new_pass' WHERE nic_no = '$nic'";
                 $update_data_result = mysqli_query($con, $update_data);
+
+                header("location:my_account_admin.php");
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Password Error</strong> Old Password Cannot be find in database..!
