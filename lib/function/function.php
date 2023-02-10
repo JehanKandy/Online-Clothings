@@ -770,6 +770,9 @@
 
         if($id == $nic){
             $pass_update = "
+
+                <a href='my_account_admin.php'><button class='btn btn-primary'>Back</button></a>
+
                 <table class='tabel'>
                     <tr>
                         <td>NIC : </td>
