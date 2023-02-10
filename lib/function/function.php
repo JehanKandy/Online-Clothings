@@ -602,7 +602,7 @@
                 $user_data .= " <a href='edit_user.php?id=".$user_row['nic_no']."'><button class='user-data-edit-btn'> <i class='fas fa-user-edit'></i> Edit Information</button></a>";
             }
             $user_data .="
-                <br><a href='pass_update.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
+                <br><a href='pass_update_admin.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
                 <br><a href='email_update.php?id=".$user_row['nic_no']."'><button class='email-edit-btn'><i class='fas fa-at'></i> Update Email</button></a>
             ";      
 
@@ -641,8 +641,7 @@
                 </tr>
                 <tr>
                     <td>Last Name : </td>
-                    <td><input type='text' name='ln' class='input-feild' value='".$user_row['lname']."' >
-                </td>
+                    <td><input type='text' name='ln' class='input-feild' value='".$user_row['lname']."' ></td>
                 </tr>
                 <tr>
                     <td style='vertical-align:top; padding-top:10px;'>Address : </td>
@@ -652,15 +651,11 @@
                 </tr>
                 <tr>
                     <td>Gender : </td>
-                    <td><input type='text' class='input-feild' value='".$user_row['gender']."' disabled>
-                        <br>
-                        <input type='radio' name='update_gender' value='Male' style='margin-left:20px; margin-top:10px'> Male
-                        <input type='radio' name='update_gender' value='Female'> Female
-                    </td>
+                    <td><input type='text' name='update_gender' class='input-feild' value='".$user_row['gender']."' ></td>
                 </tr>
                 <tr>
                     <td>Date Of Birth : </td>
-                    <td><input type='text' name='date_birth' class='input-feild' value='".$user_row['dob']."'>
+                    <td><input type='date' name='date_birth' class='input-feild' value='".$user_row['dob']."'>
                         <p style='color:red;'>use this date formart to enter Date of Birth (yyyy-mm-dd)</p>
                     </td>
                 </tr>
@@ -760,5 +755,9 @@
                     </button>
             </div>";
         }
+    }
+
+    function update_pass_login(){
+        $con = Connection();
     }
 ?>
