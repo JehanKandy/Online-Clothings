@@ -773,7 +773,7 @@
 
                 <a href='my_account_admin.php'><button class='btn btn-primary'>Back</button></a>
 
-                <table class='tabel'>
+                <table class='tabel' style='margin-top:30px;'>
                     <tr>
                         <td>NIC : </td>
                         <td>".$nic."</td>
