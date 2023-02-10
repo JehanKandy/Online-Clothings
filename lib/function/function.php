@@ -824,5 +824,21 @@
         $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
         $check_user_result = mysqli_query($con, $check_user);
         $check_user_row = mysqli_fetch_assoc($check_user_result);
+
+        if(empty($old_pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong> Old Password Cannot be Empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }elseif(empty($new_pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Password Error</strong> New Password Cannot be Empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }
     }
 ?>
