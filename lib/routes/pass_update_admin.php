@@ -38,7 +38,7 @@
 		<hr>
         <?php 
             if(isset($_POST['update_dpass'])){
-                update_pass_data($_POST['old_pass'], $_POST['new_pass'], $_POST['new_cpass']);
+                $result = update_pass_data($_POST['old_pass'], $_POST['new_pass'], $_POST['new_cpass']);
                 
             }
         
