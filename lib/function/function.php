@@ -974,8 +974,17 @@
                 $body .= "Use this email as user Email";
                 $sender = "From:jehankandy@gmail.com";
 
-                
-                header("location:../views/logout.php");
+                if(mail($recever,$subject,$body,$sender)){
+                    header("location:../views/logout.php");
+                }
+                else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error</strong>Cannot send the OTP..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+                }     
 
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
