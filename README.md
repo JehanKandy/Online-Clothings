@@ -88,7 +88,11 @@
   - lib/routes/email_update_admin.php
   - lib/function/function.php (UPDATE)
  
-
+  <h4> 10 February 2023</h4>
+  
+  - lib/routes/pass_update_admin.php
+  - lib/routes/email_update_admin.php
+  - lib/function/function.php (UPDATE)
 <h1>Developers</h1>
   <h4>JehanKandy</h4>
 
