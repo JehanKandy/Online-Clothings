@@ -1154,4 +1154,8 @@
         $id = $_GET['id'];
         echo $id;
     }
+
+    function member_info(){
+        
+    }
 ?>
