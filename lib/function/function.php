@@ -932,5 +932,21 @@
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
 
+        if(empty($update_email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Email Can not be Empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }elseif(empty($update_cemail)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Email Can not be Empty..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }
+
     }
 ?>
