@@ -1106,4 +1106,8 @@
 
         echo $all_admin_nor;
     }
+
+    function all_members(){
+        $con = Connection();
+    }
 ?>
