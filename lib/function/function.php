@@ -933,12 +933,7 @@
         $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
-
-
-        $check_email = "SELECT email FROM user_tbl";
-        $check_email_result = mysqli_query($con, $check_email);
-        $check_email_row = mysqli_fetch_assoc($check_email_result);
-
+        $select_data_nor = mysqli_num_rows($select_data_result);
 
         if(empty($update_email)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
@@ -971,44 +966,49 @@
                     </button>
             </div>";   
         }
-        elseif($update_email == $check_email_row['email']){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Email Already Used by another user..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>";   
-        }    
         else{
-            $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
-            $update_data_result = mysqli_query($con, $update_data);
+            $check_email = "SELECT * FROM user_tbl";
+            $check_email_result = mysqli_query($con, $check_email);
+            $check_email_nor = mysqli_num_rows($check_email_result);
 
-            if($update_data_result){
-                $recever = $update_email;
-                $subject = "Online Clothings";
-                $body = "Online Clothings";
-                $body .= "Use this email as user Email";
-                $sender = "From:jehankandy@gmail.com";
-
-                if(mail($recever,$subject,$body,$sender)){
-                    header("location:../views/logout.php");
-                }
-                else{
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Process Error</strong>Cannot send the OTP..!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                </div>";
-                }     
-
-            }else{
+            if(){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Proceess Error</strong> Can not Process the request..!
+                        <strong>Email Error</strong> Email Already Used another user..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
-                </div>"; 
+                </div>";   
+            }else{            
+                $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
+                $update_data_result = mysqli_query($con, $update_data);
+
+                if($update_data_result){
+                    $recever = $update_email;
+                    $subject = "Online Clothings";
+                    $body = "Online Clothings";
+                    $body .= "Use this email as user Email";
+                    $sender = "From:jehankandy@gmail.com";
+
+                    if(mail($recever,$subject,$body,$sender)){
+                        header("location:../views/logout.php");
+                    }
+                    else{
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error</strong>Cannot send the OTP..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                    }     
+
+                }else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Proceess Error</strong> Can not Process the request..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>"; 
+                }
             }
         }
     }    
