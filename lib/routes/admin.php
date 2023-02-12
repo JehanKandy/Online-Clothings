@@ -41,7 +41,7 @@
 					<div class="admin-title">
 						<i class="fas fa-user-alt"></i> &nbsp;  Members<br>
 					</div>
-					<hr class="std-hr">
+					<hr class="admin-hr">
 					<div class="admin-body">
 						<?php //count_members(); ?>
 					</div>
@@ -50,7 +50,7 @@
 					<div class="admin-title">
 						<i class="fas fa-user-tie"></i> &nbsp;  Admins<br>
 					</div>
-					<hr class="tea-hr">
+					<hr class="admin-hr">
 					<div class="admin-body">
 						<?php //count_admins(); ?>
 					</div>
@@ -68,7 +68,7 @@
 					<div class="admin-title">
 						<i class="fas fa-money-bill-wave"></i> &nbsp;  Bills<br>
 					</div>
-					<hr class="qui-hr">
+					<hr class="admin-hr">
 					<div class="admin-body">
 					<?php //count_plans(); ?>
 					</div>
