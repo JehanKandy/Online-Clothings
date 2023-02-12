@@ -91,7 +91,7 @@
   <h4> 12 February 2023</h4>
   
   - lib/function/function.php (UPDATE)
-  - lib/routes/
+  - lib/routes/email_update_admin.php 
 
 
 <h1>Developers</h1>
