@@ -1109,5 +1109,9 @@
 
     function all_members(){
         $con = Connection();
+
+        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user'";
+        $all_memebers_result = mysqli_query($con, $all_members);
+        $all_members_row = mysqli_fetch_assoc($all_memebers_result);
     }
 ?>
