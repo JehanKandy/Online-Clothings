@@ -1130,7 +1130,7 @@
                     $all_members .="<td><h3><span class='badge bg-info'>User is Pending</span></h3></td>";
                 }
                 elseif($all_members_row['is_pending'] == 0){
-                    $all_members .="<td><h3><span class='badge bg-info'>Account Activeted</span></h3></td>";
+                    $all_members .="<td><h3><span class='badge bg-success'>Account Activeted</span></h3></td>";
                 }
                 if($all_members_row['un_access'] == 1){
                     $all_members .="<td><h3><span class='badge bg-danger'>Unauthorized Access</span></h3></td>";
