@@ -35,6 +35,22 @@
 	<main class="content">
 		<h1>Welcome, To Admin Dashboard</h1>
 		<hr>
+		<table class="table">
+			<thead class="table-dark">
+				<tr>
+					<td>NIC Number</td>
+					<td>Username</td>
+					<td>Email</td>
+					<td>Active Status</td>
+					<td>Pending Status</td>
+					<td>Infor</td>
+				</tr>
+			</thead>
+			<tbody>
+				...
+			</tbody>
+		</table>
+
 
 	</main>
 </div>
