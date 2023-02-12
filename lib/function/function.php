@@ -1156,6 +1156,6 @@
     }
 
     function member_info(){
-        
+        $con = Connection();
     }
 ?>
