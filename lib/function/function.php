@@ -1096,4 +1096,14 @@
 
         echo $all_memebers_nor;
     }
+
+    function count_admin(){
+        $con = Connection();
+
+        $all_admin = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
+        $all_admin_result = mysqli_query($con, $all_admin);
+        $all_admin_nor = mysqli_num_rows($all_admin_result);
+
+        echo $all_admin_nor;
+    }
 ?>
