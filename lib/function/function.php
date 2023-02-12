@@ -517,6 +517,8 @@
         $user_row = mysqli_fetch_assoc($select_user_data_result);
 
         $user_data = "
+        <img src='../../upload/".$user_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
+        <a href='update_pimg.php?id=".$nic."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
             <table border='0'>
                 <tr>
                     <td>NIC Number : </td>
@@ -1022,5 +1024,66 @@
         $select_usern_row = mysqli_fetch_assoc($select_usern_result);
 
         echo $select_usern_row['username'];
+    }
+
+    function update_profile_img(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $select_profile = "SELECT* FROM user_tbl WHERE nic_no = '$nic'";
+        $select_profile_result = mysqli_query($con, $select_profile);
+        $select_profile_row = mysqli_fetch_assoc($select_profile_result);
+
+        $view_form = "
+            <img src='../../upload/".$select_profile_row['profile_img']."' alt='Profile Image' class='profile-edit-img'>
+            
+            <form action='' method='POST' enctype='multipart/form-data'>
+                New Profile Image
+                <input type='file' name='images' class='form-control' style='margin-bottom:20px;'>
+                <input type='submit' name='profile_img_update' value='Update Profile Image' class='btn btn-success btn-lg btn-block'>      
+            </form>";
+
+            if($select_profile_row['user_type'] == 'admin'){
+                $view_form .="<a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+            }elseif($select_profile_row['user_type'] == 'user'){
+                $view_form .="<a href='user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+            }          
+        
+        echo $view_form;
+        
+    }
+    function update_profile_image($img){
+        $con = Connection();
+
+
+        $nic = strval($_SESSION['LoginSession']);
+
+
+        $check_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $check_user_result = mysqli_query($con, $check_user);
+        $check_user_row = mysqli_fetch_assoc($check_user_result);
+
+
+        $image_dir = "../../upload/";
+        
+        $filename = basename($_FILES["images"]["name"]);
+        $image_target_path = $image_dir . $filename;
+        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
+
+        $image_types = array('jpg','png','jpeg','gif','PNG');
+
+        if(in_array($filetype, $image_types)){
+            if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
+                $update_img = "UPDATE user_tbl SET profile_img = '$filename' WHERE nic_no = '$nic'";
+                $update_img_result = mysqli_query($con, $update_img); 
+
+                if($check_user_row['user_type'] == 'admin'){
+                    header("location:my_account_admin.php");
+                }elseif($check_user_row['user_type'] == 'user'){
+                    header("location:user.php");
+                }             
+            }
+        }
     }
 ?>
