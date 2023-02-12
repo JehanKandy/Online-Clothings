@@ -883,7 +883,28 @@
         $id = $_GET['id'];
         
         if($id == $nic){
-            
+            $user_data = "
+                <a href='my_account_admin.php'><button class='btn btn-primary' style='margin-bottom:10px;'>Back</button></a>
+
+                <table>
+                    <tr>
+                        <td>NIC Number : </td>
+                        <td>&nbsp;".$nic."</td>
+                    </tr>
+                    <tr>
+                        <td>Userame : </td>
+                        <td>&nbsp;".$select_user_row['username']."</td>
+                    </tr>
+                </table>
+
+
+                <form action='' method='POST'>
+                    <label style='margin-top:30px;'>Email : </label> <br>
+                    <input type='email' value='".$select_user_row['email']."' class='form-control'>
+                </form>
+            ";
+
+            echo $user_data;
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Proceess Error</strong> Can not Process the request..!
