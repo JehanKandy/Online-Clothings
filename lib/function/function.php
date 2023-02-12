@@ -964,7 +964,7 @@
             </div>";   
         }
         else{
-            $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE  "
+            $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
         }
     }
 ?>
