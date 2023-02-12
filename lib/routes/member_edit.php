@@ -33,7 +33,7 @@
 	</aside>
 
 	<main class="content">
-		<h1>Admin, <?php ?> </h1>
+		<h1>Member ID : <?php member_id() ?> </h1>
 		<hr>
 
 	</main>
