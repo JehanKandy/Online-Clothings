@@ -971,7 +971,7 @@
             $check_email_result = mysqli_query($con, $check_email);
             $check_email_nor = mysqli_num_rows($check_email_result);
 
-            if(){
+            if($select_data_nor == $check_email_nor){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Email Error</strong> Email Already Used another user..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
