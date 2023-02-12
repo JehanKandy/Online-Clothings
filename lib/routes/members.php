@@ -47,7 +47,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php ?>
+				<?php all_members(); ?>
 			</tbody>
 		</table>
 
