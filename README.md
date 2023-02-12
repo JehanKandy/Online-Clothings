@@ -92,6 +92,8 @@
   
   - lib/function/function.php (UPDATE)
   - lib/routes/email_update_admin.php (UPDATE)
+  - lib/routes/admin.php (UPDATE)
+  - lib/routes/edit_admin.php (UPDATE)
 
 
 <h1>Developers</h1>
