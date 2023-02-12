@@ -52,7 +52,7 @@
 					</div>
 					<hr class="admin-hr">
 					<div class="admin-body">
-						<?php //count_admins(); ?>
+						<?php count_admin(); ?>
 					</div>
 				</div>
 				<div class="admin-item3">
