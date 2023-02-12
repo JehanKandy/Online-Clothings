@@ -1139,7 +1139,7 @@
                     $all_members .="<td><h3><span class='badge bg-info'>Verify</span></h3></td>";
                 }
         $all_members .="
-                <td><a href='member_edit.php'><button class='btn btn-primary'>Info</button></a></td>
+                <td><a href='member_edit.php?id=".$all_members_row['nic_no']."'><button class='btn btn-primary'>Info</button></a></td>
 
             </tr>
         
