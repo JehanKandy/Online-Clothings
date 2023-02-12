@@ -35,46 +35,7 @@
 	<main class="content">
 		<h1>Welcome, To Admin Dashboard</h1>
 		<hr>
-		<div class="admin-content">
-			<div class="grid">
-				<div class="admin-item1">
-					<div class="admin-title">
-						<i class="fas fa-user-alt"></i> &nbsp;  Members<br>
-					</div>
-					<hr class="admin-hr">
-					<div class="admin-body">
-						<?php count_members(); ?>
-					</div>
-				</div>
-				<div class="admin-item2">
-					<div class="admin-title">
-						<i class="fas fa-user-tie"></i> &nbsp;  Admins<br>
-					</div>
-					<hr class="admin-hr">
-					<div class="admin-body">
-						<?php count_admin(); ?>
-					</div>
-				</div>
-				<div class="admin-item3">
-					<div class="admin-title">
-						<i class="fas fa-gifts"></i> &nbsp;  Products<br>
-					</div>
-					<hr class="admin-hr">
-					<div class="admin-body">
-						<?php //count_products(); ?>
-					</div>
-				</div>
-				<div class="admin-item4">
-					<div class="admin-title">
-						<i class="fas fa-money-bill-wave"></i> &nbsp;  Bills<br>
-					</div>
-					<hr class="admin-hr">
-					<div class="admin-body">
-					<?php //count_plans(); ?>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</main>
 </div>
 
