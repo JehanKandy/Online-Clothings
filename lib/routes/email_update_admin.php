@@ -39,9 +39,9 @@
 
 		<?php 
 			if(isset($_POST['update_email'])){
-				$result = 
-			}
-		
+				$result = update_email_data($_POST['new_email'], $_POST['new_cemail']);
+				echo $result;
+			}		
 		?>
 
 
