@@ -12,7 +12,6 @@
 
 ?>
 
-
 <div class="app">
 	<div class="menu-toggle">
 		<div class="hamburger">
@@ -35,15 +34,16 @@
 	</aside>
 
 	<main class="content">
-		<h1>Update Password, <?php ?> </h1>
+		<h1>Update Email, <?php ?> </h1>
 		<hr>
-        <?php 
-            if(isset($_POST['update_dpass'])){
-                $result = update_pass_data(md5($_POST['old_pass']), md5($_POST['new_pass']), md5($_POST['new_cpass']));
-                echo $result;
-            }
-        
-        ?>
+
+		<?php 
+			if(isset($_POST['update_email'])){
+				$result = 
+			}
+		
+		?>
+
 
 		<?php update_email(); ?>
 	</main>
