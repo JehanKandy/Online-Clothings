@@ -925,5 +925,8 @@
 
     function update_email_data($update_email, $update_cemail){
         $con = Connection();
+              
+        $nic = strval($_SESSION['LoginSession']);
+
     }
 ?>
