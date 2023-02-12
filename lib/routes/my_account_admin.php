@@ -27,7 +27,6 @@
 			<a href="members.php" class="menu-item"><i class="fas fa-user-alt"></i>Members 
 			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin   
 			<a href="products.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  
-            <a href="plans.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  
 			<a href="my_account_admin.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
 		</nav>
 		
