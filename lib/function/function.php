@@ -1089,5 +1089,8 @@
 
     function count_members(){
         $con = Connection();
+
+        $all_memebers = "SELECT * FROM user_tbl WHERE user_type = 'user'";
+        $all_memebers_result = mysqli_query($con, $all_memebers);
     }
 ?>
