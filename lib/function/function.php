@@ -1110,7 +1110,7 @@
     function all_members(){
         $con = Connection();
 
-        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_active = 1 && is_pending = 0 && un_access = '0'";
+        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $all_memebers_result = mysqli_query($con, $all_members);
         $all_members_row = mysqli_fetch_assoc($all_memebers_result);
 
@@ -1121,10 +1121,22 @@
                 <td>".$all_members_row['email']."</td>";
 
                 if($all_members_row['is_active'] == 1){
-                    $all_members .="<h3>Example heading <span class='badge bg-success'>Active</span></h3>";
+                    $all_members .="<td><h3><span class='badge bg-success'>Active</span></h3></td>";
                 }
-                if($all_members_row['is_pending'] == 0.){
-                    $all_members .="<h3>Example heading <span class='badge bg-info'>User is Pending</span></h3>";
+                elseif($all_members_row['is_active'] == 0){
+                    $all_members .="<td><h3><span class='badge bg-danger'>Deactive</span></h3></td>";
+                }
+                if($all_members_row['is_pending'] == 1){
+                    $all_members .="<td><h3><span class='badge bg-info'>User is Pending</span></h3></td>";
+                }
+                elseif($all_members_row['is_pending'] == 0){
+                    $all_members .="<td><h3><span class='badge bg-info'>Account Activeted</span></h3></td>";
+                }
+                if($all_members_row['un_access'] == 1){
+                    $all_members .="<td><h3><span class='badge bg-danger'>Unauthorized Access</span></h3></td>";
+                }
+                elseif($all_members_row['un_access'] == 0){
+                    $all_members .="<td><h3><span class='badge bg-info'>Verify</span></h3></td>";
                 }
         $all_members .="
                 <td><a href='member_edit.php'><button class='btn btn-primary'>Info</button></a></td>
