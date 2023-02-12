@@ -873,5 +873,7 @@
 
     function update_email(){
         $con = Connection();
+        
+        $nic = strval($_SESSION['LoginSession']);
     }
 ?>
