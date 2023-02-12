@@ -900,7 +900,13 @@
 
                 <form action='' method='POST'>
                     <label style='margin-top:30px;'>Email : </label> <br>
-                    <input type='email' value='".$select_user_row['email']."' class='form-control'>
+                    <input type='email' value='".$select_user_row['email']."' class='form-control' disabled>
+                    
+                    <label style='margin-top:30px;'>Enter New Email : </label><br>
+                    <input type='email' name='new_email' id='new_email' class='form-control'>
+
+                    <label style='margin-top:30px;'>Confarm New Email : </label><br>
+                    <input type='email' name='new_email' id='new_cemail' class='form-control'>
                 </form>
             ";
 
