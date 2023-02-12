@@ -995,5 +995,32 @@
                 </div>"; 
             }
         }
+    }    
+    function profile_img(){
+        $con = Connection();
+
+        $nic = strval($_SESSION['LoginSession']);
+
+        $view_profile_img = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $view_profile_img_result = mysqli_query($con, $view_profile_img);
+        $view_profile_img_row = mysqli_fetch_assoc($view_profile_img_result);
+
+        $profile_img_view ="
+        <img src='../../upload/".$view_profile_img_row['profile_img']."' alt='Profile Image' class='profile-img'>
+        ";
+
+        echo $profile_img_view;
+    }
+    
+    function user_id_loged(){
+        $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
+        $select_usern = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_usern_result = mysqli_query($con, $select_usern);
+        $select_usern_row = mysqli_fetch_assoc($select_usern_result);
+
+        echo $select_usern_row['u_username'];
     }
 ?>
