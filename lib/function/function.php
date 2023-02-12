@@ -963,5 +963,8 @@
                     </button>
             </div>";   
         }
+        else{
+            $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE  "
+        }
     }
 ?>
