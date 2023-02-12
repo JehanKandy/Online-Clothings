@@ -43,11 +43,11 @@
 					<td>Email</td>
 					<td>Active Status</td>
 					<td>Pending Status</td>
-					<td>Infor</td>
+					<td></td>
 				</tr>
 			</thead>
 			<tbody>
-				...
+				<?php ?>
 			</tbody>
 		</table>
 
