@@ -1110,15 +1110,21 @@
     function all_members(){
         $con = Connection();
 
-        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user'";
+        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user' ";
         $all_memebers_result = mysqli_query($con, $all_members);
         $all_members_row = mysqli_fetch_assoc($all_memebers_result);
 
-        $all_members="
+        $all_members ="
             <tr>
                 <td>".$all_members_row['nic_no']."</td>
                 <td>".$all_members_row['username']."</td>
-                <td>".$all_members_row['email']."</td>
+                <td>".$all_members_row['email']."</td>";
+
+                if($all_members_row['is_active'] == 1){
+                    $all_members .="<h3>Example heading <span class='badge bg-success'>Active</span></h3>";
+                }
+
+        $all_members .="
             </tr>
         
         ";
