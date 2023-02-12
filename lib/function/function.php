@@ -1092,5 +1092,8 @@
 
         $all_memebers = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $all_memebers_result = mysqli_query($con, $all_memebers);
+        $all_memebers_nor = mysqli_num_rows($all_memebers_result);
+
+        echo $all_memebers_nor;
     }
 ?>
