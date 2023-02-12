@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../../css/dashboard.css">
-<?php include "../layouts/header.php";?>
-<?php include "../layouts/nav_loged_user.php";?>
+<?php include("../function/function.php"); ?>
+<?php include("../layouts/header.php"); ?>
+<?php include("../layouts/loged_nav.php"); ?>
 
 <?php 
     if(empty($_SESSION['LoginSession'])){
