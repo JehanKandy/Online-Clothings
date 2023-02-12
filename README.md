@@ -95,6 +95,7 @@
   - lib/routes/admin.php (UPDATE)
   - lib/routes/edit_admin.php (UPDATE)
   - lib/routes/my_account_admin.php (UPDATE)
+  - lib/routes/pass_update_admin.php (UPDATE)
 
 
 <h1>Developers</h1>
