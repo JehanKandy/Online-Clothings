@@ -1114,7 +1114,14 @@
         $all_memebers_result = mysqli_query($con, $all_members);
         $all_members_row = mysqli_fetch_assoc($all_memebers_result);
 
-        $all_members="";
+        $all_members="
+            <tr>
+                <td>".$all_members_row['nic_no']."</td>
+                <td>".$all_members_row['username']."</td>
+                <td>".$all_members_row['email']."</td>
+            </tr>
+        
+        ";
 
         echo $all_members;
     }
