@@ -968,7 +968,15 @@
             $update_data_result = mysqli_query($con, $update_data);
 
             if($update_data_result){
+                $recever = $update_email;
+                $subject = "Online Clothings";
+                $body = "Online Clothings";
+                $body .= "Use this email as user Email";
+                $sender = "From:jehankandy@gmail.com";
+
+                
                 header("location:../views/logout.php");
+
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Proceess Error</strong> Can not Process the request..!
