@@ -906,7 +906,7 @@
                     <input type='email' name='new_email' id='new_email' class='form-control'>
 
                     <label style='margin-top:30px;'>Confarm New Email : </label><br>
-                    <input type='email' name='new_email' id='new_cemail' class='form-control'>
+                    <input type='email' name='new_cemail' id='new_cemail' class='form-control'>
 
                     <input type='submit' name='update_email' value='Update Email' class='btn btn-success' style='margin-top:20px;'>
                 </form>
