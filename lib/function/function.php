@@ -875,5 +875,22 @@
         $con = Connection();
         
         $nic = strval($_SESSION['LoginSession']);
+
+        $select_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
+        $select_user_result = mysqli_query($con, $select_user);
+        $select_user_row = mysqli_fetch_assoc($select_user_result);
+
+        $id = $_GET['id'];
+        
+        if($id == $nic){
+            
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Proceess Error</strong> Can not Process the request..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
+        }
     }
 ?>
