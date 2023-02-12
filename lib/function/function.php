@@ -605,7 +605,7 @@
             }
             $user_data .="
                 <br><a href='pass_update_admin.php?id=".$user_row['nic_no']."'><button class='pass-edit-btn'><i class='fas fa-key'></i> Update Password</button></a>
-                <br><a href='email_update_admin.php?id=".$user_row['nic_no']."'><button class='email-edit-btn'><i class='fas fa-at'></i> Update Email</button></a>
+               
             ";      
 
         echo $user_data;
@@ -873,145 +873,9 @@
         }
     }
 
-    function update_email(){
-        $con = Connection();
-        
-        $nic = strval($_SESSION['LoginSession']);
+    
 
-        $select_user = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
-        $select_user_result = mysqli_query($con, $select_user);
-        $select_user_row = mysqli_fetch_assoc($select_user_result);
-
-        $id = $_GET['id'];
-        
-        if($id == $nic){
-            $user_data = "
-                <a href='my_account_admin.php'><button class='btn btn-primary' style='margin-bottom:10px;'>Back</button></a>
-
-                <table>
-                    <tr>
-                        <td>NIC Number : </td>
-                        <td>&nbsp;".$nic."</td>
-                    </tr>
-                    <tr>
-                        <td>Userame : </td>
-                        <td>&nbsp;".$select_user_row['username']."</td>
-                    </tr>
-                </table>
-
-
-                <form action='' method='POST'>
-                    <label style='margin-top:30px;'>Email : </label> <br>
-                    <input type='email' value='".$select_user_row['email']."' class='form-control' disabled>
-                    
-                    <label style='margin-top:30px;'>Enter New Email : </label><br>
-                    <input type='email' name='new_email' id='new_email' class='form-control'>
-
-                    <label style='margin-top:30px;'>Confarm New Email : </label><br>
-                    <input type='email' name='new_cemail' id='new_cemail' class='form-control'>
-
-                    <input type='submit' name='update_email' value='Update Email' class='btn btn-success' style='margin-top:20px;'>
-                </form>
-            ";
-
-            echo $user_data;
-        }else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Proceess Error</strong> Can not Process the request..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>"; 
-        }
-    }
-
-    function update_email_data($update_email, $update_cemail){
-        $con = Connection();
-              
-        $nic = strval($_SESSION['LoginSession']);
-        
-        $select_data = "SELECT * FROM user_tbl WHERE nic_no = '$nic'";
-        $select_data_result = mysqli_query($con, $select_data);
-        $select_data_row = mysqli_fetch_assoc($select_data_result);
-        $select_data_nor = mysqli_num_rows($select_data_result);
-
-        if(empty($update_email)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Email Can not be Empty..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>"; 
-        }elseif(empty($update_cemail)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Confarm Email Can not be Empty..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>"; 
-        }
-        elseif($update_email != $update_cemail){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Emails not Match..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>"; 
-        }
-        elseif($update_email == $select_data_row['email']){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Email Already Used..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>";   
-        }
-        else{
-            $check_email = "SELECT * FROM user_tbl";
-            $check_email_result = mysqli_query($con, $check_email);
-            $check_email_nor = mysqli_num_rows($check_email_result);
-
-            if($select_data_nor == $check_email_nor){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error</strong> Email Already Used another user..!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                </div>";   
-            }else{            
-                $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
-                $update_data_result = mysqli_query($con, $update_data);
-
-                if($update_data_result){
-                    $recever = $update_email;
-                    $subject = "Online Clothings";
-                    $body = "Online Clothings";
-                    $body .= "Use this email as user Email";
-                    $sender = "From:jehankandy@gmail.com";
-
-                    if(mail($recever,$subject,$body,$sender)){
-                        header("location:../views/logout.php");
-                    }
-                    else{
-                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Process Error</strong>Cannot send the OTP..!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                    </div>";
-                    }     
-
-                }else{
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Proceess Error</strong> Can not Process the request..!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                    </div>"; 
-                }
-            }
-        }
-    }    
+    
     function profile_img(){
         $con = Connection();
 
