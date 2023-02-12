@@ -941,7 +941,7 @@
             </div>"; 
         }elseif(empty($update_cemail)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> Email Can not be Empty..!
+                    <strong>Email Error</strong> Confarm Email Can not be Empty..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                     <span aria-hidden='true'>&times;</span>
                     </button>
