@@ -1110,7 +1110,7 @@
     function all_members(){
         $con = Connection();
 
-        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user' ";
+        $all_members = "SELECT * FROM user_tbl WHERE user_type = 'user' && is_active = 1 && is_pending = 0 && un_access = '0'";
         $all_memebers_result = mysqli_query($con, $all_members);
         $all_members_row = mysqli_fetch_assoc($all_memebers_result);
 
@@ -1123,8 +1123,12 @@
                 if($all_members_row['is_active'] == 1){
                     $all_members .="<h3>Example heading <span class='badge bg-success'>Active</span></h3>";
                 }
-
+                if($all_members_row['is_pending'] == 0.){
+                    $all_members .="<h3>Example heading <span class='badge bg-info'>User is Pending</span></h3>";
+                }
         $all_members .="
+                <td><a href='member_edit.php'><button class='btn btn-primary'>Info</button></a></td>
+
             </tr>
         
         ";
