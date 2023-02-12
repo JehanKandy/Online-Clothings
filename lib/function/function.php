@@ -1157,5 +1157,12 @@
 
     function member_info(){
         $con = Connection();
+
+        $id = $_GET['id'];
+
+        $select_member = "SELECT * FROM user_tbl WHERE nic_no = '$id'";
+        $select_member_result = mysqli_query($con, $select_member);
+        $select_member_row = mysqli_fetch_assoc($select_member_result);
+        
     }
 ?>
