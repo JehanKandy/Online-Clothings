@@ -1086,4 +1086,8 @@
             }
         }
     }
+
+    function count_members(){
+        $con = Connection();
+    }
 ?>
