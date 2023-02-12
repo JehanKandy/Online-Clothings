@@ -965,6 +965,7 @@
         }
         else{
             $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
+            $update_data_result = mysqli_query($con, $update_data);
         }
     }
 ?>
