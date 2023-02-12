@@ -1147,4 +1147,8 @@
 
         echo $all_members;
     }
+
+    function member_id(){
+        $con = Connection();
+    }
 ?>
