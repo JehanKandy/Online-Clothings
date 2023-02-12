@@ -43,6 +43,7 @@
 					<td>Email</td>
 					<td>Active Status</td>
 					<td>Pending Status</td>
+					<td>Remarks</td>
 					<td></td>
 				</tr>
 			</thead>
