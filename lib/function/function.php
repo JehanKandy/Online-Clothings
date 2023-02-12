@@ -1150,5 +1150,8 @@
 
     function member_id(){
         $con = Connection();
+
+        $id = $_GET['id'];
+        echo $id;
     }
 ?>
