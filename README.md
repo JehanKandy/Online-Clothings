@@ -92,6 +92,7 @@
   
   - lib/routes/members.php
   - lib/routes/update_pimg.php
+  - lib/routes/member_edit.php
   - lib/function/function.php (UPDATE)
   - lib/routes/email_update_admin.php (UPDATE)
   - lib/routes/admin.php (UPDATE)
