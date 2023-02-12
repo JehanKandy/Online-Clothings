@@ -934,6 +934,12 @@
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
 
+
+        $check_email = "SELECT email FROM user_tbl";
+        $check_email_result = mysqli_query($con, $check_email);
+        $check_email_row = mysqli_fetch_assoc($check_email_result);
+
+
         if(empty($update_email)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Email Error</strong> Email Can not be Empty..!
@@ -965,6 +971,14 @@
                     </button>
             </div>";   
         }
+        elseif($update_email == $check_email_row['email']){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> Email Already Used by another user..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";   
+        }    
         else{
             $update_data = "UPDATE user_tbl SET email = '$update_email' WHERE nic_no = '$nic'";
             $update_data_result = mysqli_query($con, $update_data);
@@ -1166,7 +1180,30 @@
 
         $member_data = "
             <img src='../../upload/".$select_member_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
-                    
+        
+            <table>
+            <tr>
+                <td>NIC Number : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['nic_no']."' disabled></td>
+            </tr>
+            <tr>
+                <td>Username : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['username']."' disabled></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['email']."' disabled></td>
+            </tr>
+            <tr>
+                <td>First Name : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['fname']."' disabled></td>
+            </tr>
+            <tr>
+                <td>Last Name : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['lname']."' disabled></td>
+            </tr>
+            </table>
+
         ";
         
         echo $member_data;
