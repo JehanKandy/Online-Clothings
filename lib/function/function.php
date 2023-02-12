@@ -1163,6 +1163,12 @@
         $select_member = "SELECT * FROM user_tbl WHERE nic_no = '$id'";
         $select_member_result = mysqli_query($con, $select_member);
         $select_member_row = mysqli_fetch_assoc($select_member_result);
+
+        $member_data = "
+            <img src='../../upload/".$select_member_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
+                    
+        ";
         
+        echo $member_data;
     }
 ?>
