@@ -1043,6 +1043,8 @@
         $select_member_row = mysqli_fetch_assoc($select_member_result);
 
         $member_data = "
+            <a href='members.php'><button class='btn btn-primary'>Back</button></a> <br><br>
+
             <img src='../../upload/".$select_member_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
         
             <table>
