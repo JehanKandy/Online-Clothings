@@ -1079,7 +1079,14 @@
             <tr>
                 <td>Date of Birth : </td>
                 <td><input type='text' class='input-feild' value='".$select_member_row['dob']."' disabled></td>
-            </tr>
+            </tr>";
+
+            if($select_member_row['is_pending'] == 0){
+                
+            }
+
+        $member_data = "
+
             </table>
 
         ";
