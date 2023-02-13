@@ -102,8 +102,6 @@
   
   <h4> 13 February 2023</h4>
   
-  - lib/routes/pass_update_admin.php
-  - lib/routes/email_update_admin.php
   - lib/function/function.php (UPDATE)
 
 
