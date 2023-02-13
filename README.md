@@ -99,6 +99,12 @@
   - lib/routes/edit_admin.php (UPDATE)
   - lib/routes/my_account_admin.php (UPDATE)
   - lib/routes/pass_update_admin.php (UPDATE)
+  
+    <h4> 10 February 2023</h4>
+  
+  - lib/routes/pass_update_admin.php
+  - lib/routes/email_update_admin.php
+  - lib/function/function.php (UPDATE)
 
 
 <h1>Developers</h1>
