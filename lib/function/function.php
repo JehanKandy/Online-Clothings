@@ -1068,6 +1068,18 @@
                 <td>Last Name : </td>
                 <td><input type='text' class='input-feild' value='".$select_member_row['lname']."' disabled></td>
             </tr>
+            <tr>
+                <td>Address : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['address_user']."' disabled></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['gender']."' disabled></td>
+            </tr>
+            <tr>
+                <td>Date of Birth : </td>
+                <td><input type='text' class='input-feild' value='".$select_member_row['dob']."' disabled></td>
+            </tr>
             </table>
 
         ";
